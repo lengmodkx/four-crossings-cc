@@ -1,0 +1,116 @@
+<script setup lang="ts">
+/**
+ * TrajectoryLine — 行军轨迹线组件
+ *
+ * 使用 Mapbox GL GeoJSON source + line layer 在地图上渲染行军轨迹。
+ * 颜色从 trajectory.properties.color 读取，线宽 2.5。
+ */
+import { onMounted, onBeforeUnmount, watch } from 'vue'
+import mapboxgl from 'mapbox-gl'
+import type { TrajectoryFeature } from '@/data/types'
+
+const props = defineProps<{
+  /** Mapbox GL Map 实例 */
+  map: mapboxgl.Map
+  /** 要渲染的轨迹 feature */
+  feature: TrajectoryFeature
+}>()
+
+/** 图层和 source 的唯一 id */
+const sourceId = `trajectory-source-${props.feature.properties.id}`
+const layerId = `trajectory-layer-${props.feature.properties.id}`
+
+/**
+ * 将 TrajectoryFeature 转换为 Mapbox GeoJSON source data
+ */
+function toGeoJSONSource(): GeoJSON.Feature {
+  return {
+    type: 'Feature',
+    properties: props.feature.properties,
+    geometry: props.feature.geometry,
+  }
+}
+
+function addSourceAndLayer(): void {
+  const map = props.map
+
+  // 检查 source 是否已存在 (热更新场景)
+  if (map.getSource(sourceId)) {
+    const source = map.getSource(sourceId) as mapboxgl.GeoJSONSource
+    source.setData(toGeoJSONSource() as GeoJSON.GeoJSON)
+    return
+  }
+
+  // 添加 GeoJSON source
+  map.addSource(sourceId, {
+    type: 'geojson',
+    data: toGeoJSONSource() as GeoJSON.GeoJSON,
+  })
+
+  // 添加 line layer
+  const color = props.feature.properties.color || '#C0392B'
+  map.addLayer({
+    id: layerId,
+    type: 'line',
+    source: sourceId,
+    paint: {
+      'line-color': color,
+      'line-width': 2.5,
+      'line-opacity': 0.85,
+      'line-blur': 0.5,
+    },
+    layout: {
+      'line-cap': 'round',
+      'line-join': 'round',
+    },
+  })
+}
+
+function removeSourceAndLayer(): void {
+  const map = props.map
+  if (!map || !map.loaded()) return
+
+  try {
+    if (map.getLayer(layerId)) {
+      map.removeLayer(layerId)
+    }
+    if (map.getSource(sourceId)) {
+      map.removeSource(sourceId)
+    }
+  } catch {
+    // 地图可能已被销毁
+  }
+}
+
+onMounted(() => {
+  // 等待地图加载完成再添加图层
+  if (props.map.loaded()) {
+    addSourceAndLayer()
+  } else {
+    props.map.once('load', addSourceAndLayer)
+  }
+})
+
+// 监听 feature 变化更新数据
+watch(
+  () => props.feature,
+  () => {
+    const map = props.map
+    if (!map.loaded()) return
+
+    const source = map.getSource(sourceId) as mapboxgl.GeoJSONSource | undefined
+    if (source) {
+      source.setData(toGeoJSONSource() as GeoJSON.GeoJSON)
+    }
+  },
+  { deep: true },
+)
+
+onBeforeUnmount(() => {
+  removeSourceAndLayer()
+})
+</script>
+
+<template>
+  <!-- 此组件不渲染 DOM，通过 Mapbox GL API 直接操作地图图层 -->
+</template>
