@@ -12,6 +12,12 @@ export default mergeConfig(
     },
     test: {
       environment: 'jsdom',
+      coverage: {
+        provider: 'v8',
+        reporter: ['text', 'html'],
+        include: ['src/**/*.ts', 'src/**/*.vue'],
+        exclude: ['src/**/*.test.ts', 'src/**/*.spec.ts'],
+      },
     },
   }),
 )
