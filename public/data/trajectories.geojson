@@ -8,572 +8,438 @@
         "coordinates": [
           [
             106.92,
-            27.68
-          ],
-          [
-            106.92,
             27.72
-          ],
-          [
-            106.95,
-            27.78
-          ],
-          [
-            106.98,
-            27.85
-          ],
-          [
-            106.85,
-            27.98
-          ],
-          [
-            106.83,
-            28.13
-          ],
-          [
-            106.5,
-            28.18
-          ],
-          [
-            106.2,
-            28.3
-          ],
-          [
-            105.95,
-            28.1
-          ],
-          [
-            105.7,
-            28.3
-          ],
-          [
-            105.5,
-            28.35
-          ]
-        ]
-      },
-      "properties": {
-        "id": "traj-red-1st-army-1935-01-20-25",
-        "force_id": "red-1st-army",
-        "segment_start": "1935-01-20",
-        "segment_end": "1935-01-25",
-        "phase": "first-crossing",
-        "color": "#C0392B",
-        "source": "《红军长征史》模拟演示数据"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            106.85,
-            27.7
-          ],
-          [
-            106.7,
-            27.65
-          ],
-          [
-            106.55,
-            27.68
-          ],
-          [
-            106.4,
-            27.75
-          ],
-          [
-            106.4,
-            27.8
           ],
           [
             106.25,
-            27.85
-          ],
-          [
-            106.3,
-            28.15
-          ],
-          [
-            106.2,
-            28.3
-          ],
-          [
-            105.97,
-            28.05
-          ],
-          [
-            105.97,
-            28.04
-          ],
-          [
-            105.92,
-            28
-          ]
-        ]
-      },
-      "properties": {
-        "id": "traj-red-3rd-army-1935-01-20-25",
-        "force_id": "red-3rd-army",
-        "segment_start": "1935-01-20",
-        "segment_end": "1935-01-25",
-        "phase": "first-crossing",
-        "color": "#D06155",
-        "source": "《红军长征史》模拟演示数据"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            106.98,
-            27.72
-          ],
-          [
-            106.92,
-            27.72
-          ],
-          [
-            107,
-            27.85
-          ],
-          [
-            106.95,
-            28.1
-          ],
-          [
-            106.83,
-            28.13
-          ],
-          [
-            106.7,
-            28.2
-          ],
-          [
-            106.4,
             28.25
           ],
           [
-            106.25,
-            28.3
-          ],
-          [
-            106.05,
-            28.08
-          ],
-          [
-            105.98,
-            28.03
-          ],
-          [
-            105.95,
-            27.98
-          ]
-        ]
-      },
-      "properties": {
-        "id": "traj-red-5th-army-1935-01-20-25",
-        "force_id": "red-5th-army",
-        "segment_start": "1935-01-20",
-        "segment_end": "1935-01-25",
-        "phase": "first-crossing",
-        "color": "#B03A2E",
-        "source": "《红军长征史》模拟演示数据"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            106.9,
-            27.68
-          ],
-          [
-            106.92,
-            27.72
-          ],
-          [
-            106.92,
-            27.72
-          ],
-          [
-            106.98,
-            27.85
-          ],
-          [
-            106.86,
-            27.95
-          ],
-          [
-            106.84,
-            28.08
-          ],
-          [
-            106.7,
-            28.12
-          ],
-          [
-            106.25,
-            28.22
-          ],
-          [
-            106,
-            28.02
-          ],
-          [
-            105.72,
-            28.28
-          ],
-          [
-            105.65,
-            28.32
-          ]
-        ]
-      },
-      "properties": {
-        "id": "traj-red-9th-army-1935-01-20-25",
-        "force_id": "red-9th-army",
-        "segment_start": "1935-01-20",
-        "segment_end": "1935-01-25",
-        "phase": "first-crossing",
-        "color": "#A93226",
-        "source": "《红军长征史》模拟演示数据"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            105.82,
-            28.82
-          ],
-          [
-            105.85,
-            28.75
-          ],
-          [
-            105.9,
-            28.58
-          ],
-          [
-            105.72,
-            28.5
-          ],
-          [
-            105.8,
-            28.8
-          ],
-          [
-            105.97,
-            28.04
-          ],
-          [
-            105.98,
-            28.03
-          ],
-          [
-            105.98,
-            28.03
-          ],
-          [
             105.97,
             28.04
           ],
           [
             105.97,
             28.04
-          ],
-          [
-            105.95,
-            28.02
-          ]
-        ]
-      },
-      "properties": {
-        "id": "traj-blue-chuan-army-1935-01-20-25",
-        "force_id": "blue-chuan-army",
-        "segment_start": "1935-01-20",
-        "segment_end": "1935-01-25",
-        "phase": "first-crossing",
-        "color": "#2E86C1",
-        "source": "《红军长征史》模拟演示数据"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            105.82,
-            28.82
-          ],
-          [
-            105.85,
-            28.75
-          ],
-          [
-            105.88,
-            28.65
-          ],
-          [
-            105.9,
-            28.5
-          ],
-          [
-            105.95,
-            28.35
-          ],
-          [
-            105.97,
-            28.15
-          ],
-          [
-            105.98,
-            28.05
-          ],
-          [
-            105.98,
-            28.03
-          ],
-          [
-            105.97,
-            28.04
-          ],
-          [
-            105.96,
-            28.03
-          ]
-        ]
-      },
-      "properties": {
-        "id": "traj-blue-sichuan",
-        "force_id": "blue-sichuan",
-        "segment_start": "1935-01-20",
-        "segment_end": "1935-01-24",
-        "phase": "first-crossing",
-        "color": "#2C5F7C",
-        "source": "模拟"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            106.71,
-            26.58
-          ],
-          [
-            106.72,
-            26.6
-          ],
-          [
-            106.75,
-            26.75
-          ],
-          [
-            106.8,
-            26.95
-          ],
-          [
-            106.85,
-            27.15
-          ],
-          [
-            106.88,
-            27.35
-          ],
-          [
-            106.9,
-            27.5
-          ],
-          [
-            106.91,
-            27.58
-          ],
-          [
-            106.92,
-            27.65
-          ],
-          [
-            106.93,
-            27.68
-          ]
-        ]
-      },
-      "properties": {
-        "id": "traj-blue-guizhou",
-        "force_id": "blue-guizhou",
-        "segment_start": "1935-01-20",
-        "segment_end": "1935-01-24",
-        "phase": "first-crossing",
-        "color": "#2C5F7C",
-        "source": "模拟"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            106.71,
-            26.58
-          ],
-          [
-            106.72,
-            26.65
-          ],
-          [
-            106.73,
-            26.85
-          ],
-          [
-            106.75,
-            27.1
-          ],
-          [
-            106.78,
-            27.2
-          ],
-          [
-            106.8,
-            27.28
-          ],
-          [
-            106.82,
-            27.38
-          ],
-          [
-            106.85,
-            27.42
-          ],
-          [
-            106.87,
-            27.5
-          ],
-          [
-            106.9,
-            27.58
-          ]
-        ]
-      },
-      "properties": {
-        "id": "traj-blue-center-xueyue-1935-01-20-24",
-        "force_id": "blue-center-xueyue",
-        "segment_start": "1935-01-20",
-        "segment_end": "1935-01-24",
-        "phase": "first-crossing",
-        "color": "#1F618D",
-        "source": "模拟演示数据"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            104.1,
-            26.22
-          ],
-          [
-            104.28,
-            26.87
-          ],
-          [
-            104.72,
-            27.13
-          ],
-          [
-            105.3,
-            27.3
-          ],
-          [
-            105.4,
-            27.35
-          ],
-          [
-            105.5,
-            27.42
-          ],
-          [
-            105.6,
-            27.5
-          ],
-          [
-            105.68,
-            27.58
-          ],
-          [
-            105.75,
-            27.65
-          ],
-          [
-            105.8,
-            27.7
-          ]
-        ]
-      },
-      "properties": {
-        "id": "traj-blue-yunnan-sundu-1935-01-20-24",
-        "force_id": "blue-yunnan-sundu",
-        "segment_start": "1935-01-20",
-        "segment_end": "1935-01-24",
-        "phase": "first-crossing",
-        "color": "#2980B9",
-        "source": "模拟演示数据"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            105.43,
-            28.87
-          ],
-          [
-            105.38,
-            28.77
-          ],
-          [
-            105.43,
-            28.17
-          ],
-          [
-            105.82,
-            28.05
           ],
           [
             105.7,
-            28.58
+            28.3
           ],
           [
-            105.9,
-            28.5
+            105.81,
+            28.05
           ],
           [
-            105.94,
-            28.38
+            105.05,
+            27.85
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-red-1st-army-first-crossing-1935-01-19",
+        "force_id": "red-1st-army",
+        "segment_start": "1935-01-19",
+        "segment_end": "1935-02-05",
+        "phase": "first-crossing",
+        "color": "#C0392B",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.92,
+            27.72
           ],
           [
-            105.96,
-            28.2
+            106.25,
+            28.25
           ],
           [
-            105.99,
-            28.08
+            105.97,
+            28.04
+          ],
+          [
+            105.97,
+            28.04
+          ],
+          [
+            105.7,
+            28.3
+          ],
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.05,
+            27.85
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-red-3rd-army-first-crossing-1935-01-19",
+        "force_id": "red-3rd-army",
+        "segment_start": "1935-01-19",
+        "segment_end": "1935-02-05",
+        "phase": "first-crossing",
+        "color": "#D06155",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.92,
+            27.72
+          ],
+          [
+            105.97,
+            28.04
+          ],
+          [
+            105.97,
+            28.04
+          ],
+          [
+            105.7,
+            28.3
+          ],
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.45,
+            28.18
+          ],
+          [
+            105.05,
+            27.85
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-red-5th-army-first-crossing-1935-01-19",
+        "force_id": "red-5th-army",
+        "segment_start": "1935-01-19",
+        "segment_end": "1935-02-05",
+        "phase": "first-crossing",
+        "color": "#B03A2E",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.92,
+            27.72
+          ],
+          [
+            105.97,
+            28.04
+          ],
+          [
+            105.95,
+            28.1
+          ],
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.05,
+            27.85
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-red-9th-army-first-crossing-1935-01-19",
+        "force_id": "red-9th-army",
+        "segment_start": "1935-01-19",
+        "segment_end": "1935-02-05",
+        "phase": "first-crossing",
+        "color": "#A93226",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.97,
+            28.04
+          ],
+          [
+            105.97,
+            28.04
+          ],
+          [
+            105.7,
+            28.3
+          ],
+          [
+            105.45,
+            28.18
+          ],
+          [
+            105.81,
+            28.05
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-chuan-army-first-crossing-1935-01-24",
+        "force_id": "blue-chuan-army",
+        "segment_start": "1935-01-24",
+        "segment_end": "1935-02-06",
+        "phase": "first-crossing",
+        "color": "#2E86C1",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.97,
+            28.04
+          ],
+          [
+            105.97,
+            28.04
+          ],
+          [
+            105.7,
+            28.3
+          ],
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.81,
+            28.05
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-chuan-army-b-first-crossing-1935-01-24",
+        "force_id": "blue-chuan-army-b",
+        "segment_start": "1935-01-24",
+        "segment_end": "1935-02-06",
+        "phase": "first-crossing",
+        "color": "#2E86C1",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.92,
+            27.72
+          ],
+          [
+            106.92,
+            27.72
+          ],
+          [
+            105.45,
+            28.18
+          ],
+          [
+            105.45,
+            28.18
+          ],
+          [
+            106.92,
+            27.72
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-guizhou-first-crossing-1935-01-22",
+        "force_id": "blue-guizhou",
+        "segment_start": "1935-01-22",
+        "segment_end": "1935-02-06",
+        "phase": "first-crossing",
+        "color": "#2C5F7C",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.45,
+            28.18
+          ],
+          [
+            105.45,
+            28.18
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-sichuan-first-crossing-1935-01-26",
+        "force_id": "blue-sichuan",
+        "segment_start": "1935-01-26",
+        "segment_end": "1935-02-06",
+        "phase": "first-crossing",
+        "color": "#2C5F7C",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.71,
+            26.58
+          ],
+          [
+            106.71,
+            26.58
+          ],
+          [
+            106.92,
+            27.72
+          ],
+          [
+            106.92,
+            27.72
+          ],
+          [
+            106.92,
+            27.72
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-center-xueyue-first-crossing-1935-01-22",
+        "force_id": "blue-center-xueyue",
+        "segment_start": "1935-01-22",
+        "segment_end": "1935-02-06",
+        "phase": "first-crossing",
+        "color": "#1F618D",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.45,
+            27.3
+          ],
+          [
+            105.05,
+            27.85
+          ],
+          [
+            105.05,
+            27.85
+          ],
+          [
+            105.05,
+            27.85
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-yunnan-sundu-first-crossing-1935-01-20",
+        "force_id": "blue-yunnan-sundu",
+        "segment_start": "1935-01-20",
+        "segment_end": "1935-02-06",
+        "phase": "first-crossing",
+        "color": "#2980B9",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.55,
+            28.25
+          ],
+          [
+            105.45,
+            28.18
+          ],
+          [
+            105.45,
+            28.18
+          ],
+          [
+            105.45,
+            28.18
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-sichuan-liuxiang-first-crossing-1935-01-22",
+        "force_id": "blue-sichuan-liuxiang",
+        "segment_start": "1935-01-22",
+        "segment_end": "1935-02-06",
+        "phase": "first-crossing",
+        "color": "#3498DB",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.2,
+            27.85
+          ],
+          [
+            105.97,
+            28.04
+          ],
+          [
+            105.97,
+            28.04
           ],
           [
             105.97,
@@ -582,13 +448,2078 @@
         ]
       },
       "properties": {
-        "id": "traj-blue-sichuan-liuxiang-1935-01-20-24",
-        "force_id": "blue-sichuan-liuxiang",
-        "segment_start": "1935-01-20",
-        "segment_end": "1935-01-24",
+        "id": "traj-blue-zhouhunyuan-first-crossing-1935-01-22",
+        "force_id": "blue-zhouhunyuan",
+        "segment_start": "1935-01-22",
+        "segment_end": "1935-02-06",
         "phase": "first-crossing",
+        "color": "#5DADE2",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.71,
+            26.58
+          ],
+          [
+            106.71,
+            26.58
+          ],
+          [
+            106.71,
+            26.58
+          ],
+          [
+            106.92,
+            27.72
+          ],
+          [
+            106.92,
+            27.72
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-wuqiwei-first-crossing-1935-01-22",
+        "force_id": "blue-wuqiwei",
+        "segment_start": "1935-01-22",
+        "segment_end": "1935-02-06",
+        "phase": "first-crossing",
+        "color": "#2874A6",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.05,
+            27.85
+          ],
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.75,
+            27.85
+          ],
+          [
+            106.82,
+            28.15
+          ],
+          [
+            106.85,
+            28.05
+          ],
+          [
+            106.92,
+            27.72
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-red-1st-army-second-crossing-1935-02-10",
+        "force_id": "red-1st-army",
+        "segment_start": "1935-02-10",
+        "segment_end": "1935-02-28",
+        "phase": "second-crossing",
+        "color": "#C0392B",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.05,
+            27.85
+          ],
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.75,
+            27.85
+          ],
+          [
+            106.82,
+            28.15
+          ],
+          [
+            106.85,
+            28.05
+          ],
+          [
+            106.92,
+            27.72
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-red-3rd-army-second-crossing-1935-02-10",
+        "force_id": "red-3rd-army",
+        "segment_start": "1935-02-10",
+        "segment_end": "1935-02-28",
+        "phase": "second-crossing",
+        "color": "#D06155",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.05,
+            27.85
+          ],
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.75,
+            27.85
+          ],
+          [
+            106.85,
+            28.05
+          ],
+          [
+            106.85,
+            28.05
+          ],
+          [
+            106.92,
+            27.72
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-red-5th-army-second-crossing-1935-02-10",
+        "force_id": "red-5th-army",
+        "segment_start": "1935-02-10",
+        "segment_end": "1935-02-28",
+        "phase": "second-crossing",
+        "color": "#B03A2E",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.05,
+            27.85
+          ],
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.75,
+            27.85
+          ],
+          [
+            106.82,
+            28.15
+          ],
+          [
+            106.92,
+            27.72
+          ],
+          [
+            106.92,
+            27.72
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-red-9th-army-second-crossing-1935-02-10",
+        "force_id": "red-9th-army",
+        "segment_start": "1935-02-10",
+        "segment_end": "1935-02-28",
+        "phase": "second-crossing",
+        "color": "#A93226",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.45,
+            28.18
+          ],
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.95,
+            28.1
+          ],
+          [
+            106.82,
+            28.15
+          ],
+          [
+            106.85,
+            28.05
+          ],
+          [
+            106.71,
+            26.58
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-chuan-army-second-crossing-1935-02-10",
+        "force_id": "blue-chuan-army",
+        "segment_start": "1935-02-10",
+        "segment_end": "1935-02-28",
+        "phase": "second-crossing",
+        "color": "#2E86C1",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.95,
+            28.1
+          ],
+          [
+            106.82,
+            28.15
+          ],
+          [
+            106.85,
+            28.05
+          ],
+          [
+            106.71,
+            26.58
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-chuan-army-b-second-crossing-1935-02-10",
+        "force_id": "blue-chuan-army-b",
+        "segment_start": "1935-02-10",
+        "segment_end": "1935-02-28",
+        "phase": "second-crossing",
+        "color": "#2E86C1",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.92,
+            27.72
+          ],
+          [
+            106.92,
+            27.72
+          ],
+          [
+            106.92,
+            27.72
+          ],
+          [
+            106.92,
+            27.72
+          ],
+          [
+            106.85,
+            28.05
+          ],
+          [
+            106.71,
+            26.58
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-guizhou-second-crossing-1935-02-10",
+        "force_id": "blue-guizhou",
+        "segment_start": "1935-02-10",
+        "segment_end": "1935-02-28",
+        "phase": "second-crossing",
+        "color": "#2C5F7C",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.45,
+            28.18
+          ],
+          [
+            105.45,
+            28.18
+          ],
+          [
+            105.81,
+            28.05
+          ],
+          [
+            106.82,
+            28.15
+          ],
+          [
+            106.85,
+            28.05
+          ],
+          [
+            106.92,
+            27.72
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-sichuan-second-crossing-1935-02-10",
+        "force_id": "blue-sichuan",
+        "segment_start": "1935-02-10",
+        "segment_end": "1935-02-28",
+        "phase": "second-crossing",
+        "color": "#2C5F7C",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.71,
+            26.58
+          ],
+          [
+            106.71,
+            26.58
+          ],
+          [
+            106.71,
+            26.58
+          ],
+          [
+            106.92,
+            27.72
+          ],
+          [
+            106.92,
+            27.72
+          ],
+          [
+            106.92,
+            27.72
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-center-xueyue-second-crossing-1935-02-10",
+        "force_id": "blue-center-xueyue",
+        "segment_start": "1935-02-10",
+        "segment_end": "1935-02-28",
+        "phase": "second-crossing",
+        "color": "#1F618D",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.05,
+            27.85
+          ],
+          [
+            105.05,
+            27.85
+          ],
+          [
+            105.05,
+            27.85
+          ],
+          [
+            105.05,
+            27.85
+          ],
+          [
+            106.92,
+            27.72
+          ],
+          [
+            106.92,
+            27.72
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-yunnan-sundu-second-crossing-1935-02-10",
+        "force_id": "blue-yunnan-sundu",
+        "segment_start": "1935-02-10",
+        "segment_end": "1935-02-28",
+        "phase": "second-crossing",
+        "color": "#2980B9",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.45,
+            28.18
+          ],
+          [
+            105.45,
+            28.18
+          ],
+          [
+            105.95,
+            28.1
+          ],
+          [
+            106.82,
+            28.15
+          ],
+          [
+            106.85,
+            28.05
+          ],
+          [
+            106.92,
+            27.72
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-sichuan-liuxiang-second-crossing-1935-02-10",
+        "force_id": "blue-sichuan-liuxiang",
+        "segment_start": "1935-02-10",
+        "segment_end": "1935-02-28",
+        "phase": "second-crossing",
         "color": "#3498DB",
-        "source": "模拟演示数据"
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.97,
+            28.04
+          ],
+          [
+            105.97,
+            28.04
+          ],
+          [
+            105.97,
+            28.04
+          ],
+          [
+            105.97,
+            28.04
+          ],
+          [
+            105.97,
+            28.04
+          ],
+          [
+            106.92,
+            27.72
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-zhouhunyuan-second-crossing-1935-02-10",
+        "force_id": "blue-zhouhunyuan",
+        "segment_start": "1935-02-10",
+        "segment_end": "1935-02-28",
+        "phase": "second-crossing",
+        "color": "#5DADE2",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.71,
+            26.58
+          ],
+          [
+            106.71,
+            26.58
+          ],
+          [
+            106.71,
+            26.58
+          ],
+          [
+            106.71,
+            26.58
+          ],
+          [
+            106.71,
+            26.58
+          ],
+          [
+            106.92,
+            27.72
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-wuqiwei-second-crossing-1935-02-10",
+        "force_id": "blue-wuqiwei",
+        "segment_start": "1935-02-10",
+        "segment_end": "1935-02-28",
+        "phase": "second-crossing",
+        "color": "#2874A6",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.92,
+            27.72
+          ],
+          [
+            106.92,
+            27.72
+          ],
+          [
+            106.3,
+            27.75
+          ],
+          [
+            106.3,
+            27.75
+          ],
+          [
+            106.32,
+            27.88
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-red-1st-army-third-crossing-1935-03-02",
+        "force_id": "red-1st-army",
+        "segment_start": "1935-03-02",
+        "segment_end": "1935-03-16",
+        "phase": "third-crossing",
+        "color": "#C0392B",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.92,
+            27.72
+          ],
+          [
+            106.92,
+            27.72
+          ],
+          [
+            106.3,
+            27.75
+          ],
+          [
+            106.3,
+            27.75
+          ],
+          [
+            106.32,
+            27.88
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-red-3rd-army-third-crossing-1935-03-02",
+        "force_id": "red-3rd-army",
+        "segment_start": "1935-03-02",
+        "segment_end": "1935-03-16",
+        "phase": "third-crossing",
+        "color": "#D06155",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.92,
+            27.72
+          ],
+          [
+            106.92,
+            27.72
+          ],
+          [
+            106.3,
+            27.75
+          ],
+          [
+            106.3,
+            27.75
+          ],
+          [
+            106.32,
+            27.88
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-red-5th-army-third-crossing-1935-03-02",
+        "force_id": "red-5th-army",
+        "segment_start": "1935-03-02",
+        "segment_end": "1935-03-16",
+        "phase": "third-crossing",
+        "color": "#B03A2E",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.92,
+            27.72
+          ],
+          [
+            106.92,
+            27.72
+          ],
+          [
+            106.92,
+            27.72
+          ],
+          [
+            106.92,
+            27.72
+          ],
+          [
+            106.32,
+            27.88
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-red-9th-army-third-crossing-1935-03-02",
+        "force_id": "red-9th-army",
+        "segment_start": "1935-03-02",
+        "segment_end": "1935-03-16",
+        "phase": "third-crossing",
+        "color": "#A93226",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.81,
+            28.05
+          ],
+          [
+            106.85,
+            28.05
+          ],
+          [
+            106.3,
+            27.75
+          ],
+          [
+            105.81,
+            28.05
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-chuan-army-third-crossing-1935-03-02",
+        "force_id": "blue-chuan-army",
+        "segment_start": "1935-03-02",
+        "segment_end": "1935-03-16",
+        "phase": "third-crossing",
+        "color": "#2E86C1",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.81,
+            28.05
+          ],
+          [
+            106.85,
+            28.05
+          ],
+          [
+            106.3,
+            27.75
+          ],
+          [
+            105.81,
+            28.05
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-chuan-army-b-third-crossing-1935-03-02",
+        "force_id": "blue-chuan-army-b",
+        "segment_start": "1935-03-02",
+        "segment_end": "1935-03-16",
+        "phase": "third-crossing",
+        "color": "#2E86C1",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.92,
+            27.72
+          ],
+          [
+            106.71,
+            26.58
+          ],
+          [
+            106.71,
+            26.58
+          ],
+          [
+            106.71,
+            26.58
+          ],
+          [
+            106.71,
+            26.58
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-guizhou-third-crossing-1935-03-02",
+        "force_id": "blue-guizhou",
+        "segment_start": "1935-03-02",
+        "segment_end": "1935-03-16",
+        "phase": "third-crossing",
+        "color": "#2C5F7C",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.45,
+            28.18
+          ],
+          [
+            105.45,
+            28.18
+          ],
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.81,
+            28.05
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-sichuan-third-crossing-1935-03-02",
+        "force_id": "blue-sichuan",
+        "segment_start": "1935-03-02",
+        "segment_end": "1935-03-16",
+        "phase": "third-crossing",
+        "color": "#2C5F7C",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.92,
+            27.72
+          ],
+          [
+            106.92,
+            27.72
+          ],
+          [
+            106.3,
+            27.75
+          ],
+          [
+            106.3,
+            27.75
+          ],
+          [
+            105.81,
+            28.05
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-center-xueyue-third-crossing-1935-03-02",
+        "force_id": "blue-center-xueyue",
+        "segment_start": "1935-03-02",
+        "segment_end": "1935-03-16",
+        "phase": "third-crossing",
+        "color": "#1F618D",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.92,
+            27.72
+          ],
+          [
+            106.92,
+            27.72
+          ],
+          [
+            106.3,
+            27.75
+          ],
+          [
+            106.3,
+            27.75
+          ],
+          [
+            105.81,
+            28.05
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-yunnan-sundu-third-crossing-1935-03-02",
+        "force_id": "blue-yunnan-sundu",
+        "segment_start": "1935-03-02",
+        "segment_end": "1935-03-16",
+        "phase": "third-crossing",
+        "color": "#2980B9",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.45,
+            28.18
+          ],
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.81,
+            28.05
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-sichuan-liuxiang-third-crossing-1935-03-02",
+        "force_id": "blue-sichuan-liuxiang",
+        "segment_start": "1935-03-02",
+        "segment_end": "1935-03-16",
+        "phase": "third-crossing",
+        "color": "#3498DB",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.3,
+            27.75
+          ],
+          [
+            106.3,
+            27.75
+          ],
+          [
+            106.3,
+            27.75
+          ],
+          [
+            106.3,
+            27.75
+          ],
+          [
+            105.81,
+            28.05
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-zhouhunyuan-third-crossing-1935-03-02",
+        "force_id": "blue-zhouhunyuan",
+        "segment_start": "1935-03-02",
+        "segment_end": "1935-03-16",
+        "phase": "third-crossing",
+        "color": "#5DADE2",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.71,
+            26.58
+          ],
+          [
+            106.71,
+            26.58
+          ],
+          [
+            106.92,
+            27.72
+          ],
+          [
+            106.3,
+            27.75
+          ],
+          [
+            105.81,
+            28.05
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-wuqiwei-third-crossing-1935-03-02",
+        "force_id": "blue-wuqiwei",
+        "segment_start": "1935-03-02",
+        "segment_end": "1935-03-16",
+        "phase": "third-crossing",
+        "color": "#2874A6",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.95,
+            27.9
+          ],
+          [
+            106.85,
+            27
+          ],
+          [
+            106.2,
+            27.2
+          ],
+          [
+            106.71,
+            26.58
+          ],
+          [
+            103.8,
+            25.5
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-red-1st-army-fourth-crossing-1935-03-22",
+        "force_id": "red-1st-army",
+        "segment_start": "1935-03-18",
+        "segment_end": "1935-04-06",
+        "phase": "fourth-crossing",
+        "color": "#C0392B",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.75,
+            27.85
+          ],
+          [
+            106.85,
+            27
+          ],
+          [
+            106.2,
+            27.2
+          ],
+          [
+            106.71,
+            26.58
+          ],
+          [
+            103.82,
+            25.4
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-red-3rd-army-fourth-crossing-1935-03-22",
+        "force_id": "red-3rd-army",
+        "segment_start": "1935-03-18",
+        "segment_end": "1935-04-06",
+        "phase": "fourth-crossing",
+        "color": "#D06155",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.95,
+            27.9
+          ],
+          [
+            106.85,
+            27
+          ],
+          [
+            106.2,
+            27.2
+          ],
+          [
+            106.71,
+            26.58
+          ],
+          [
+            103.8,
+            25.5
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-red-5th-army-fourth-crossing-1935-03-22",
+        "force_id": "red-5th-army",
+        "segment_start": "1935-03-18",
+        "segment_end": "1935-04-06",
+        "phase": "fourth-crossing",
+        "color": "#B03A2E",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.2,
+            27.85
+          ],
+          [
+            106.2,
+            27.85
+          ],
+          [
+            106.2,
+            27.85
+          ],
+          [
+            106.2,
+            27.85
+          ],
+          [
+            106.32,
+            27.88
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-red-9th-army-fourth-crossing-1935-03-22",
+        "force_id": "red-9th-army",
+        "segment_start": "1935-03-18",
+        "segment_end": "1935-04-07",
+        "phase": "fourth-crossing",
+        "color": "#A93226",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.45,
+            28.18
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-chuan-army-fourth-crossing-1935-03-22",
+        "force_id": "blue-chuan-army",
+        "segment_start": "1935-03-18",
+        "segment_end": "1935-04-07",
+        "phase": "fourth-crossing",
+        "color": "#2E86C1",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.45,
+            28.18
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-chuan-army-b-fourth-crossing-1935-03-22",
+        "force_id": "blue-chuan-army-b",
+        "segment_start": "1935-03-18",
+        "segment_end": "1935-04-07",
+        "phase": "fourth-crossing",
+        "color": "#2E86C1",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.71,
+            26.58
+          ],
+          [
+            106.71,
+            26.58
+          ],
+          [
+            106.95,
+            26.45
+          ],
+          [
+            106.71,
+            26.58
+          ],
+          [
+            106.95,
+            26.45
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-guizhou-fourth-crossing-1935-03-22",
+        "force_id": "blue-guizhou",
+        "segment_start": "1935-03-18",
+        "segment_end": "1935-04-07",
+        "phase": "fourth-crossing",
+        "color": "#2C5F7C",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.45,
+            28.18
+          ],
+          [
+            105.45,
+            28.18
+          ],
+          [
+            105.45,
+            28.18
+          ],
+          [
+            105.55,
+            28.3
+          ],
+          [
+            105.45,
+            28.18
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-sichuan-fourth-crossing-1935-03-22",
+        "force_id": "blue-sichuan",
+        "segment_start": "1935-03-18",
+        "segment_end": "1935-04-07",
+        "phase": "fourth-crossing",
+        "color": "#2C5F7C",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.81,
+            28.05
+          ],
+          [
+            106.71,
+            26.58
+          ],
+          [
+            106.71,
+            26.58
+          ],
+          [
+            106.71,
+            26.58
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-center-xueyue-fourth-crossing-1935-03-22",
+        "force_id": "blue-center-xueyue",
+        "segment_start": "1935-03-18",
+        "segment_end": "1935-04-07",
+        "phase": "fourth-crossing",
+        "color": "#1F618D",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.05,
+            27.85
+          ],
+          [
+            105.05,
+            27.85
+          ],
+          [
+            104.62,
+            27.13
+          ],
+          [
+            106.71,
+            26.58
+          ],
+          [
+            106.71,
+            26.58
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-yunnan-sundu-fourth-crossing-1935-03-22",
+        "force_id": "blue-yunnan-sundu",
+        "segment_start": "1935-03-18",
+        "segment_end": "1935-04-07",
+        "phase": "fourth-crossing",
+        "color": "#2980B9",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.45,
+            28.18
+          ],
+          [
+            105.45,
+            28.18
+          ],
+          [
+            105.45,
+            28.18
+          ],
+          [
+            105.55,
+            28.3
+          ],
+          [
+            105.45,
+            28.18
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-sichuan-liuxiang-fourth-crossing-1935-03-22",
+        "force_id": "blue-sichuan-liuxiang",
+        "segment_start": "1935-03-18",
+        "segment_end": "1935-04-07",
+        "phase": "fourth-crossing",
+        "color": "#3498DB",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.55,
+            28.3
+          ],
+          [
+            105.45,
+            28.18
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-zhouhunyuan-fourth-crossing-1935-03-22",
+        "force_id": "blue-zhouhunyuan",
+        "segment_start": "1935-03-18",
+        "segment_end": "1935-04-07",
+        "phase": "fourth-crossing",
+        "color": "#5DADE2",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.55,
+            28.3
+          ],
+          [
+            105.45,
+            28.18
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-wuqiwei-fourth-crossing-1935-03-22",
+        "force_id": "blue-wuqiwei",
+        "segment_start": "1935-03-18",
+        "segment_end": "1935-04-07",
+        "phase": "fourth-crossing",
+        "color": "#2874A6",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.95,
+            26.25
+          ],
+          [
+            102.1,
+            25.15
+          ],
+          [
+            101.85,
+            25.7
+          ],
+          [
+            102.3,
+            26.1
+          ],
+          [
+            102.3,
+            26.1
+          ],
+          [
+            102.25,
+            26.65
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-red-1st-army-jinsha-river-1935-04-12",
+        "force_id": "red-1st-army",
+        "segment_start": "1935-04-08",
+        "segment_end": "1935-05-09",
+        "phase": "jinsha-river",
+        "color": "#C0392B",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            102.1,
+            25.15
+          ],
+          [
+            102.1,
+            25.15
+          ],
+          [
+            103.55,
+            26.4
+          ],
+          [
+            102.3,
+            26.1
+          ],
+          [
+            102.3,
+            26.1
+          ],
+          [
+            102.25,
+            26.65
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-red-3rd-army-jinsha-river-1935-04-12",
+        "force_id": "red-3rd-army",
+        "segment_start": "1935-04-08",
+        "segment_end": "1935-05-09",
+        "phase": "jinsha-river",
+        "color": "#D06155",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            102.1,
+            25.15
+          ],
+          [
+            102.1,
+            25.15
+          ],
+          [
+            103.1,
+            27
+          ],
+          [
+            102.45,
+            26.25
+          ],
+          [
+            102.45,
+            26.25
+          ],
+          [
+            102.3,
+            26.1
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-red-5th-army-jinsha-river-1935-04-12",
+        "force_id": "red-5th-army",
+        "segment_start": "1935-04-08",
+        "segment_end": "1935-05-09",
+        "phase": "jinsha-river",
+        "color": "#B03A2E",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.95,
+            26.25
+          ],
+          [
+            102.5,
+            27.4
+          ],
+          [
+            103.55,
+            26.4
+          ],
+          [
+            102.3,
+            26.1
+          ],
+          [
+            102.3,
+            26.1
+          ],
+          [
+            102.25,
+            26.65
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-red-9th-army-jinsha-river-1935-04-12",
+        "force_id": "red-9th-army",
+        "segment_start": "1935-04-08",
+        "segment_end": "1935-05-09",
+        "phase": "jinsha-river",
+        "color": "#A93226",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.45,
+            28.18
+          ],
+          [
+            104.62,
+            27.13
+          ],
+          [
+            104.2,
+            26.85
+          ],
+          [
+            104.2,
+            26.85
+          ],
+          [
+            104.2,
+            26.85
+          ],
+          [
+            104.2,
+            26.85
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-chuan-army-jinsha-river-1935-04-12",
+        "force_id": "blue-chuan-army",
+        "segment_start": "1935-04-08",
+        "segment_end": "1935-05-09",
+        "phase": "jinsha-river",
+        "color": "#2E86C1",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.45,
+            28.18
+          ],
+          [
+            105.45,
+            28.18
+          ],
+          [
+            105.45,
+            28.18
+          ],
+          [
+            105.45,
+            28.18
+          ],
+          [
+            105.45,
+            28.18
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-chuan-army-b-jinsha-river-1935-04-12",
+        "force_id": "blue-chuan-army-b",
+        "segment_start": "1935-04-08",
+        "segment_end": "1935-05-09",
+        "phase": "jinsha-river",
+        "color": "#2E86C1",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.71,
+            26.58
+          ],
+          [
+            106.95,
+            26.45
+          ],
+          [
+            105.61,
+            25.1
+          ],
+          [
+            105.61,
+            25.1
+          ],
+          [
+            105.61,
+            25.1
+          ],
+          [
+            105.61,
+            25.1
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-guizhou-jinsha-river-1935-04-12",
+        "force_id": "blue-guizhou",
+        "segment_start": "1935-04-08",
+        "segment_end": "1935-05-09",
+        "phase": "jinsha-river",
+        "color": "#2C5F7C",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.45,
+            28.18
+          ],
+          [
+            105.55,
+            28.3
+          ],
+          [
+            105.55,
+            28.3
+          ],
+          [
+            105.55,
+            28.3
+          ],
+          [
+            105.55,
+            28.3
+          ],
+          [
+            105.55,
+            28.3
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-sichuan-jinsha-river-1935-04-12",
+        "force_id": "blue-sichuan",
+        "segment_start": "1935-04-08",
+        "segment_end": "1935-05-09",
+        "phase": "jinsha-river",
+        "color": "#2C5F7C",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.71,
+            26.58
+          ],
+          [
+            102.1,
+            25.15
+          ],
+          [
+            102.1,
+            25.15
+          ],
+          [
+            102.71,
+            25.04
+          ],
+          [
+            102.71,
+            25.04
+          ],
+          [
+            102.71,
+            25.04
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-center-xueyue-jinsha-river-1935-04-12",
+        "force_id": "blue-center-xueyue",
+        "segment_start": "1935-04-08",
+        "segment_end": "1935-05-09",
+        "phase": "jinsha-river",
+        "color": "#1F618D",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.71,
+            26.58
+          ],
+          [
+            102.71,
+            25.04
+          ],
+          [
+            102.71,
+            25.04
+          ],
+          [
+            102.71,
+            25.04
+          ],
+          [
+            102.71,
+            25.04
+          ],
+          [
+            102.71,
+            25.04
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-yunnan-sundu-jinsha-river-1935-04-12",
+        "force_id": "blue-yunnan-sundu",
+        "segment_start": "1935-04-08",
+        "segment_end": "1935-05-09",
+        "phase": "jinsha-river",
+        "color": "#2980B9",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.45,
+            28.18
+          ],
+          [
+            105.55,
+            28.3
+          ],
+          [
+            104.62,
+            27.13
+          ],
+          [
+            104.62,
+            27.13
+          ],
+          [
+            104.62,
+            27.13
+          ],
+          [
+            104.62,
+            27.13
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-sichuan-liuxiang-jinsha-river-1935-04-12",
+        "force_id": "blue-sichuan-liuxiang",
+        "segment_start": "1935-04-08",
+        "segment_end": "1935-05-09",
+        "phase": "jinsha-river",
+        "color": "#3498DB",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.45,
+            28.18
+          ],
+          [
+            105.45,
+            28.18
+          ],
+          [
+            105.45,
+            28.18
+          ],
+          [
+            105.45,
+            28.18
+          ],
+          [
+            105.45,
+            28.18
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-zhouhunyuan-jinsha-river-1935-04-12",
+        "force_id": "blue-zhouhunyuan",
+        "segment_start": "1935-04-08",
+        "segment_end": "1935-05-09",
+        "phase": "jinsha-river",
+        "color": "#5DADE2",
+        "source": "《中国工农红军长征史》"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.81,
+            28.05
+          ],
+          [
+            105.45,
+            28.18
+          ],
+          [
+            105.45,
+            28.18
+          ],
+          [
+            105.45,
+            28.18
+          ],
+          [
+            105.45,
+            28.18
+          ],
+          [
+            105.45,
+            28.18
+          ]
+        ]
+      },
+      "properties": {
+        "id": "traj-blue-wuqiwei-jinsha-river-1935-04-12",
+        "force_id": "blue-wuqiwei",
+        "segment_start": "1935-04-08",
+        "segment_end": "1935-05-09",
+        "phase": "jinsha-river",
+        "color": "#2874A6",
+        "source": "《中国工农红军长征史》"
       }
     }
   ]

@@ -85,12 +85,11 @@ function removeSourceAndLayer(): void {
 }
 
 onMounted(() => {
-  // 等待地图加载完成再添加图层
-  if (props.map.loaded()) {
-    addSourceAndLayer()
-  } else {
-    props.map.once('load', addSourceAndLayer)
-  }
+  // The parent's "load" handler may have fired before this component mounted,
+  // so neither props.map.loaded() nor a "styledata"/"load" listener is reliable
+  // for late-mounting components. MapLibre queues addSource/addLayer calls
+  // internally until the style is ready, so just call them directly.
+  addSourceAndLayer();
 })
 
 // 监听 feature 变化更新数据

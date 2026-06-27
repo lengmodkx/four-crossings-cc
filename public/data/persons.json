@@ -3,13 +3,32 @@
     {
       "id": "person-mao-zedong",
       "name": "毛泽东",
-      "role": "中央政治局常委",
-      "trajectory_ref": "traj-central-committee",
+      "role": "中央政治局常委、中革军委负责人",
       "key_decisions": [
         {
-          "timestamp": "1935-01-29",
-          "event_id": "evt-first-crossing-1935-01-29",
-          "decision": "提出放弃原定北渡长江计划，向西渡过赤水河进入川南"
+          "timestamp": "1935-01-15",
+          "event_id": "evt-zunyi-meeting-1935-01-15",
+          "decision": "遵义会议上被选为中央政治局常委,在军事上逐步取得指挥权。"
+        },
+        {
+          "timestamp": "1935-01-28",
+          "event_id": "evt-tucheng-battle-1935-01-28",
+          "decision": "在土城战役不利时果断提出放弃北上计划,改为一渡赤水西进川南,成为四渡赤水的转折点。"
+        },
+        {
+          "timestamp": "1935-02-10",
+          "event_id": "evt-zhaxi-meeting-1935-02-05",
+          "decision": "在扎西会议(鸡鸣三省会议)后明确提出回师东进、二渡赤水的战略思想。"
+        },
+        {
+          "timestamp": "1935-03-16",
+          "event_id": "evt-third-crossing-1935-03-16",
+          "decision": "指挥红军三渡赤水,佯装北渡长江以调动敌军主力西移。"
+        },
+        {
+          "timestamp": "1935-03-21",
+          "event_id": "evt-fourth-crossing-1935-03-21",
+          "decision": "以红九军团在长干山伴动,主力秘密四渡赤水南渡乌江,实现战略转移。"
         }
       ]
     },
@@ -17,12 +36,257 @@
       "id": "person-zhou-enlai",
       "name": "周恩来",
       "role": "中央政治局常委、中革军委副主席",
-      "trajectory_ref": "traj-central-committee",
+      "key_decisions": [
+        {
+          "timestamp": "1935-01-15",
+          "event_id": "evt-zunyi-meeting-1935-01-15",
+          "decision": "遵义会议上与博古、李德的错误军事指挥进行坚决斗争,促成毛泽东进入三人军事指挥小组。"
+        },
+        {
+          "timestamp": "1935-01-19",
+          "event_id": "evt-zunyi-departure-1935-01-19",
+          "decision": "协助组织红军从遵义出发,主持日常行军作战协调工作。"
+        }
+      ]
+    },
+    {
+      "id": "person-bogu",
+      "name": "博古(秦邦宪)",
+      "role": "中央总书记(遵义会议后改任)",
+      "key_decisions": [
+        {
+          "timestamp": "1935-01-15",
+          "event_id": "evt-zunyi-meeting-1935-01-15",
+          "decision": "遵义会议上被取消最高军事指挥权,后仍担任中央书记处书记。"
+        }
+      ]
+    },
+    {
+      "id": "person-zhangwentian",
+      "name": "张闻天(洛甫)",
+      "role": "中央政治局常委",
+      "key_decisions": [
+        {
+          "timestamp": "1935-01-15",
+          "event_id": "evt-zunyi-meeting-1935-01-15",
+          "decision": "遵义会议上作反报告批判第五次反围剿的军事错误,支持毛泽东的正确主张。"
+        },
+        {
+          "timestamp": "1935-02-05",
+          "event_id": "evt-zhaxi-meeting-1935-02-05",
+          "decision": "在扎西会议上被确定为'党内负总责'。"
+        }
+      ]
+    },
+    {
+      "id": "person-wangjiaxiang",
+      "name": "王稼祥",
+      "role": "中央政治局候补委员、中革军委副主席",
+      "key_decisions": [
+        {
+          "timestamp": "1935-01-15",
+          "event_id": "evt-zunyi-meeting-1935-01-15",
+          "decision": "遵义会议上旗帜鲜明地支持毛泽东,是会议转向的关键人物之一。"
+        }
+      ]
+    },
+    {
+      "id": "person-zhude",
+      "name": "朱德",
+      "role": "中革军委主席、红军总司令",
+      "key_decisions": [
+        {
+          "timestamp": "1935-01-19",
+          "event_id": "evt-zunyi-departure-1935-01-19",
+          "decision": "随中央红军行动,负责日常作战部署与部队协调。"
+        },
+        {
+          "timestamp": "1935-05-03",
+          "event_id": "evt-jinsha-crossing-1935-05-03",
+          "decision": "协助指挥红军在绞平渡巧渡金沙江,部署昼夜不停的渡江工作。"
+        }
+      ]
+    },
+    {
+      "id": "person-chenyun",
+      "name": "陈云",
+      "role": "中央政治局常委、红五军团中央代表",
+      "key_decisions": [
+        {
+          "timestamp": "1935-01-15",
+          "event_id": "evt-zunyi-meeting-1935-01-15",
+          "decision": "遵义会议后担任中央组织部长,后奉命赴上海恢复党的地下工作。"
+        }
+      ]
+    },
+    {
+      "id": "person-liubocheng",
+      "name": "刘伯承",
+      "role": "红军总参谋长、军委纵队司令员",
+      "key_decisions": [
+        {
+          "timestamp": "1935-05-03",
+          "event_id": "evt-jinsha-crossing-1935-05-03",
+          "decision": "在巧渡金沙江中指挥夺取绞平渡,部署工兵架浮桥保证大军渡江。"
+        }
+      ]
+    },
+    {
+      "id": "person-linbiao",
+      "name": "林彪",
+      "role": "红一军团军团长",
+      "key_decisions": [
+        {
+          "timestamp": "1935-01-21",
+          "event_id": "evt-three-route-north-1935-01-21",
+          "decision": "率红一军团为右路军抢占土城、习水方向,后转向东进二渡赤水。"
+        },
+        {
+          "timestamp": "1935-02-25",
+          "event_id": "evt-loushan-pass-1935-02-25",
+          "decision": "指挥红一军团夺取娄山关,为再克遵义打开通道。"
+        }
+      ]
+    },
+    {
+      "id": "person-nierongzhen",
+      "name": "聂荣臻",
+      "role": "红一军团政委",
+      "key_decisions": [
+        {
+          "timestamp": "1935-02-25",
+          "event_id": "evt-loushan-pass-1935-02-25",
+          "decision": "与林彪共同指挥红一军团夺取娄山关战斗。"
+        }
+      ]
+    },
+    {
+      "id": "person-pengdehuai",
+      "name": "彭德怀",
+      "role": "红三军团军团长",
       "key_decisions": [
         {
           "timestamp": "1935-01-28",
           "event_id": "evt-tucheng-battle-1935-01-28",
-          "decision": "在土城前线指挥战斗，发现敌情后决定撤出战场"
+          "decision": "在土城青杠坡战役中率红三军团主攻,失利后掩护主力撤出战场。"
+        },
+        {
+          "timestamp": "1935-02-26",
+          "event_id": "evt-zunyi-recapture-1935-02-28",
+          "decision": "指挥红三军团配合红一军团再克遵义城。"
+        }
+      ]
+    },
+    {
+      "id": "person-dongzhentang",
+      "name": "董振堂",
+      "role": "红五军团军团长",
+      "key_decisions": [
+        {
+          "timestamp": "1935-01-19",
+          "event_id": "evt-zunyi-departure-1935-01-19",
+          "decision": "率红五军团担任全军后卫,掩护主力行军作战。"
+        }
+      ]
+    },
+    {
+      "id": "person-luobinghui",
+      "name": "罗炳辉",
+      "role": "红九军团军团长",
+      "key_decisions": [
+        {
+          "timestamp": "1935-03-21",
+          "event_id": "evt-fourth-crossing-1935-03-21",
+          "decision": "奉命率红九军团在长干山、枫香坝地区伴动,伪装主力吸引敌军,成功掩护红军主力四渡赤水。"
+        }
+      ]
+    },
+    {
+      "id": "person-xueyue",
+      "name": "薛岳",
+      "role": "国民党中央军第二路军前敌总指挥",
+      "key_decisions": [
+        {
+          "timestamp": "1935-01-20",
+          "event_id": "evt-zunyi-departure-1935-01-19",
+          "decision": "率中央军从贵阳方向北进,企图与川军、滇军合围红军于川南。"
+        }
+      ]
+    },
+    {
+      "id": "person-zhouhunyuan",
+      "name": "周浑元",
+      "role": "国民党中央军第九纵队司令官",
+      "key_decisions": [
+        {
+          "timestamp": "1935-01-24",
+          "event_id": "evt-qinggangpo-standoff-1935-01-24",
+          "decision": "率部抢占青杠坡制高点,造成红军土城战役失利。"
+        },
+        {
+          "timestamp": "1935-03-15",
+          "event_id": "evt-lubanchang-battle-1935-03-15",
+          "decision": "驻守鲁班场,迫使红军发起鲁班场战斗,未得手后红军三渡赤水。"
+        }
+      ]
+    },
+    {
+      "id": "person-wuqiwei",
+      "name": "吴奇伟",
+      "role": "国民党中央军第二路军第四纵队司令官",
+      "key_decisions": [
+        {
+          "timestamp": "1935-02-28",
+          "event_id": "evt-zunyi-recapture-1935-02-28",
+          "decision": "率部从乌江南岸驰援遵义,在遵义以南被红军击溃,险被俘获。"
+        }
+      ]
+    },
+    {
+      "id": "person-guoxunqi",
+      "name": "郭勋祺",
+      "role": "川军第一路司令、模范师师长",
+      "key_decisions": [
+        {
+          "timestamp": "1935-01-24",
+          "event_id": "evt-qinggangpo-standoff-1935-01-24",
+          "decision": "率川军模范师抢先占领青杠坡,顶住红军土城战役进攻,迫使红军一渡赤水。"
+        }
+      ]
+    },
+    {
+      "id": "person-wangjialie",
+      "name": "王家烈",
+      "role": "国民党第二十五军军长、贵州省主席",
+      "key_decisions": [
+        {
+          "timestamp": "1935-01-20",
+          "event_id": "evt-zunyi-departure-1935-01-19",
+          "decision": "率黔军从贵阳北进参与对红军的追击,在二渡赤水后被迫辞去省主席职务。"
+        }
+      ]
+    },
+    {
+      "id": "person-sundu",
+      "name": "孙渡",
+      "role": "滇军第三纵队司令、龙云嫡系",
+      "key_decisions": [
+        {
+          "timestamp": "1935-01-20",
+          "event_id": "evt-zunyi-departure-1935-01-19",
+          "decision": "率滇军从昭通、毕节方向东进,试图切断红军西进云南的退路。"
+        }
+      ]
+    },
+    {
+      "id": "person-liuxiang",
+      "name": "刘湘",
+      "role": "四川省主席、川军总司令",
+      "key_decisions": [
+        {
+          "timestamp": "1935-01-21",
+          "event_id": "evt-three-route-north-1935-01-21",
+          "decision": "奉蒋介石之命调集川军在长江沿岸及川南布防,堵截红军北渡长江。"
         }
       ]
     }

@@ -6,24 +6,95 @@
       "location": [106.92, 27.72],
       "date_start": "1935-01-15",
       "date_end": "1935-01-17",
-      "background": "第五次反围剿失败后中央红军被迫长征，湘江战役后部队损失惨重，党内对博古、李德军事指挥的不满达到顶点",
+      "background": "第五次反围剿失败后中央红军被迫长征,湘江战役后部队损失惨重,党内对博古、李德军事指挥的不满达到顶点,中央政治局在遵义召开扩大会议。",
       "resolutions": [
         "选举毛泽东为中央政治局常委",
         "取消博古、李德的最高军事指挥权",
-        "决定改变原定去湘西的计划，转向贵州进军"
+        "决定改变原定去湘西的计划,转向贵州进军",
+        "由张闻天起草《遵义会议决议》"
       ],
       "participants": [
-        {
-          "person_id": "person-mao-zedong",
-          "role": "政治局常委"
-        },
-        {
-          "person_id": "person-zhou-enlai",
-          "role": "政治局常委"
-        }
+        { "person_id": "person-mao-zedong", "role": "政治局常委" },
+        { "person_id": "person-zhou-enlai", "role": "政治局常委" },
+        { "person_id": "person-zhangwentian", "role": "政治局常委" },
+        { "person_id": "person-bogu", "role": "政治局常委(后改任)" },
+        { "person_id": "person-chenyun", "role": "政治局常委" },
+        { "person_id": "person-wangjiaxiang", "role": "政治局候补委员" }
       ],
       "related_event_ids": ["evt-zunyi-meeting-1935-01-15"],
-      "sources": ["《遵义会议文献》", "《毛泽东年谱》"]
+      "sources": ["《遵义会议文献》", "《毛泽东年谱》", "《中国共产党历史》第一卷"]
+    },
+    {
+      "id": "meeting-zhaxi-1935-02-05",
+      "name": "扎西会议(鸡鸣三省会议)",
+      "location": [105.05, 27.85],
+      "date_start": "1935-02-05",
+      "date_end": "1935-02-08",
+      "background": "中央红军一渡赤水进入川南后又西进至云南威信(扎西)地区,面对敌军合围收紧,中央政治局连续召开会议讨论下一步战略方针与中央领导调整。",
+      "resolutions": [
+        "决定张闻天代替博古在党内'负总责'",
+        "明确提出'回师东进'的作战方针,放弃北渡长江计划",
+        "对中央红军进行整编,精简机关充实连队,缩编师为团",
+        "在川滇黔边区创建新的苏区根据地"
+      ],
+      "participants": [
+        { "person_id": "person-mao-zedong", "role": "政治局常委" },
+        { "person_id": "person-zhou-enlai", "role": "政治局常委" },
+        { "person_id": "person-zhangwentian", "role": "政治局常委" },
+        { "person_id": "person-bogu", "role": "政治局常委" },
+        { "person_id": "person-chenyun", "role": "政治局常委" },
+        { "person_id": "person-wangjiaxiang", "role": "政治局候补委员" },
+        { "person_id": "person-zhude", "role": "中革军委主席" }
+      ],
+      "related_event_ids": ["evt-zhaxi-meeting-1935-02-05", "evt-zhaxi-consolidation-1935-02-08"],
+      "sources": ["《张闻天年谱》", "《中国工农红军长征史》", "《毛泽东年谱》"]
+    },
+    {
+      "id": "meeting-gouba-1935-03-10",
+      "name": "苟坝会议",
+      "location": [106.78, 27.65],
+      "date_start": "1935-03-10",
+      "date_end": "1935-03-12",
+      "background": "遵义大捷后,中央红军在贵州遵义县苟坝地区,围绕是否进攻打鼓新场(今金沙县城)的问题,中央政治局召开会议,毛泽东坚决反对进攻,会议最终取消了进攻计划。",
+      "resolutions": [
+        "取消进攻打鼓新场的作战计划,避免了红军可能的重大损失",
+        "成立由毛泽东、周恩来、王稼祥组成的三人军事指挥小组",
+        "进一步巩固了毛泽东在军事上的指挥地位",
+        "决定继续在黔北活动,寻找新的战机"
+      ],
+      "participants": [
+        { "person_id": "person-mao-zedong", "role": "政治局常委" },
+        { "person_id": "person-zhou-enlai", "role": "政治局常委" },
+        { "person_id": "person-zhangwentian", "role": "政治局常委" },
+        { "person_id": "person-wangjiaxiang", "role": "政治局候补委员" },
+        { "person_id": "person-zhude", "role": "中革军委主席" }
+      ],
+      "related_event_ids": ["evt-gouba-meeting-1935-03-10"],
+      "sources": ["《中国共产党历史》第一卷", "《毛泽东年谱》", "《苟坝会议研究》"]
+    },
+    {
+      "id": "meeting-huili-1935-05-12",
+      "name": "会理会议",
+      "location": [102.25, 26.65],
+      "date_start": "1935-05-12",
+      "date_end": "1935-05-12",
+      "background": "中央红军巧渡金沙江、跳出合围圈进入四川会理地区后,中央政治局召开会议,统一对四渡赤水以来军事行动的认识,批判了林彪对毛泽东军事指挥的怀疑。",
+      "resolutions": [
+        "肯定四渡赤水战役的军事指挥,统一了党内军事思想",
+        "批评了林彪等对毛泽东军事指挥的怀疑情绪",
+        "决定继续北上与红四方面军会合",
+        "要求加强对张国焘分裂倾向的警惕"
+      ],
+      "participants": [
+        { "person_id": "person-mao-zedong", "role": "政治局常委" },
+        { "person_id": "person-zhou-enlai", "role": "政治局常委" },
+        { "person_id": "person-zhangwentian", "role": "政治局常委" },
+        { "person_id": "person-chenyun", "role": "政治局常委" },
+        { "person_id": "person-bogu", "role": "政治局常委" },
+        { "person_id": "person-zhude", "role": "中革军委主席" }
+      ],
+      "related_event_ids": ["evt-huili-meeting-1935-05-12"],
+      "sources": ["《中国共产党历史》第一卷", "《毛泽东年谱》", "《朱德年谱》"]
     }
   ]
 }

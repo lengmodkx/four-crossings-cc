@@ -7,10 +7,21 @@
  * 古旧军图风格，max-width 800px，居中。
  */
 import type { Meeting } from '@/data/types'
+import { useScenarioStore } from '@/stores/scenario'
+import { computed } from 'vue'
 
-defineProps<{
-  meeting: Meeting
-}>()
+const props = defineProps<{ meeting: Meeting }>()
+const scenarioStore = useScenarioStore()
+
+const personNameMap = computed(() => {
+  const m = new Map<string, string>()
+  for (const p of scenarioStore.persons) m.set(p.id, p.name)
+  return m
+})
+
+function personName(id: string): string {
+  return personNameMap.value.get(id) ?? id
+}
 
 function formatDateRange(start: string, end: string): string {
   const s = start.slice(0, 10)
@@ -49,7 +60,7 @@ function formatDateRange(start: string, end: string): string {
       <ul class="participants-list">
         <li v-for="(p, idx) in meeting.participants" :key="idx">
           <span class="participant-role">{{ p.role }}</span>
-          <span class="participant-id">{{ p.person_id }}</span>
+          <span class="participant-id">{{ personName(p.person_id) }}</span>
         </li>
       </ul>
     </section>
