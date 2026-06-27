@@ -1,30 +1,30 @@
 import type { RouteRecordRaw } from 'vue-router'
+import LandingView from '../views/LandingView.vue'
+import PhaseSelectView from '../views/PhaseSelectView.vue'
+import NarrativeView from '../views/NarrativeView.vue'
+import ExploreView from '../views/ExploreView.vue'
 import PlaceholderView from '../views/PlaceholderView.vue'
 
 export const routes: RouteRecordRaw[] = [
   {
     path: '/',
     name: 'landing',
-    component: PlaceholderView,
-    props: { title: '战役扉页' },
+    component: LandingView,
   },
   {
     path: '/phase-select',
     name: 'phase-select',
-    component: PlaceholderView,
-    props: { title: '战役阶段选择' },
+    component: PhaseSelectView,
   },
   {
     path: '/narrative/:phaseId',
     name: 'narrative',
-    component: PlaceholderView,
-    props: { title: '叙事模式' },
+    component: NarrativeView,
   },
   {
     path: '/explore/:phaseId',
     name: 'explore',
-    component: PlaceholderView,
-    props: { title: '探索模式' },
+    component: ExploreView,
   },
   {
     path: '/meeting/:meetingId',
