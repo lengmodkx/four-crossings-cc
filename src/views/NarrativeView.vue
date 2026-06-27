@@ -19,11 +19,24 @@ import MapView3D from '@/components/map3d/MapView3D.vue'
 import Timeline from '@/components/timeline/Timeline.vue'
 import SidePanel from '@/components/layout/SidePanel.vue'
 import ChapterBookmark from '@/components/timeline/ChapterBookmark.vue'
+import LoadingCompass from '@/components/common/LoadingCompass.vue'
+import ErrorState from '@/components/common/ErrorState.vue'
 
 const route = useRoute()
 const viewStore = useViewStore()
 const timeStore = useTimeStore()
 const scenarioStore = useScenarioStore()
+
+const loadError = ref(false)
+
+async function loadData(): Promise<void> {
+  loadError.value = false
+  try {
+    await scenarioStore.loadAll()
+  } catch {
+    loadError.value = true
+  }
+}
 
 const phaseId = computed(() => {
   return (route.params.phaseId as string) || 'first-crossing'
@@ -59,7 +72,7 @@ onMounted(async () => {
   viewStore.setMode('narrative')
   timeStore.setPhase(phaseId.value)
   if (!scenarioStore.loaded) {
-    await scenarioStore.loadAll()
+    await loadData()
   }
 })
 </script>
@@ -67,19 +80,28 @@ onMounted(async () => {
 <template>
   <div class="narrative-view">
     <TopBar />
-    <div class="narrative-main">
-      <div class="map-area">
-        <MapView2D v-if="viewStore.render === '2d'" />
-        <MapView3D v-else-if="viewStore.render === '3d'" />
-        <!-- 地图底部旁白叠加 -->
-        <div v-if="currentEvent" class="narration-overlay">
-          <h3 class="narration-title">{{ currentEvent.title }}</h3>
-          <p class="narration-desc">{{ currentEvent.description }}</p>
-        </div>
-      </div>
-      <SidePanel />
+    <!-- 加载/错误状态 -->
+    <div v-if="!scenarioStore.loaded && !loadError" class="load-state">
+      <LoadingCompass />
     </div>
-    <Timeline />
+    <div v-else-if="loadError" class="load-state">
+      <ErrorState message="史料加载失败" @retry="loadData()" />
+    </div>
+    <template v-else>
+      <div class="narrative-main">
+        <div class="map-area">
+          <MapView2D v-if="viewStore.render === '2d'" />
+          <MapView3D v-else-if="viewStore.render === '3d'" />
+          <!-- 地图底部旁白叠加 -->
+          <div v-if="currentEvent" class="narration-overlay">
+            <h3 class="narration-title">{{ currentEvent.title }}</h3>
+            <p class="narration-desc">{{ currentEvent.description }}</p>
+          </div>
+        </div>
+        <SidePanel />
+      </div>
+      <Timeline />
+    </template>
     <ChapterBookmark v-if="showBookmark" class="chapter-bookmark-layer" />
   </div>
 </template>
@@ -135,6 +157,13 @@ onMounted(async () => {
   font-size: 13px;
   line-height: 1.5;
   color: #e0e0e0;
+}
+
+.load-state {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .chapter-bookmark-layer {

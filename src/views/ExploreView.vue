@@ -5,7 +5,7 @@
  * 布局: TopBar (上) + FilterPanel (左) + [MapView2D/MapView3D] 主区 (右) + Timeline (下)
  * onMounted 时加载数据并设置探索模式。
  */
-import { onMounted, computed } from 'vue'
+import { onMounted, computed, ref } from 'vue'
 import { useRoute } from 'vue-router'
 import { useViewStore } from '@/stores/view'
 import { useTimeStore } from '@/stores/time'
@@ -15,6 +15,8 @@ import MapView2D from '@/components/map2d/MapView2D.vue'
 import MapView3D from '@/components/map3d/MapView3D.vue'
 import Timeline from '@/components/timeline/Timeline.vue'
 import FilterPanel from '@/components/common/FilterPanel.vue'
+import LoadingCompass from '@/components/common/LoadingCompass.vue'
+import ErrorState from '@/components/common/ErrorState.vue'
 
 const route = useRoute()
 const viewStore = useViewStore()
@@ -25,11 +27,22 @@ const phaseId = computed(() => {
   return (route.params.phaseId as string) || 'first-crossing'
 })
 
+const loadError = ref(false)
+
+async function loadData(): Promise<void> {
+  loadError.value = false
+  try {
+    await scenarioStore.loadAll()
+  } catch {
+    loadError.value = true
+  }
+}
+
 onMounted(async () => {
   viewStore.setMode('explore')
   timeStore.setPhase(phaseId.value)
   if (!scenarioStore.loaded) {
-    await scenarioStore.loadAll()
+    await loadData()
   }
 })
 </script>
@@ -37,14 +50,23 @@ onMounted(async () => {
 <template>
   <div class="explore-view">
     <TopBar />
-    <div class="explore-main">
-      <FilterPanel />
-      <div class="map-area">
-        <MapView2D v-if="viewStore.render === '2d'" />
-        <MapView3D v-else-if="viewStore.render === '3d'" />
-      </div>
+    <!-- 加载/错误状态 -->
+    <div v-if="!scenarioStore.loaded && !loadError" class="load-state">
+      <LoadingCompass />
     </div>
-    <Timeline />
+    <div v-else-if="loadError" class="load-state">
+      <ErrorState message="史料加载失败" @retry="loadData()" />
+    </div>
+    <template v-else>
+      <div class="explore-main">
+        <FilterPanel />
+        <div class="map-area">
+          <MapView2D v-if="viewStore.render === '2d'" />
+          <MapView3D v-else-if="viewStore.render === '3d'" />
+        </div>
+      </div>
+      <Timeline />
+    </template>
   </div>
 </template>
 
@@ -68,5 +90,12 @@ onMounted(async () => {
   flex: 1;
   min-width: 0;
   position: relative;
+}
+
+.load-state {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>
