@@ -84,9 +84,11 @@ export function useThreeSetup(
   function resizeRenderer(): void {
     const el = containerRef.value
     if (!el) return
-    const width = el.clientWidth
-    const height = el.clientHeight
-    if (width <= 0 || height <= 0) return
+    let width = el.clientWidth
+    let height = el.clientHeight
+    // 兜底: 容器可能尚未布局(如 tab 切换),至少给个可用的最小尺寸
+    if (width <= 0) width = 400
+    if (height <= 0) height = 400
     renderer.setSize(width, height)
     camera.aspect = width / height
     camera.updateProjectionMatrix()
