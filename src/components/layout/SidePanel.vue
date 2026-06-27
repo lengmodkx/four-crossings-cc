@@ -70,4 +70,20 @@ function handleClear(): void {
   font-size: 14px;
   text-align: center;
 }
+
+/* ===== 响应式 ===== */
+@media (max-width: 768px) {
+  .side-panel {
+    width: 100% !important;
+    max-height: 40vh;
+    border-left: none;
+    border-top: 1px solid var(--color-bg-dark, #3D2F1F);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1280px) {
+  .side-panel {
+    width: 280px !important;
+  }
+}
 </style>

@@ -98,4 +98,15 @@ onMounted(async () => {
   align-items: center;
   justify-content: center;
 }
+
+/* ===== 响应式 ===== */
+@media (max-width: 768px) {
+  .explore-view .explore-main {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1280px) {
+  /* 中等屏幕保留侧栏 */
+}
 </style>

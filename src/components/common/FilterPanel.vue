@@ -400,4 +400,20 @@ const eventTypeOptions: { value: EventType; label: string }[] = [
 .checkbox-input {
   accent-color: var(--color-bg-dark, #3D2F1F);
 }
+
+/* ===== 响应式 ===== */
+@media (max-width: 768px) {
+  .filter-panel {
+    width: 100% !important;
+    max-height: 40vh;
+    border-right: none;
+    border-bottom: 1px solid var(--color-bg-dark, #3D2F1F);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1280px) {
+  .filter-panel {
+    width: 240px !important;
+  }
+}
 </style>

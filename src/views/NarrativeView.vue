@@ -174,4 +174,30 @@ onMounted(async () => {
   bottom: 0;
   z-index: 100;
 }
+
+/* ===== 响应式 ===== */
+@media (max-width: 768px) {
+  .narrative-view .narrative-main {
+    flex-direction: column;
+  }
+  .narration-overlay {
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    padding: 8px 12px;
+  }
+  .narration-title {
+    font-size: 13px;
+  }
+  .narration-desc {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1280px) {
+  .narration-overlay {
+    max-width: 480px;
+  }
+}
 </style>

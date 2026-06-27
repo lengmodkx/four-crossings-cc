@@ -135,4 +135,28 @@ function goHome(): void {
   background: var(--color-accent-red, #C0392B);
   color: #fff;
 }
+
+/* ===== 响应式 ===== */
+@media (max-width: 768px) {
+  .topbar {
+    padding: 0.5rem;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+  }
+  .brand-text {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  .topbar-nav {
+    gap: 8px;
+  }
+  .mode-btn,
+  .render-btn {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+  .render-switch button:nth-child(2) {
+    display: none;
+  }
+}
 </style>
