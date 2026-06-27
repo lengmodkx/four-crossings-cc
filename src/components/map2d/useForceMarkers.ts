@@ -2,7 +2,6 @@
  * useForceMarkers — 部队标记 composable
  *
  * 根据当前时间筛选部队动态数据，返回每个部队在给定时间之前的最新位置。
- * 用于在 Mapbox 地图上渲染部队标记。
  */
 import { computed, type Ref } from 'vue'
 import type { ForcesCollection, ForceFeature } from '@/data/types'
@@ -26,11 +25,12 @@ export function useForceMarkers(
 
     const targetMs = new Date(currentTime.value).getTime()
 
-    // 按 force_id 分组，取每个部队在 targetTime 之前的最新点位
+    // 按部队名(name)分组,取每个部队在 targetTime 之前的最新点位
     const latestByForce = new Map<string, ForceFeature>()
 
     for (const feature of collection.features) {
-      const forceId = feature.properties.id
+      // 按部队名分组(同部队的 id 可能在不同时间点变化,用 name 统一)
+      const forceId = feature.properties.name
       const featureTime = new Date(feature.properties.timestamp).getTime()
 
       // 只考虑在当前时间之前的点位
@@ -54,7 +54,7 @@ export function useForceMarkers(
    * 获取指定部队在当前时间之前的最新位置
    */
   function getForceLatest(forceId: string): ForceFeature | undefined {
-    return activeForces.value.find((f) => f.properties.id === forceId)
+    return activeForces.value.find((f) => f.properties.name === forceId)
   }
 
   /**
