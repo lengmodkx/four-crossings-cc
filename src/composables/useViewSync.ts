@@ -59,7 +59,7 @@ export function useViewSync(
   // ===== 2D → Store (用户拖动地图时) =====
   if (map2dRef) {
     // 当地图准备好后，绑定 moveend 事件
-    const unbindMoveEnd = watch(
+    watch(
       map2dRef,
       (map, _, onCleanup) => {
         if (!map) return

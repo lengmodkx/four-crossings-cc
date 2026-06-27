@@ -6,7 +6,7 @@
  *
  * 设计参考: §5.4 鸟瞰沙盘模式
  */
-import { ref, type Ref } from 'vue'
+import { type Ref } from 'vue'
 import * as THREE from 'three'
 
 export interface ThreeSceneContext {
@@ -127,8 +127,8 @@ export function useThreeSetup(
           child.material.forEach((m) => m.dispose())
         }
       }
-      if (child instanceof THREE.Light) {
-        if (child.shadow && child.shadow.map) {
+      if (child instanceof THREE.DirectionalLight || child instanceof THREE.SpotLight) {
+        if (child.shadow?.map) {
           child.shadow.map.dispose()
         }
       }

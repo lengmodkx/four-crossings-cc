@@ -6,12 +6,12 @@
  * 颜色从 trajectory.properties.color 读取，线宽 2.5。
  */
 import { onMounted, onBeforeUnmount, watch } from 'vue'
-import mapboxgl from 'mapbox-gl'
+import type { Map, GeoJSONSource } from 'mapbox-gl'
 import type { TrajectoryFeature } from '@/data/types'
 
 const props = defineProps<{
   /** Mapbox GL Map 实例 */
-  map: mapboxgl.Map
+  map: Map
   /** 要渲染的轨迹 feature */
   feature: TrajectoryFeature
 }>()
@@ -36,7 +36,7 @@ function addSourceAndLayer(): void {
 
   // 检查 source 是否已存在 (热更新场景)
   if (map.getSource(sourceId)) {
-    const source = map.getSource(sourceId) as mapboxgl.GeoJSONSource
+    const source = map.getSource(sourceId) as GeoJSONSource
     source.setData(toGeoJSONSource() as GeoJSON.GeoJSON)
     return
   }
@@ -98,7 +98,7 @@ watch(
     const map = props.map
     if (!map.loaded()) return
 
-    const source = map.getSource(sourceId) as mapboxgl.GeoJSONSource | undefined
+    const source = map.getSource(sourceId) as GeoJSONSource | undefined
     if (source) {
       source.setData(toGeoJSONSource() as GeoJSON.GeoJSON)
     }

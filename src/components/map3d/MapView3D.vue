@@ -16,7 +16,7 @@ onMounted(() => {
     return
   }
 
-  const { scene, camera, renderer, dispose } = useThreeSetup(containerRef)
+  const { dispose } = useThreeSetup(containerRef)
 
   // 存储到 template ref 以便清理
   const el = containerRef.value as any

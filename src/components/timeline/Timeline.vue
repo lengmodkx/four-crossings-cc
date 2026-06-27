@@ -10,16 +10,6 @@ import { useTimeStore, PHASES, PLAYBACK_SPEEDS, parseTime } from '@/stores/time'
 
 const timeStore = useTimeStore()
 
-/** 当前阶段信息 */
-const currentPhaseDef = computed(() => {
-  return PHASES.find((p) => p.id === timeStore.currentPhase)
-})
-
-/** 当前阶段名称 */
-const phaseName = computed(() => {
-  return currentPhaseDef.value?.name ?? '未知阶段'
-})
-
 /** 所有阶段信息（用于渲染阶段指示器） */
 const phaseLabels = computed(() => {
   return PHASES.map((p) => ({
@@ -54,10 +44,6 @@ const displayTime = computed(() => {
   const minutes = String(d.getMinutes()).padStart(2, '0')
   return `${month}-${day} ${hours}:${minutes}`
 })
-
-/** 战役开始和结束的时间戳 (毫秒，用于事件标记计算) */
-const campaignStartMs = computed(() => parseTime(PHASES[0].start).getTime())
-const campaignEndMs = computed(() => parseTime(PHASES[PHASES.length - 1].end).getTime())
 
 /**
  * 点击轨道跳转
