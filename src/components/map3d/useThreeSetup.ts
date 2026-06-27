@@ -51,6 +51,14 @@ export function useThreeSetup(
   renderer.shadowMap.type = THREE.PCFShadowMap
 
   // ===== Lighting =====
+  // 半球光: 天空 + 地面 自然散射 (模拟大气)
+  const hemiLight = new THREE.HemisphereLight('#FFE4B5', '#5C7A8C', 0.5)
+  scene.add(hemiLight)
+
+  // 环境光: 柔和全局补光 (避免暗面过黑)
+  const ambientLight = new THREE.AmbientLight('#FFF5E0', 0.3)
+  scene.add(ambientLight)
+
   // 方向光 (模拟太阳，产生阴影)
   const sunLight = new THREE.DirectionalLight('#FFE4B5', 0.8)
   sunLight.position.set(5000, 5000, 3000)
