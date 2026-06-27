@@ -1,0 +1,46 @@
+// 四渡赤水全景沙盘 — 全局样式
+@use 'variables' as *;
+@use 'typography' as *;
+
+// === 全局重置 ===
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: $font-size-base;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: $font-body;
+  color: $color-text-main;
+  background-color: $color-bg-paper;
+  line-height: $line-height-normal;
+}
+
+// === 排版 ===
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-title;
+  color: $color-bg-dark;
+  line-height: $line-height-tight;
+}
+
+code, pre {
+  font-family: $font-mono;
+}
+
+a {
+  color: $color-accent-red;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-highlight;
+    text-decoration: underline;
+  }
+}

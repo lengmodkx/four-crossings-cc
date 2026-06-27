@@ -1,0 +1,52 @@
+// 古旧军图色板 — 四渡赤水全景沙盘
+// 参考设计文档 §5.1 配色方案
+
+// === 主色板 ===
+$color-bg-paper: #F2E8D0;        // 军图米白 - 主背景
+$color-bg-dark: #3D2F1F;         // 旧军图褐 - 标题栏/深色区
+$color-text-main: #1A1410;       // 墨黑 - 主文字
+$color-text-muted: #6B5D4A;      // 灰褐 - 副文字
+$color-accent-red: #C0392B;      // 朱砂红 - 只用于红军
+$color-accent-blue: #2C5F7C;     // 钢蓝 - 只用于敌军
+$color-highlight: #D4A017;       // 硫磺黄 - 选中/悬停
+$color-contour: #6B7F4A;         // 褐绿 - 等高线
+
+// === 中性色(数据可视化) ===
+$color-red-gradient-start: #F5D5C8;
+$color-red-gradient-end: #C0392B;
+$color-blue-gradient-start: #C8D8E0;
+$color-blue-gradient-end: #2C5F7C;
+
+// === 3D 沙盘 ===
+$color-terrain-water: #5C7A8C;
+$color-terrain-mid: #C9A86A;
+$color-terrain-high: #8B6B47;
+$color-terrain-snow: #E8E0D0;
+
+// === 红军色阶 ===
+$red-army-1: #F5D5C8;
+$red-army-2: #E8B4A3;
+$red-army-3: #DB9380;
+$red-army-4: #D06155;
+$red-army-5: #C0392B;
+
+// === 敌军色阶 ===
+$blue-army-1: #C8D8E0;
+$blue-army-2: #A8C0CC;
+$blue-army-3: #7BA0B0;
+$blue-army-4: #4A8098;
+$blue-army-5: #2C5F7C;
+
+// === 间距 ===
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+$spacing-2xl: 48px;
+
+// === 断点 ===
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;

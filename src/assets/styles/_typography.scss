@@ -1,0 +1,28 @@
+// 字体方案 — 四渡赤水全景沙盘
+// 参考设计文档 §5.2 字体方案
+
+// 中文标题:霞鹜文楷 (LXGW WenKai, 可商用, 书卷气)
+$font-title: 'LXGW WenKai', 'STKaiti', 'KaiTi', serif;
+
+// 中文正文:思源宋体 SC (印刷品质)
+$font-body: 'Source Han Serif SC', 'Noto Serif SC', 'STSong', 'SimSun', serif;
+
+// 数字/数据:JetBrains Mono
+$font-mono: 'JetBrains Mono', 'Consolas', 'Monaco', monospace;
+
+// 英文(如有):IM Fell English (1930s 印刷感)
+$font-english: 'IM Fell English', 'Georgia', serif;
+
+// === 字号 ===
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-base: 16px;
+$font-size-lg: 18px;
+$font-size-xl: 24px;
+$font-size-2xl: 32px;
+$font-size-3xl: 48px;
+
+// === 行高 ===
+$line-height-tight: 1.25;
+$line-height-normal: 1.6;
+$line-height-relaxed: 1.8;
