@@ -23,6 +23,10 @@ dist-ssr
 *.sln
 *.sw?
 
+# Environment files
+.env
+.env.local
+
 # Font files (large, user must download manually)
 public/fonts/*.ttf
 public/fonts/*.otf

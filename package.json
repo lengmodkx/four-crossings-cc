@@ -16,11 +16,13 @@
     "zod": "^4.4.3"
   },
   "devDependencies": {
+    "@anthropic-ai/sdk": "^0.106.0",
     "@playwright/test": "^1.61.1",
     "@types/node": "^24.13.2",
     "@vitejs/plugin-vue": "^6.0.7",
     "@vue/test-utils": "^2.4.11",
     "@vue/tsconfig": "^0.9.1",
+    "dotenv": "^17.4.2",
     "jsdom": "^29.1.1",
     "sass": "^1.101.0",
     "typescript": "~6.0.2",
