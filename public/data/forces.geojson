@@ -3,7 +3,13 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [106.92, 27.68] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.92,
+          27.68
+        ]
+      },
       "properties": {
         "id": "red-1st-army-1935-01-20-08",
         "type": "force",
@@ -20,7 +26,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [106.92, 27.72] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.92,
+          27.72
+        ]
+      },
       "properties": {
         "id": "red-1st-army-1935-01-20-20",
         "type": "force",
@@ -37,7 +49,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [106.95, 27.78] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.95,
+          27.78
+        ]
+      },
       "properties": {
         "id": "red-1st-army-1935-01-21-08",
         "type": "force",
@@ -54,7 +72,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [106.98, 27.85] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.98,
+          27.85
+        ]
+      },
       "properties": {
         "id": "red-1st-army-1935-01-21-20",
         "type": "force",
@@ -71,7 +95,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [106.85, 27.98] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.85,
+          27.98
+        ]
+      },
       "properties": {
         "id": "red-1st-army-1935-01-22-08",
         "type": "force",
@@ -88,7 +118,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [106.83, 28.13] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.83,
+          28.13
+        ]
+      },
       "properties": {
         "id": "red-1st-army-1935-01-22-20",
         "type": "force",
@@ -105,7 +141,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [106.50, 28.18] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.5,
+          28.18
+        ]
+      },
       "properties": {
         "id": "red-1st-army-1935-01-23-08",
         "type": "force",
@@ -122,7 +164,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [106.20, 28.30] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.2,
+          28.3
+        ]
+      },
       "properties": {
         "id": "red-1st-army-1935-01-23-20",
         "type": "force",
@@ -139,7 +187,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [105.95, 28.10] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.95,
+          28.1
+        ]
+      },
       "properties": {
         "id": "red-1st-army-1935-01-24-08",
         "type": "force",
@@ -156,7 +210,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [105.70, 28.30] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7,
+          28.3
+        ]
+      },
       "properties": {
         "id": "red-1st-army-1935-01-24-20",
         "type": "force",
@@ -173,7 +233,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [105.50, 28.35] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.5,
+          28.35
+        ]
+      },
       "properties": {
         "id": "red-1st-army-1935-01-25-08",
         "type": "force",
@@ -188,10 +254,15 @@
         "source": "《红军长征史》模拟演示数据"
       }
     },
-
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [106.85, 27.70] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.85,
+          27.7
+        ]
+      },
       "properties": {
         "id": "red-3rd-army-1935-01-20-08",
         "type": "force",
@@ -208,7 +279,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [106.70, 27.65] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7,
+          27.65
+        ]
+      },
       "properties": {
         "id": "red-3rd-army-1935-01-20-20",
         "type": "force",
@@ -225,7 +302,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [106.55, 27.68] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.55,
+          27.68
+        ]
+      },
       "properties": {
         "id": "red-3rd-army-1935-01-21-08",
         "type": "force",
@@ -242,7 +325,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [106.40, 27.75] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.4,
+          27.75
+        ]
+      },
       "properties": {
         "id": "red-3rd-army-1935-01-21-20",
         "type": "force",
@@ -259,7 +348,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [106.40, 27.80] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.4,
+          27.8
+        ]
+      },
       "properties": {
         "id": "red-3rd-army-1935-01-22-08",
         "type": "force",
@@ -276,7 +371,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [106.25, 27.85] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.25,
+          27.85
+        ]
+      },
       "properties": {
         "id": "red-3rd-army-1935-01-22-20",
         "type": "force",
@@ -293,7 +394,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [106.30, 28.15] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.3,
+          28.15
+        ]
+      },
       "properties": {
         "id": "red-3rd-army-1935-01-23-08",
         "type": "force",
@@ -310,7 +417,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [106.20, 28.30] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.2,
+          28.3
+        ]
+      },
       "properties": {
         "id": "red-3rd-army-1935-01-23-20",
         "type": "force",
@@ -327,7 +440,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [105.97, 28.05] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.97,
+          28.05
+        ]
+      },
       "properties": {
         "id": "red-3rd-army-1935-01-24-08",
         "type": "force",
@@ -344,7 +463,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [105.97, 28.04] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.97,
+          28.04
+        ]
+      },
       "properties": {
         "id": "red-3rd-army-1935-01-24-20",
         "type": "force",
@@ -361,7 +486,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [105.92, 28.00] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.92,
+          28
+        ]
+      },
       "properties": {
         "id": "red-3rd-army-1935-01-25-08",
         "type": "force",
@@ -376,10 +507,15 @@
         "source": "《红军长征史》模拟演示数据"
       }
     },
-
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [106.98, 27.72] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.98,
+          27.72
+        ]
+      },
       "properties": {
         "id": "red-5th-army-1935-01-20-08",
         "type": "force",
@@ -396,7 +532,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [106.92, 27.72] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.92,
+          27.72
+        ]
+      },
       "properties": {
         "id": "red-5th-army-1935-01-20-20",
         "type": "force",
@@ -413,7 +555,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [107.00, 27.85] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107,
+          27.85
+        ]
+      },
       "properties": {
         "id": "red-5th-army-1935-01-21-08",
         "type": "force",
@@ -430,7 +578,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [106.95, 28.10] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.95,
+          28.1
+        ]
+      },
       "properties": {
         "id": "red-5th-army-1935-01-21-20",
         "type": "force",
@@ -447,7 +601,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [106.83, 28.13] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.83,
+          28.13
+        ]
+      },
       "properties": {
         "id": "red-5th-army-1935-01-22-08",
         "type": "force",
@@ -464,7 +624,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [106.70, 28.20] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7,
+          28.2
+        ]
+      },
       "properties": {
         "id": "red-5th-army-1935-01-22-20",
         "type": "force",
@@ -481,7 +647,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [106.40, 28.25] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.4,
+          28.25
+        ]
+      },
       "properties": {
         "id": "red-5th-army-1935-01-23-08",
         "type": "force",
@@ -498,7 +670,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [106.25, 28.30] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.25,
+          28.3
+        ]
+      },
       "properties": {
         "id": "red-5th-army-1935-01-23-20",
         "type": "force",
@@ -515,7 +693,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [106.05, 28.08] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.05,
+          28.08
+        ]
+      },
       "properties": {
         "id": "red-5th-army-1935-01-24-08",
         "type": "force",
@@ -532,7 +716,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [105.98, 28.03] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.98,
+          28.03
+        ]
+      },
       "properties": {
         "id": "red-5th-army-1935-01-24-20",
         "type": "force",
@@ -549,7 +739,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [105.95, 27.98] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.95,
+          27.98
+        ]
+      },
       "properties": {
         "id": "red-5th-army-1935-01-25-08",
         "type": "force",
@@ -564,10 +760,15 @@
         "source": "《红军长征史》模拟演示数据"
       }
     },
-
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [106.90, 27.68] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.9,
+          27.68
+        ]
+      },
       "properties": {
         "id": "red-9th-army-1935-01-20-08",
         "type": "force",
@@ -584,7 +785,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [106.92, 27.72] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.92,
+          27.72
+        ]
+      },
       "properties": {
         "id": "red-9th-army-1935-01-20-20",
         "type": "force",
@@ -601,7 +808,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [106.92, 27.72] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.92,
+          27.72
+        ]
+      },
       "properties": {
         "id": "red-9th-army-1935-01-21-08",
         "type": "force",
@@ -618,7 +831,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [106.98, 27.85] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.98,
+          27.85
+        ]
+      },
       "properties": {
         "id": "red-9th-army-1935-01-21-20",
         "type": "force",
@@ -635,7 +854,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [106.86, 27.95] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.86,
+          27.95
+        ]
+      },
       "properties": {
         "id": "red-9th-army-1935-01-22-08",
         "type": "force",
@@ -652,7 +877,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [106.84, 28.08] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.84,
+          28.08
+        ]
+      },
       "properties": {
         "id": "red-9th-army-1935-01-22-20",
         "type": "force",
@@ -669,7 +900,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [106.70, 28.12] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7,
+          28.12
+        ]
+      },
       "properties": {
         "id": "red-9th-army-1935-01-23-08",
         "type": "force",
@@ -686,7 +923,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [106.25, 28.22] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.25,
+          28.22
+        ]
+      },
       "properties": {
         "id": "red-9th-army-1935-01-23-20",
         "type": "force",
@@ -703,7 +946,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [106.00, 28.02] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106,
+          28.02
+        ]
+      },
       "properties": {
         "id": "red-9th-army-1935-01-24-08",
         "type": "force",
@@ -720,7 +969,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [105.72, 28.28] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.72,
+          28.28
+        ]
+      },
       "properties": {
         "id": "red-9th-army-1935-01-24-20",
         "type": "force",
@@ -737,7 +992,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [105.65, 28.32] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.65,
+          28.32
+        ]
+      },
       "properties": {
         "id": "red-9th-army-1935-01-25-08",
         "type": "force",
@@ -752,10 +1013,15 @@
         "source": "《红军长征史》模拟演示数据"
       }
     },
-
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [105.82, 28.82] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.82,
+          28.82
+        ]
+      },
       "properties": {
         "id": "blue-chuan-army-1935-01-20-08",
         "type": "force",
@@ -772,7 +1038,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [105.85, 28.75] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.85,
+          28.75
+        ]
+      },
       "properties": {
         "id": "blue-chuan-army-1935-01-20-20",
         "type": "force",
@@ -789,7 +1061,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [105.90, 28.58] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.9,
+          28.58
+        ]
+      },
       "properties": {
         "id": "blue-chuan-army-1935-01-21-08",
         "type": "force",
@@ -806,7 +1084,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [105.72, 28.50] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.72,
+          28.5
+        ]
+      },
       "properties": {
         "id": "blue-chuan-army-1935-01-21-20",
         "type": "force",
@@ -823,7 +1107,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [105.80, 28.80] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8,
+          28.8
+        ]
+      },
       "properties": {
         "id": "blue-chuan-army-1935-01-22-08",
         "type": "force",
@@ -840,7 +1130,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [105.97, 28.04] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.97,
+          28.04
+        ]
+      },
       "properties": {
         "id": "blue-chuan-army-1935-01-22-20",
         "type": "force",
@@ -857,7 +1153,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [105.98, 28.03] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.98,
+          28.03
+        ]
+      },
       "properties": {
         "id": "blue-chuan-army-1935-01-23-08",
         "type": "force",
@@ -874,7 +1176,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [105.98, 28.03] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.98,
+          28.03
+        ]
+      },
       "properties": {
         "id": "blue-chuan-army-1935-01-23-20",
         "type": "force",
@@ -891,7 +1199,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [105.97, 28.04] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.97,
+          28.04
+        ]
+      },
       "properties": {
         "id": "blue-chuan-army-1935-01-24-08",
         "type": "force",
@@ -908,7 +1222,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [105.97, 28.04] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.97,
+          28.04
+        ]
+      },
       "properties": {
         "id": "blue-chuan-army-1935-01-24-20",
         "type": "force",
@@ -925,7 +1245,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [105.95, 28.02] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.95,
+          28.02
+        ]
+      },
       "properties": {
         "id": "blue-chuan-army-1935-01-25-08",
         "type": "force",
@@ -938,6 +1264,466 @@
         "status": "marching",
         "next_destination": "元厚",
         "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.82,
+          28.82
+        ]
+      },
+      "properties": {
+        "id": "blue--1935-01-20-08",
+        "type": "force",
+        "side": "blue",
+        "name": "川军郭勋祺部",
+        "level": "army",
+        "commander": "郭勋祺",
+        "strength": 12000,
+        "timestamp": "1935-01-20T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "合江",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.85,
+          28.75
+        ]
+      },
+      "properties": {
+        "id": "blue--1935-01-20-20",
+        "type": "force",
+        "side": "blue",
+        "name": "川军郭勋祺部",
+        "level": "army",
+        "commander": "郭勋祺",
+        "strength": 12000,
+        "timestamp": "1935-01-20T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "合江南",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.88,
+          28.65
+        ]
+      },
+      "properties": {
+        "id": "blue--1935-01-21-08",
+        "type": "force",
+        "side": "blue",
+        "name": "川军郭勋祺部",
+        "level": "army",
+        "commander": "郭勋祺",
+        "strength": 12000,
+        "timestamp": "1935-01-21T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "赤水方向",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.9,
+          28.5
+        ]
+      },
+      "properties": {
+        "id": "blue--1935-01-21-20",
+        "type": "force",
+        "side": "blue",
+        "name": "川军郭勋祺部",
+        "level": "army",
+        "commander": "郭勋祺",
+        "strength": 12000,
+        "timestamp": "1935-01-21T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "复兴场",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.95,
+          28.35
+        ]
+      },
+      "properties": {
+        "id": "blue--1935-01-22-08",
+        "type": "force",
+        "side": "blue",
+        "name": "川军郭勋祺部",
+        "level": "army",
+        "commander": "郭勋祺",
+        "strength": 12000,
+        "timestamp": "1935-01-22T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "旺隆",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.97,
+          28.15
+        ]
+      },
+      "properties": {
+        "id": "blue--1935-01-22-20",
+        "type": "force",
+        "side": "blue",
+        "name": "川军郭勋祺部",
+        "level": "army",
+        "commander": "郭勋祺",
+        "strength": 12000,
+        "timestamp": "1935-01-22T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "土城北",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.98,
+          28.05
+        ]
+      },
+      "properties": {
+        "id": "blue--1935-01-23-08",
+        "type": "force",
+        "side": "blue",
+        "name": "川军郭勋祺部",
+        "level": "army",
+        "commander": "郭勋祺",
+        "strength": 12000,
+        "timestamp": "1935-01-23T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "青杠坡",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.98,
+          28.03
+        ]
+      },
+      "properties": {
+        "id": "blue--1935-01-23-20",
+        "type": "force",
+        "side": "blue",
+        "name": "川军郭勋祺部",
+        "level": "army",
+        "commander": "郭勋祺",
+        "strength": 12000,
+        "timestamp": "1935-01-23T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "青杠坡",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.97,
+          28.04
+        ]
+      },
+      "properties": {
+        "id": "blue--1935-01-24-08",
+        "type": "force",
+        "side": "blue",
+        "name": "川军郭勋祺部",
+        "level": "army",
+        "commander": "郭勋祺",
+        "strength": 12000,
+        "timestamp": "1935-01-24T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "土城",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.96,
+          28.03
+        ]
+      },
+      "properties": {
+        "id": "blue--1935-01-24-20",
+        "type": "force",
+        "side": "blue",
+        "name": "川军郭勋祺部",
+        "level": "army",
+        "commander": "郭勋祺",
+        "strength": 12000,
+        "timestamp": "1935-01-24T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "土城",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.71,
+          26.58
+        ]
+      },
+      "properties": {
+        "id": "blue--1935-01-20-08",
+        "type": "force",
+        "side": "blue",
+        "name": "黔军王家烈部",
+        "level": "army",
+        "commander": "王家烈",
+        "strength": 8000,
+        "timestamp": "1935-01-20T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "贵阳",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.72,
+          26.6
+        ]
+      },
+      "properties": {
+        "id": "blue--1935-01-20-20",
+        "type": "force",
+        "side": "blue",
+        "name": "黔军王家烈部",
+        "level": "army",
+        "commander": "王家烈",
+        "strength": 8000,
+        "timestamp": "1935-01-20T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "贵阳北",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.75,
+          26.75
+        ]
+      },
+      "properties": {
+        "id": "blue--1935-01-21-08",
+        "type": "force",
+        "side": "blue",
+        "name": "黔军王家烈部",
+        "level": "army",
+        "commander": "王家烈",
+        "strength": 8000,
+        "timestamp": "1935-01-21T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "息烽",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8,
+          26.95
+        ]
+      },
+      "properties": {
+        "id": "blue--1935-01-21-20",
+        "type": "force",
+        "side": "blue",
+        "name": "黔军王家烈部",
+        "level": "army",
+        "commander": "王家烈",
+        "strength": 8000,
+        "timestamp": "1935-01-21T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "乌江方向",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.85,
+          27.15
+        ]
+      },
+      "properties": {
+        "id": "blue--1935-01-22-08",
+        "type": "force",
+        "side": "blue",
+        "name": "黔军王家烈部",
+        "level": "army",
+        "commander": "王家烈",
+        "strength": 8000,
+        "timestamp": "1935-01-22T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "乌江",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.88,
+          27.35
+        ]
+      },
+      "properties": {
+        "id": "blue--1935-01-22-20",
+        "type": "force",
+        "side": "blue",
+        "name": "黔军王家烈部",
+        "level": "army",
+        "commander": "王家烈",
+        "strength": 8000,
+        "timestamp": "1935-01-22T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "刀靶水",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.9,
+          27.5
+        ]
+      },
+      "properties": {
+        "id": "blue--1935-01-23-08",
+        "type": "force",
+        "side": "blue",
+        "name": "黔军王家烈部",
+        "level": "army",
+        "commander": "王家烈",
+        "strength": 8000,
+        "timestamp": "1935-01-23T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "懒板凳",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.91,
+          27.58
+        ]
+      },
+      "properties": {
+        "id": "blue--1935-01-23-20",
+        "type": "force",
+        "side": "blue",
+        "name": "黔军王家烈部",
+        "level": "army",
+        "commander": "王家烈",
+        "strength": 8000,
+        "timestamp": "1935-01-23T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "遵义南",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.92,
+          27.65
+        ]
+      },
+      "properties": {
+        "id": "blue--1935-01-24-08",
+        "type": "force",
+        "side": "blue",
+        "name": "黔军王家烈部",
+        "level": "army",
+        "commander": "王家烈",
+        "strength": 8000,
+        "timestamp": "1935-01-24T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "遵义南郊",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.93,
+          27.68
+        ]
+      },
+      "properties": {
+        "id": "blue--1935-01-24-20",
+        "type": "force",
+        "side": "blue",
+        "name": "黔军王家烈部",
+        "level": "army",
+        "commander": "王家烈",
+        "strength": 8000,
+        "timestamp": "1935-01-24T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "遵义",
+        "source": "模拟演示数据"
       }
     }
   ]
