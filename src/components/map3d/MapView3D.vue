@@ -1,168 +1,84 @@
 <script setup lang="ts">
 /**
- * MapView3D — 鸟瞰沙盘 3D 地图组件
- *
- * 使用 Three.js 渲染地形、部队、轨迹的 3D 鸟瞰场景。
- * 设计参考: §5.4 鸟瞰沙盘模式
+ * MapView3D — DEBUG VERSION
+ * 临时调试版:红色场景背景 + 测试立方体,证明 Three.js 管线是否工作
  */
-import { ref, onMounted, onBeforeUnmount, watch, computed, nextTick } from 'vue'
-import { storeToRefs } from 'pinia'
-import { useThreeSetup, type ThreeSceneContext } from './useThreeSetup'
-import { loadTerrainMesh } from './useTerrainMesh'
-import { createForceArrow, defaultLngLatToWorldXY } from './useForce3D'
-import { createTrajectory3D } from './useTrajectory3D'
-import { useScenarioStore } from '@/stores/scenario'
-import { useTimeStore } from '@/stores/time'
-import { useForceMarkers } from '@/components/map2d/useForceMarkers'
-import { useTrajectories } from '@/components/map2d/useTrajectories'
-import type { ForcesCollection, TrajectoriesCollection, LngLat } from '@/data/types'
+import { ref, onMounted, onBeforeUnmount } from 'vue'
 import * as THREE from 'three'
 
 const containerRef = ref<HTMLElement | null>(null)
-const scenarioStore = useScenarioStore()
-const timeStore = useTimeStore()
+const statusMsg = ref('初始化中...')
+let rafId: number | null = null
+let renderer: THREE.WebGLRenderer | null = null
+let scene: THREE.Scene | null = null
 
-const { currentTime, currentPhase } = storeToRefs(timeStore)
+onMounted(() => {
+  const el = containerRef.value
+  if (!el) { statusMsg.value = '❌ 容器元素不存在'; return }
 
-const forcesCollection = computed<ForcesCollection | null>(() => {
-  if (!scenarioStore.forces.length) return null
-  return { type: 'FeatureCollection', features: scenarioStore.forces }
-})
+  const w = el.clientWidth || 800
+  const h = el.clientHeight || 600
+  statusMsg.value = `容器尺寸: ${w}×${h}`
 
-const trajectoriesCollection = computed<TrajectoriesCollection | null>(() => {
-  if (!scenarioStore.trajectories.length) return null
-  return { type: 'FeatureCollection', features: scenarioStore.trajectories }
-})
-
-const { activeForces } = useForceMarkers(forcesCollection, currentTime)
-const { visibleTrajectories } = useTrajectories(trajectoriesCollection, currentPhase, currentTime)
-
-let threeCtx: ThreeSceneContext | null = null
-const loaded = ref(false)
-const terrainReady = ref(false)
-
-function getHeight(_lngLat: LngLat): number {
-  return 0
-}
-
-function clear3DMarkers(): void {
-  if (!threeCtx) return
-  const toRemove: THREE.Object3D[] = []
-  threeCtx.scene.traverse((child) => {
-    if (
-      child.userData?.type === 'force-arrow' ||
-      child.userData?.type === 'force-glow' ||
-      child.userData?.type === 'trajectory-line'
-    ) {
-      toRemove.push(child)
-    }
-  })
-  for (const obj of toRemove) {
-    threeCtx.scene.remove(obj)
-    if (obj instanceof THREE.Mesh) {
-      obj.geometry.dispose()
-      const mat = obj.material
-      if (mat instanceof THREE.Material) mat.dispose()
-      else if (Array.isArray(mat)) mat.forEach((m) => m.dispose())
-    }
-    if (obj instanceof THREE.Line) {
-      obj.geometry.dispose()
-      if (obj.material instanceof THREE.Material) obj.material.dispose()
-    }
-  }
-}
-
-watch(
-  [activeForces, () => loaded.value],
-  () => {
-    if (!loaded.value || !threeCtx) return
-    const oldMarkers: THREE.Object3D[] = []
-    threeCtx.scene.traverse((child) => {
-      if (child.userData?.type === 'force-arrow' || child.userData?.type === 'force-glow') {
-        oldMarkers.push(child)
-      }
-    })
-    for (const obj of oldMarkers) {
-      threeCtx.scene.remove(obj)
-      if (obj instanceof THREE.Mesh) {
-        obj.geometry.dispose()
-        const mat = obj.material
-        if (mat instanceof THREE.Material) mat.dispose()
-        else if (Array.isArray(mat)) mat.forEach((m) => m.dispose())
-      }
-    }
-    for (const force of activeForces.value) {
-      const { mesh, glow } = createForceArrow(force, threeCtx.scene, defaultLngLatToWorldXY)
-      mesh.userData = { type: 'force-arrow' }
-      glow.userData = { type: 'force-glow' }
-    }
-  },
-  { immediate: true, deep: true },
-)
-
-watch(
-  [visibleTrajectories, () => loaded.value],
-  () => {
-    if (!loaded.value || !threeCtx) return
-    const oldLines: THREE.Object3D[] = []
-    threeCtx.scene.traverse((child) => {
-      if (child.userData?.type === 'trajectory-line') oldLines.push(child)
-    })
-    for (const obj of oldLines) {
-      threeCtx.scene.remove(obj)
-      if (obj instanceof THREE.Line) {
-        obj.geometry.dispose()
-        if (obj.material instanceof THREE.Material) obj.material.dispose()
-      }
-    }
-    for (const traj of visibleTrajectories.value) {
-      const line = createTrajectory3D(traj, threeCtx.scene, defaultLngLatToWorldXY, getHeight)
-      line.userData = { type: 'trajectory-line' }
-    }
-  },
-  { immediate: true, deep: true },
-)
-
-onMounted(async () => {
-  if (!containerRef.value) {
-    console.error('3D 容器未找到')
+  // === 测试 WebGL ===
+  try {
+    renderer = new THREE.WebGLRenderer({ antialias: true })
+  } catch (e: any) {
+    statusMsg.value = `❌ WebGL 不可用: ${e.message}`
     return
   }
 
-  threeCtx = useThreeSetup(containerRef)
+  renderer.setSize(w, h)
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+  renderer.domElement.style.display = 'block'
+  el.appendChild(renderer.domElement)
+  statusMsg.value = `✅ WebGL 创建成功,canvas: ${renderer.domElement.width}×${renderer.domElement.height}`
 
-  const el = containerRef.value as any
-  el.__threeDispose = threeCtx.dispose
+  // === 红色场景(证明渲染是否工作) ===
+  scene = new THREE.Scene()
+  scene.background = new THREE.Color('#FF0000') // 纯红,一看就知道是否在渲染
 
-  try {
-    await loadTerrainMesh(threeCtx.scene)
-    terrainReady.value = true
-  } catch (e) {
-    console.warn('地形加载失败，使用平坦地形:', e)
-    terrainReady.value = true
+  // === 绿色测试方块(证明 3D 物体是否可见) ===
+  const cubeGeo = new THREE.BoxGeometry(300, 300, 300)
+  const cubeMat = new THREE.MeshBasicMaterial({ color: '#00FF00' })
+  const cube = new THREE.Mesh(cubeGeo, cubeMat)
+  cube.position.set(0, 150, 0)
+  scene.add(cube)
+
+  // === 相机 ===
+  const camera = new THREE.PerspectiveCamera(45, w / h, 1, 10000)
+  camera.position.set(500, 500, 800)
+  camera.lookAt(0, 0, 0)
+
+  // === 灯光(虽然 BasicMaterial 不需要,但后续需要) ===
+  scene.add(new THREE.AmbientLight('#FFFFFF', 0.5))
+  scene.add(new THREE.DirectionalLight('#FFFFFF', 0.8))
+
+  // === RAF 渲染 ===
+  function animate() {
+    rafId = requestAnimationFrame(animate)
+    if (renderer && scene && camera) {
+      renderer.render(scene, camera)
+    }
   }
+  animate()
 
-  loaded.value = true
-
-  if (!scenarioStore.loaded) {
-    try { await scenarioStore.loadAll() } catch {}
-  }
-
-  // 强制 resize: Tab 切换后容器可能尚未完成 CSS 布局
-  await nextTick()
-  setTimeout(() => window.dispatchEvent(new Event('resize')), 200)
+  statusMsg.value = `✅ 渲染循环已启动 — 应看到红色背景+绿色方块。实际:${renderer.domElement.width}×${renderer.domElement.height}`
 })
 
 onBeforeUnmount(() => {
-  clear3DMarkers()
-  const el = containerRef.value as any
-  if (el && typeof el.__threeDispose === 'function') el.__threeDispose()
-  threeCtx = null
+  if (rafId !== null) cancelAnimationFrame(rafId)
+  if (renderer) {
+    renderer.dispose()
+    renderer = null
+  }
 })
 </script>
 
 <template>
-  <div class="map-3d" ref="containerRef"></div>
+  <div class="map-3d" ref="containerRef">
+    <div class="debug-overlay">{{ statusMsg }}</div>
+  </div>
 </template>
 
 <style scoped>
@@ -172,5 +88,19 @@ onBeforeUnmount(() => {
   min-height: 400px;
   min-width: 400px;
   position: relative;
+}
+.debug-overlay {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: rgba(0,0,0,0.75);
+  color: #FFFF00;
+  font-family: monospace;
+  font-size: 12px;
+  padding: 6px 10px;
+  z-index: 20;
+  max-width: 400px;
+  word-break: break-all;
+  border-radius: 4px;
 }
 </style>
