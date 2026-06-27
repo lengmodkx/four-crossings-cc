@@ -1,0 +1,42 @@
+{
+  "events": [
+    {
+      "id": "evt-zunyi-meeting-1935-01-15",
+      "type": "meeting",
+      "title": "遵义会议",
+      "timestamp": "1935-01-15T14:00:00+08:00",
+      "duration_hours": 72,
+      "location": [106.92, 27.72],
+      "participants": ["person-mao-zedong", "person-zhou-enlai"],
+      "outcome": "red-advance",
+      "description": "中共中央在遵义召开政治局扩大会议，确立毛泽东在红军和党中央的领导地位，是党的历史上一个生死攸关的转折点",
+      "sources": ["《遵义会议文献》", "《毛泽东年谱》"]
+    },
+    {
+      "id": "evt-tucheng-battle-1935-01-28",
+      "type": "battle",
+      "title": "土城战役",
+      "timestamp": "1935-01-28T10:00:00+08:00",
+      "duration_hours": 12,
+      "location": [105.97, 28.04],
+      "participants": ["red-3rd-army", "red-5th-army"],
+      "outcome": "red-retreat",
+      "casualties_red": 3000,
+      "casualties_blue": 1500,
+      "description": "红军在土城青杠坡与川军郭勋祺部激战，因情报有误敌军兵力远超预期，红军主动撤出战斗",
+      "sources": ["《土城战役综述》", "《红军长征史》p.362"]
+    },
+    {
+      "id": "evt-first-crossing-1935-01-29",
+      "type": "crossing",
+      "title": "一渡赤水",
+      "timestamp": "1935-01-29T06:00:00+08:00",
+      "duration_hours": 24,
+      "location": [105.70, 28.30],
+      "participants": ["red-1st-army", "red-3rd-army", "red-5th-army", "red-9th-army"],
+      "outcome": "red-retreat",
+      "description": "土城战役后红军分三路从土城、元厚等渡口西渡赤水河，进入川南古蔺、叙永地区，摆脱敌军围堵",
+      "sources": ["《红军长征史》p.365", "《长征》刘统 p.145"]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "meetings": [
+    {
+      "id": "meeting-zunyi-1935-01-15",
+      "name": "遵义会议",
+      "location": [106.92, 27.72],
+      "date_start": "1935-01-15",
+      "date_end": "1935-01-17",
+      "background": "第五次反围剿失败后中央红军被迫长征，湘江战役后部队损失惨重，党内对博古、李德军事指挥的不满达到顶点",
+      "resolutions": [
+        "选举毛泽东为中央政治局常委",
+        "取消博古、李德的最高军事指挥权",
+        "决定改变原定去湘西的计划，转向贵州进军"
+      ],
+      "participants": [
+        {
+          "person_id": "person-mao-zedong",
+          "role": "政治局常委"
+        },
+        {
+          "person_id": "person-zhou-enlai",
+          "role": "政治局常委"
+        }
+      ],
+      "related_event_ids": ["evt-zunyi-meeting-1935-01-15"],
+      "sources": ["《遵义会议文献》", "《毛泽东年谱》"]
+    }
+  ]
+}

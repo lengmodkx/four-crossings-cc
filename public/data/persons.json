@@ -1,0 +1,30 @@
+{
+  "persons": [
+    {
+      "id": "person-mao-zedong",
+      "name": "毛泽东",
+      "role": "中央政治局常委",
+      "trajectory_ref": "traj-central-committee",
+      "key_decisions": [
+        {
+          "timestamp": "1935-01-29",
+          "event_id": "evt-first-crossing-1935-01-29",
+          "decision": "提出放弃原定北渡长江计划，向西渡过赤水河进入川南"
+        }
+      ]
+    },
+    {
+      "id": "person-zhou-enlai",
+      "name": "周恩来",
+      "role": "中央政治局常委、中革军委副主席",
+      "trajectory_ref": "traj-central-committee",
+      "key_decisions": [
+        {
+          "timestamp": "1935-01-28",
+          "event_id": "evt-tucheng-battle-1935-01-28",
+          "decision": "在土城前线指挥战斗，发现敌情后决定撤出战场"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [107.05, 27.82],
+          [106.90, 27.95],
+          [106.45, 28.02],
+          [105.97, 28.04]
+        ]
+      },
+      "properties": {
+        "id": "traj-red-1st-army-1935-01-22-30",
+        "force_id": "red-1st-army",
+        "segment_start": "1935-01-22",
+        "segment_end": "1935-01-30",
+        "phase": "first-crossing",
+        "color": "#C0392B",
+        "source": "《红军长征在贵州》p.123"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [107.12, 27.78],
+          [106.88, 27.93],
+          [106.42, 28.05]
+        ]
+      },
+      "properties": {
+        "id": "traj-red-3rd-army-1935-01-22-30",
+        "force_id": "red-3rd-army",
+        "segment_start": "1935-01-22",
+        "segment_end": "1935-01-30",
+        "phase": "first-crossing",
+        "color": "#D06155",
+        "source": "《红军长征在贵州》p.124"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [107.08, 27.85],
+          [106.95, 27.97],
+          [106.44, 28.03]
+        ]
+      },
+      "properties": {
+        "id": "traj-red-5th-army-1935-01-22-30",
+        "force_id": "red-5th-army",
+        "segment_start": "1935-01-22",
+        "segment_end": "1935-01-30",
+        "phase": "first-crossing",
+        "color": "#C0392B",
+        "source": "《红军长征在贵州》p.125"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [107.02, 27.75],
+          [106.91, 27.88],
+          [106.43, 28.00]
+        ]
+      },
+      "properties": {
+        "id": "traj-red-9th-army-1935-01-22-30",
+        "force_id": "red-9th-army",
+        "segment_start": "1935-01-22",
+        "segment_end": "1935-01-30",
+        "phase": "first-crossing",
+        "color": "#C0392B",
+        "source": "《红军长征在贵州》p.126"
+      }
+    }
+  ]
+}

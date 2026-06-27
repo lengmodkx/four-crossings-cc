@@ -1,0 +1,85 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [107.05, 27.82]
+      },
+      "properties": {
+        "id": "red-1st-army",
+        "type": "force",
+        "side": "red",
+        "name": "红一军团",
+        "level": "army",
+        "commander": "林彪",
+        "strength": 18000,
+        "timestamp": "1935-01-22T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "土城",
+        "source": "《红军长征史》p.358"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [107.12, 27.78]
+      },
+      "properties": {
+        "id": "red-3rd-army",
+        "type": "force",
+        "side": "red",
+        "name": "红三军团",
+        "level": "army",
+        "commander": "彭德怀",
+        "strength": 12000,
+        "timestamp": "1935-01-22T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "土城",
+        "source": "《红军长征史》p.358"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [107.08, 27.85]
+      },
+      "properties": {
+        "id": "red-5th-army",
+        "type": "force",
+        "side": "red",
+        "name": "红五军团",
+        "level": "army",
+        "commander": "董振堂",
+        "strength": 8000,
+        "timestamp": "1935-01-22T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "土城",
+        "source": "《红军长征史》p.358"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [107.02, 27.75]
+      },
+      "properties": {
+        "id": "red-9th-army",
+        "type": "force",
+        "side": "red",
+        "name": "红九军团",
+        "level": "army",
+        "commander": "罗炳辉",
+        "strength": 6000,
+        "timestamp": "1935-01-22T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "土城",
+        "source": "《红军长征史》p.358"
+      }
+    }
+  ]
+}
