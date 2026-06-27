@@ -3,7 +3,7 @@ import LandingView from '../views/LandingView.vue'
 import PhaseSelectView from '../views/PhaseSelectView.vue'
 import NarrativeView from '../views/NarrativeView.vue'
 import ExploreView from '../views/ExploreView.vue'
-import PlaceholderView from '../views/PlaceholderView.vue'
+import MeetingView from '../views/MeetingView.vue'
 
 export const routes: RouteRecordRaw[] = [
   {
@@ -29,7 +29,6 @@ export const routes: RouteRecordRaw[] = [
   {
     path: '/meeting/:meetingId',
     name: 'meeting',
-    component: PlaceholderView,
-    props: { title: '会议专题' },
+    component: MeetingView,
   },
 ]
