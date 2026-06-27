@@ -1,0 +1,154 @@
+{
+  "version": 8,
+  "name": "四渡赤水·古旧军图",
+  "sprite": "mapbox://sprites/mapbox/streets-v12",
+  "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
+  "sources": {
+    "composite": {
+      "url": "mapbox://mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v8",
+      "type": "vector"
+    }
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "#F2E8D0"
+      }
+    },
+    {
+      "id": "water",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "water",
+      "paint": {
+        "fill-color": "#5C7A8C",
+        "fill-opacity": 0.8
+      }
+    },
+    {
+      "id": "waterway",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "waterway",
+      "paint": {
+        "line-color": "#5C7A8C",
+        "line-width": 1.2,
+        "line-opacity": 0.7
+      }
+    },
+    {
+      "id": "landuse-park",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "landuse",
+      "filter": ["==", "class", "park"],
+      "paint": {
+        "fill-color": "#D9CDA8",
+        "fill-opacity": 0.5
+      }
+    },
+    {
+      "id": "landuse-wood",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "landuse",
+      "filter": ["==", "class", "wood"],
+      "paint": {
+        "fill-color": "#C4B896",
+        "fill-opacity": 0.4
+      }
+    },
+    {
+      "id": "contour-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "contour",
+      "paint": {
+        "line-color": "#6B7F4A",
+        "line-width": 0.5,
+        "line-opacity": 0.3
+      }
+    },
+    {
+      "id": "hillshade",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "hillshade",
+      "paint": {
+        "fill-color": "#BFAD86",
+        "fill-opacity": 0.3
+      }
+    },
+    {
+      "id": "road-secondary",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "road",
+      "filter": ["==", "class", "secondary"],
+      "paint": {
+        "line-color": "#A89870",
+        "line-width": 1.0
+      }
+    },
+    {
+      "id": "road-primary",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "road",
+      "filter": ["==", "class", "primary"],
+      "paint": {
+        "line-color": "#8B7D5A",
+        "line-width": 1.5
+      }
+    },
+    {
+      "id": "place-settlement",
+      "type": "symbol",
+      "source": "composite",
+      "source-layer": "place",
+      "filter": ["==", "class", "settlement"],
+      "layout": {
+        "text-field": ["get", "name"],
+        "text-font": ["Open Sans Regular"],
+        "text-size": 12
+      },
+      "paint": {
+        "text-color": "#1A1410",
+        "text-halo-color": "#F2E8D0",
+        "text-halo-width": 1.5
+      }
+    },
+    {
+      "id": "place-label",
+      "type": "symbol",
+      "source": "composite",
+      "source-layer": "place",
+      "filter": ["!=", "class", "settlement"],
+      "layout": {
+        "text-field": ["get", "name"],
+        "text-font": ["Open Sans Regular"],
+        "text-size": 10
+      },
+      "paint": {
+        "text-color": "#6B5D4A",
+        "text-halo-color": "#F2E8D0",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "admin-boundary",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "admin",
+      "filter": ["==", "admin_level", 2],
+      "paint": {
+        "line-color": "#8B7D5A",
+        "line-width": 1,
+        "line-dasharray": [4, 4],
+        "line-opacity": 0.6
+      }
+    }
+  ]
+}
