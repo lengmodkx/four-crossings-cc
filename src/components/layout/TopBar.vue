@@ -33,6 +33,18 @@ function goHome(): void {
       <span class="brand-text">四渡赤水·全景沙盘</span>
     </div>
     <nav class="topbar-nav">
+      <a
+        class="topbar-link"
+        href="https://sidu.lengmodkx.club/"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="姊妹项目 · sidu-red-river (轻量版,新窗口打开)"
+      >
+        <span>姊妹项目</span>
+        <svg class="external-icon" viewBox="0 0 16 16" width="11" height="11" aria-hidden="true">
+          <path d="M9 2h5v5M14 2L7 9M11 9v4H3V5h4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </a>
       <div class="mode-switch">
         <button
           class="mode-btn"
@@ -103,6 +115,32 @@ function goHome(): void {
   transition: all 0.2s;
 }
 
+.topbar-link {
+ display: inline-flex;
+ align-items: center;
+ gap: 4px;
+ padding: 4px 10px;
+ color: var(--color-bg-paper, #F2E8D0);
+ font-family: inherit;
+ font-size: 14px;
+ text-decoration: none;
+ border: 1px solid rgba(242, 232, 208, 0.35);
+ border-radius: 3px;
+ transition: background-color 0.15s, border-color 0.15s;
+ white-space: nowrap;
+}
+.topbar-link:hover {
+ background: rgba(255, 255, 255, 0.12);
+ border-color: var(--color-accent-red, #C0392B);
+ color: #fff;
+}
+.topbar-link .external-icon {
+ opacity: 0.75;
+ flex-shrink: 0;
+}
+.topbar-link:hover .external-icon {
+ opacity: 1;
+}
 .mode-btn:hover {
   background: rgba(255, 255, 255, 0.15);
 }

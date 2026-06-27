@@ -30,3 +30,7 @@ dist-ssr
 # Font files (large, user must download manually)
 public/fonts/*.ttf
 public/fonts/*.otf
+
+# Debug screenshots (Playwright artifacts)
+tmp-screens/
+
