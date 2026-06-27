@@ -1,0 +1,20 @@
+// 四渡赤水全景沙盘 — 自托管字体声明
+// 注意:不要真的下载字体文件(150MB+),只写声明
+
+// 霞鹜文楷 (LXGW WenKai) — 标题/显示字体
+@font-face {
+  font-family: 'LXGW WenKai';
+  src: url('/fonts/LXGWWenKai-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// 思源宋体 (Source Han Serif) — 正文/阅读字体
+@font-face {
+  font-family: 'Source Han Serif SC';
+  src: url('/fonts/SourceHanSerifSC-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// 实际字体文件保存在 public/fonts/ 目录下,不要真的去下载
