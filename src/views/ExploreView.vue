@@ -2,7 +2,7 @@
 /**
  * ExploreView — 探索模式核心视图
  *
- * 布局: TopBar (上) + FilterPanel (左) + [MapView2D/MapView3D] 主区 (右) + Timeline (下)
+ * 布局: TopBar (上) + FilterPanel (左) + MapView2D 主区 (右) + Timeline (下)
  * onMounted 时加载数据并设置探索模式。
  *
  * Bug Fix: 捕获 mapReady 事件，渲染 ForceMarker / TrajectoryLine / EventPin
@@ -18,7 +18,6 @@ import type { EventRecord, ForceFeature, ForcesCollection, TrajectoriesCollectio
 import { EVENT_TYPES } from '@/data/types'
 import TopBar from '@/components/layout/TopBar.vue'
 import MapView2D from '@/components/map2d/MapView2D.vue'
-import MapView3D from '@/components/map3d/MapView3D.vue'
 import Timeline from '@/components/timeline/Timeline.vue'
 import FilterPanel from '@/components/common/FilterPanel.vue'
 import LoadingCompass from '@/components/common/LoadingCompass.vue'
@@ -150,11 +149,10 @@ onMounted(async () => {
       <div class="explore-main">
         <FilterPanel />
         <div class="map-area">
-          <MapView2D v-if="viewStore.render === '2d'" @map-ready="handleMapReady" />
-          <MapView3D v-else-if="viewStore.render === '3d'" />
+          <MapView2D @map-ready="handleMapReady" />
 
           <!-- 地图叠加层: 部队标记 / 行军轨迹 / 事件标记 -->
-          <div v-if="mapInstance && viewStore.render === '2d'" style="display:none">
+          <div v-if="mapInstance" style="display:none">
             <ForceMarker
               v-for="force in filteredForces"
               :key="force.properties.id"

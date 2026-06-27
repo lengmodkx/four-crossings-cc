@@ -56,14 +56,6 @@ export function useKeyboardShortcuts(): void {
         timeStore.setTime(formatTime(newTime))
         break
       }
-      case '1': {
-        viewStore.setRender('2d')
-        break
-      }
-      case '2': {
-        viewStore.setRender('3d')
-        break
-      }
       case 'e':
       case 'E': {
         viewStore.setMode('explore')

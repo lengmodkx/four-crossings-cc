@@ -2,7 +2,7 @@
 /**
  * NarrativeView — 叙事模式核心视图
  *
- * 布局: TopBar (上) + [MapView2D/MapView3D] 主区 (左) + SidePanel (右) + Timeline (下)
+ * 布局: TopBar (上) + MapView2D 主区 (左) + SidePanel (右) + Timeline (下)
  * onMounted 时加载数据并设置叙事模式。
  * 当前事件与时间同步时，在 SidePanel 顶部显示旁白文字。
  *
@@ -19,7 +19,6 @@ import { parseTime } from '@/stores/time'
 import type { EventRecord, ForceFeature, ForcesCollection, TrajectoriesCollection } from '@/data/types'
 import TopBar from '@/components/layout/TopBar.vue'
 import MapView2D from '@/components/map2d/MapView2D.vue'
-import MapView3D from '@/components/map3d/MapView3D.vue'
 import Timeline from '@/components/timeline/Timeline.vue'
 import SidePanel from '@/components/layout/SidePanel.vue'
 import ChapterBookmark from '@/components/timeline/ChapterBookmark.vue'
@@ -160,12 +159,11 @@ onMounted(async () => {
     <template v-else>
       <div class="narrative-main">
         <div class="map-area">
-          <MapView2D v-if="viewStore.render === '2d'" @map-ready="handleMapReady" />
-          <MapView3D v-else-if="viewStore.render === '3d'" />
+          <MapView2D @map-ready="handleMapReady" />
 
           <!-- 地图叠加层: 部队标记 / 行军轨迹 / 事件标记 -->
           <!-- 这些组件通过 maplibregl API 直接操作地图, 不渲染可见 DOM -->
-          <div v-if="mapInstance && viewStore.render === '2d'" style="display:none">
+          <div v-if="mapInstance" style="display:none">
             <ForceMarker
               v-for="force in activeForces"
               :key="force.properties.id"

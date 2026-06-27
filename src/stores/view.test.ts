@@ -67,34 +67,17 @@ describe('useViewStore', () => {
   })
 
   describe('setRender', () => {
-    it('应切换到 3d 渲染', () => {
+    it('应保持 2d 渲染', () => {
       const store = useViewStore()
-      store.setRender('3d')
-      expect(store.render).toBe('3d')
+      store.setRender('2d')
+      expect(store.render).toBe('2d')
     })
 
-    it('应切换到 split 渲染', () => {
-      const store = useViewStore()
-      store.setRender('split')
-      expect(store.render).toBe('split')
-    })
-
-    it('is2DActive 和 is3DActive 应正确反映渲染模式', () => {
+    it('is2DActive 应正确反映渲染模式', () => {
       const store = useViewStore()
 
       // 2d
       expect(store.is2DActive).toBe(true)
-      expect(store.is3DActive).toBe(false)
-
-      // 3d
-      store.setRender('3d')
-      expect(store.is2DActive).toBe(false)
-      expect(store.is3DActive).toBe(true)
-
-      // split: 两者都激活
-      store.setRender('split')
-      expect(store.is2DActive).toBe(true)
-      expect(store.is3DActive).toBe(true)
     })
   })
 

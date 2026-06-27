@@ -2,12 +2,12 @@
 /**
  * TopBar — 顶部导航栏
  *
- * 品牌名 + 模式切换 (narrative/explore) + 渲染切换 (2D/3D)。
+ * 品牌名 + 模式切换 (narrative/explore)。
  * 使用 useViewStore 管理视图状态，useRouter 导航。
  */
 import { useRouter } from 'vue-router'
 import { useViewStore } from '@/stores/view'
-import type { ViewMode, RenderMode } from '@/stores/view'
+import type { ViewMode } from '@/stores/view'
 
 const router = useRouter()
 const viewStore = useViewStore()
@@ -20,10 +20,6 @@ function handleModeSwitch(mode: ViewMode): void {
   } else if (mode === 'explore' && !currentPath.startsWith('/explore')) {
     router.push('/explore/first-crossing')
   }
-}
-
-function handleRenderSwitch(render: RenderMode): void {
-  viewStore.setRender(render)
 }
 
 function goHome(): void {
@@ -51,22 +47,6 @@ function goHome(): void {
           @click="handleModeSwitch('explore')"
         >
           探索
-        </button>
-      </div>
-      <div class="render-switch">
-        <button
-          class="render-btn"
-          :class="{ active: viewStore.render === '2d' }"
-          @click="handleRenderSwitch('2d')"
-        >
-          2D
-        </button>
-        <button
-          class="render-btn"
-          :class="{ active: viewStore.render === '3d' }"
-          @click="handleRenderSwitch('3d')"
-        >
-          3D
         </button>
       </div>
     </nav>
@@ -103,8 +83,7 @@ function goHome(): void {
   align-items: center;
 }
 
-.mode-switch,
-.render-switch {
+.mode-switch {
   display: flex;
   gap: 2px;
   background: rgba(255, 255, 255, 0.1);
@@ -112,8 +91,7 @@ function goHome(): void {
   padding: 2px;
 }
 
-.mode-btn,
-.render-btn {
+.mode-btn {
   padding: 4px 12px;
   border: none;
   border-radius: 3px;
@@ -125,13 +103,11 @@ function goHome(): void {
   transition: all 0.2s;
 }
 
-.mode-btn:hover,
-.render-btn:hover {
+.mode-btn:hover {
   background: rgba(255, 255, 255, 0.15);
 }
 
-.mode-btn.active,
-.render-btn.active {
+.mode-btn.active {
   background: var(--color-accent-red, #C0392B);
   color: #fff;
 }
@@ -150,13 +126,9 @@ function goHome(): void {
   .topbar-nav {
     gap: 8px;
   }
-  .mode-btn,
-  .render-btn {
+  .mode-btn {
     padding: 4px 8px;
     font-size: 11px;
-  }
-  .render-switch button:nth-child(2) {
-    display: none;
   }
 }
 </style>

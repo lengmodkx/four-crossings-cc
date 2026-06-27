@@ -3,12 +3,77 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [107.05, 27.82]
-      },
+      "geometry": { "type": "Point", "coordinates": [106.92, 27.68] },
       "properties": {
-        "id": "red-1st-army",
+        "id": "red-1st-army-1935-01-20-08",
+        "type": "force",
+        "side": "red",
+        "name": "红一军团",
+        "level": "army",
+        "commander": "林彪",
+        "strength": 18000,
+        "timestamp": "1935-01-20T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "遵义",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [106.92, 27.72] },
+      "properties": {
+        "id": "red-1st-army-1935-01-20-20",
+        "type": "force",
+        "side": "red",
+        "name": "红一军团",
+        "level": "army",
+        "commander": "林彪",
+        "strength": 18000,
+        "timestamp": "1935-01-20T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "板桥",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [106.95, 27.78] },
+      "properties": {
+        "id": "red-1st-army-1935-01-21-08",
+        "type": "force",
+        "side": "red",
+        "name": "红一军团",
+        "level": "army",
+        "commander": "林彪",
+        "strength": 18000,
+        "timestamp": "1935-01-21T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "板桥",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [106.98, 27.85] },
+      "properties": {
+        "id": "red-1st-army-1935-01-21-20",
+        "type": "force",
+        "side": "red",
+        "name": "红一军团",
+        "level": "army",
+        "commander": "林彪",
+        "strength": 18000,
+        "timestamp": "1935-01-21T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "娄山关",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [106.85, 27.98] },
+      "properties": {
+        "id": "red-1st-army-1935-01-22-08",
         "type": "force",
         "side": "red",
         "name": "红一军团",
@@ -17,68 +82,862 @@
         "strength": 18000,
         "timestamp": "1935-01-22T08:00:00+08:00",
         "status": "marching",
-        "next_destination": "土城",
-        "source": "《红军长征史》p.358"
+        "next_destination": "桐梓",
+        "source": "《红军长征史》模拟演示数据"
       }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [107.12, 27.78]
-      },
+      "geometry": { "type": "Point", "coordinates": [106.83, 28.13] },
       "properties": {
-        "id": "red-3rd-army",
+        "id": "red-1st-army-1935-01-22-20",
+        "type": "force",
+        "side": "red",
+        "name": "红一军团",
+        "level": "army",
+        "commander": "林彪",
+        "strength": 18000,
+        "timestamp": "1935-01-22T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "习水",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [106.50, 28.18] },
+      "properties": {
+        "id": "red-1st-army-1935-01-23-08",
+        "type": "force",
+        "side": "red",
+        "name": "红一军团",
+        "level": "army",
+        "commander": "林彪",
+        "strength": 18000,
+        "timestamp": "1935-01-23T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "习水",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [106.20, 28.30] },
+      "properties": {
+        "id": "red-1st-army-1935-01-23-20",
+        "type": "force",
+        "side": "red",
+        "name": "红一军团",
+        "level": "army",
+        "commander": "林彪",
+        "strength": 18000,
+        "timestamp": "1935-01-23T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "土城",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [105.95, 28.10] },
+      "properties": {
+        "id": "red-1st-army-1935-01-24-08",
+        "type": "force",
+        "side": "red",
+        "name": "红一军团",
+        "level": "army",
+        "commander": "林彪",
+        "strength": 18000,
+        "timestamp": "1935-01-24T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "元厚",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [105.70, 28.30] },
+      "properties": {
+        "id": "red-1st-army-1935-01-24-20",
+        "type": "force",
+        "side": "red",
+        "name": "红一军团",
+        "level": "army",
+        "commander": "林彪",
+        "strength": 18000,
+        "timestamp": "1935-01-24T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "赤水河",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [105.50, 28.35] },
+      "properties": {
+        "id": "red-1st-army-1935-01-25-08",
+        "type": "force",
+        "side": "red",
+        "name": "红一军团",
+        "level": "army",
+        "commander": "林彪",
+        "strength": 18000,
+        "timestamp": "1935-01-25T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "古蔺",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [106.85, 27.70] },
+      "properties": {
+        "id": "red-3rd-army-1935-01-20-08",
         "type": "force",
         "side": "red",
         "name": "红三军团",
         "level": "army",
         "commander": "彭德怀",
-        "strength": 12000,
-        "timestamp": "1935-01-22T08:00:00+08:00",
+        "strength": 15000,
+        "timestamp": "1935-01-20T08:00:00+08:00",
         "status": "marching",
-        "next_destination": "土城",
-        "source": "《红军长征史》p.358"
+        "next_destination": "鸭溪",
+        "source": "《红军长征史》模拟演示数据"
       }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [107.08, 27.85]
-      },
+      "geometry": { "type": "Point", "coordinates": [106.70, 27.65] },
       "properties": {
-        "id": "red-5th-army",
+        "id": "red-3rd-army-1935-01-20-20",
+        "type": "force",
+        "side": "red",
+        "name": "红三军团",
+        "level": "army",
+        "commander": "彭德怀",
+        "strength": 15000,
+        "timestamp": "1935-01-20T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "枫香坝",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [106.55, 27.68] },
+      "properties": {
+        "id": "red-3rd-army-1935-01-21-08",
+        "type": "force",
+        "side": "red",
+        "name": "红三军团",
+        "level": "army",
+        "commander": "彭德怀",
+        "strength": 15000,
+        "timestamp": "1935-01-21T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "仁怀",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [106.40, 27.75] },
+      "properties": {
+        "id": "red-3rd-army-1935-01-21-20",
+        "type": "force",
+        "side": "red",
+        "name": "红三军团",
+        "level": "army",
+        "commander": "彭德怀",
+        "strength": 15000,
+        "timestamp": "1935-01-21T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "仁怀",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [106.40, 27.80] },
+      "properties": {
+        "id": "red-3rd-army-1935-01-22-08",
+        "type": "force",
+        "side": "red",
+        "name": "红三军团",
+        "level": "army",
+        "commander": "彭德怀",
+        "strength": 15000,
+        "timestamp": "1935-01-22T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "茅台",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [106.25, 27.85] },
+      "properties": {
+        "id": "red-3rd-army-1935-01-22-20",
+        "type": "force",
+        "side": "red",
+        "name": "红三军团",
+        "level": "army",
+        "commander": "彭德怀",
+        "strength": 15000,
+        "timestamp": "1935-01-22T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "习水",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [106.30, 28.15] },
+      "properties": {
+        "id": "red-3rd-army-1935-01-23-08",
+        "type": "force",
+        "side": "red",
+        "name": "红三军团",
+        "level": "army",
+        "commander": "彭德怀",
+        "strength": 15000,
+        "timestamp": "1935-01-23T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "习水",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [106.20, 28.30] },
+      "properties": {
+        "id": "red-3rd-army-1935-01-23-20",
+        "type": "force",
+        "side": "red",
+        "name": "红三军团",
+        "level": "army",
+        "commander": "彭德怀",
+        "strength": 15000,
+        "timestamp": "1935-01-23T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "土城",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [105.97, 28.05] },
+      "properties": {
+        "id": "red-3rd-army-1935-01-24-08",
+        "type": "force",
+        "side": "red",
+        "name": "红三军团",
+        "level": "army",
+        "commander": "彭德怀",
+        "strength": 15000,
+        "timestamp": "1935-01-24T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "土城南",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [105.97, 28.04] },
+      "properties": {
+        "id": "red-3rd-army-1935-01-24-20",
+        "type": "force",
+        "side": "red",
+        "name": "红三军团",
+        "level": "army",
+        "commander": "彭德怀",
+        "strength": 15000,
+        "timestamp": "1935-01-24T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "赤水河",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [105.92, 28.00] },
+      "properties": {
+        "id": "red-3rd-army-1935-01-25-08",
+        "type": "force",
+        "side": "red",
+        "name": "红三军团",
+        "level": "army",
+        "commander": "彭德怀",
+        "strength": 15000,
+        "timestamp": "1935-01-25T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "元厚",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [106.98, 27.72] },
+      "properties": {
+        "id": "red-5th-army-1935-01-20-08",
         "type": "force",
         "side": "red",
         "name": "红五军团",
         "level": "army",
         "commander": "董振堂",
-        "strength": 8000,
-        "timestamp": "1935-01-22T08:00:00+08:00",
+        "strength": 12000,
+        "timestamp": "1935-01-20T08:00:00+08:00",
         "status": "marching",
-        "next_destination": "土城",
-        "source": "《红军长征史》p.358"
+        "next_destination": "遵义",
+        "source": "《红军长征史》模拟演示数据"
       }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [107.02, 27.75]
-      },
+      "geometry": { "type": "Point", "coordinates": [106.92, 27.72] },
       "properties": {
-        "id": "red-9th-army",
+        "id": "red-5th-army-1935-01-20-20",
+        "type": "force",
+        "side": "red",
+        "name": "红五军团",
+        "level": "army",
+        "commander": "董振堂",
+        "strength": 12000,
+        "timestamp": "1935-01-20T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "绥阳",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [107.00, 27.85] },
+      "properties": {
+        "id": "red-5th-army-1935-01-21-08",
+        "type": "force",
+        "side": "red",
+        "name": "红五军团",
+        "level": "army",
+        "commander": "董振堂",
+        "strength": 12000,
+        "timestamp": "1935-01-21T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "桐梓",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [106.95, 28.10] },
+      "properties": {
+        "id": "red-5th-army-1935-01-21-20",
+        "type": "force",
+        "side": "red",
+        "name": "红五军团",
+        "level": "army",
+        "commander": "董振堂",
+        "strength": 12000,
+        "timestamp": "1935-01-21T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "桐梓",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [106.83, 28.13] },
+      "properties": {
+        "id": "red-5th-army-1935-01-22-08",
+        "type": "force",
+        "side": "red",
+        "name": "红五军团",
+        "level": "army",
+        "commander": "董振堂",
+        "strength": 12000,
+        "timestamp": "1935-01-22T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "夜郎",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [106.70, 28.20] },
+      "properties": {
+        "id": "red-5th-army-1935-01-22-20",
+        "type": "force",
+        "side": "red",
+        "name": "红五军团",
+        "level": "army",
+        "commander": "董振堂",
+        "strength": 12000,
+        "timestamp": "1935-01-22T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "温水",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [106.40, 28.25] },
+      "properties": {
+        "id": "red-5th-army-1935-01-23-08",
+        "type": "force",
+        "side": "red",
+        "name": "红五军团",
+        "level": "army",
+        "commander": "董振堂",
+        "strength": 12000,
+        "timestamp": "1935-01-23T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "习水",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [106.25, 28.30] },
+      "properties": {
+        "id": "red-5th-army-1935-01-23-20",
+        "type": "force",
+        "side": "red",
+        "name": "红五军团",
+        "level": "army",
+        "commander": "董振堂",
+        "strength": 12000,
+        "timestamp": "1935-01-23T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "土城",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [106.05, 28.08] },
+      "properties": {
+        "id": "red-5th-army-1935-01-24-08",
+        "type": "force",
+        "side": "red",
+        "name": "红五军团",
+        "level": "army",
+        "commander": "董振堂",
+        "strength": 12000,
+        "timestamp": "1935-01-24T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "青杠坡",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [105.98, 28.03] },
+      "properties": {
+        "id": "red-5th-army-1935-01-24-20",
+        "type": "force",
+        "side": "red",
+        "name": "红五军团",
+        "level": "army",
+        "commander": "董振堂",
+        "strength": 12000,
+        "timestamp": "1935-01-24T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "土城",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [105.95, 27.98] },
+      "properties": {
+        "id": "red-5th-army-1935-01-25-08",
+        "type": "force",
+        "side": "red",
+        "name": "红五军团",
+        "level": "army",
+        "commander": "董振堂",
+        "strength": 12000,
+        "timestamp": "1935-01-25T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "元厚",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [106.90, 27.68] },
+      "properties": {
+        "id": "red-9th-army-1935-01-20-08",
         "type": "force",
         "side": "red",
         "name": "红九军团",
         "level": "army",
         "commander": "罗炳辉",
-        "strength": 6000,
+        "strength": 8000,
+        "timestamp": "1935-01-20T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "遵义",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [106.92, 27.72] },
+      "properties": {
+        "id": "red-9th-army-1935-01-20-20",
+        "type": "force",
+        "side": "red",
+        "name": "红九军团",
+        "level": "army",
+        "commander": "罗炳辉",
+        "strength": 8000,
+        "timestamp": "1935-01-20T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "板桥",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [106.92, 27.72] },
+      "properties": {
+        "id": "red-9th-army-1935-01-21-08",
+        "type": "force",
+        "side": "red",
+        "name": "红九军团",
+        "level": "army",
+        "commander": "罗炳辉",
+        "strength": 8000,
+        "timestamp": "1935-01-21T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "板桥",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [106.98, 27.85] },
+      "properties": {
+        "id": "red-9th-army-1935-01-21-20",
+        "type": "force",
+        "side": "red",
+        "name": "红九军团",
+        "level": "army",
+        "commander": "罗炳辉",
+        "strength": 8000,
+        "timestamp": "1935-01-21T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "娄山关",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [106.86, 27.95] },
+      "properties": {
+        "id": "red-9th-army-1935-01-22-08",
+        "type": "force",
+        "side": "red",
+        "name": "红九军团",
+        "level": "army",
+        "commander": "罗炳辉",
+        "strength": 8000,
+        "timestamp": "1935-01-22T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "桐梓",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [106.84, 28.08] },
+      "properties": {
+        "id": "red-9th-army-1935-01-22-20",
+        "type": "force",
+        "side": "red",
+        "name": "红九军团",
+        "level": "army",
+        "commander": "罗炳辉",
+        "strength": 8000,
+        "timestamp": "1935-01-22T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "九坝",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [106.70, 28.12] },
+      "properties": {
+        "id": "red-9th-army-1935-01-23-08",
+        "type": "force",
+        "side": "red",
+        "name": "红九军团",
+        "level": "army",
+        "commander": "罗炳辉",
+        "strength": 8000,
+        "timestamp": "1935-01-23T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "习水",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [106.25, 28.22] },
+      "properties": {
+        "id": "red-9th-army-1935-01-23-20",
+        "type": "force",
+        "side": "red",
+        "name": "红九军团",
+        "level": "army",
+        "commander": "罗炳辉",
+        "strength": 8000,
+        "timestamp": "1935-01-23T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "土城",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [106.00, 28.02] },
+      "properties": {
+        "id": "red-9th-army-1935-01-24-08",
+        "type": "force",
+        "side": "red",
+        "name": "红九军团",
+        "level": "army",
+        "commander": "罗炳辉",
+        "strength": 8000,
+        "timestamp": "1935-01-24T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "元厚",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [105.72, 28.28] },
+      "properties": {
+        "id": "red-9th-army-1935-01-24-20",
+        "type": "force",
+        "side": "red",
+        "name": "红九军团",
+        "level": "army",
+        "commander": "罗炳辉",
+        "strength": 8000,
+        "timestamp": "1935-01-24T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "赤水河",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [105.65, 28.32] },
+      "properties": {
+        "id": "red-9th-army-1935-01-25-08",
+        "type": "force",
+        "side": "red",
+        "name": "红九军团",
+        "level": "army",
+        "commander": "罗炳辉",
+        "strength": 8000,
+        "timestamp": "1935-01-25T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "古蔺",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [105.82, 28.82] },
+      "properties": {
+        "id": "blue-chuan-army-1935-01-20-08",
+        "type": "force",
+        "side": "blue",
+        "name": "川军郭勋祺部",
+        "level": "army",
+        "commander": "郭勋祺",
+        "strength": 12000,
+        "timestamp": "1935-01-20T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "赤水",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [105.85, 28.75] },
+      "properties": {
+        "id": "blue-chuan-army-1935-01-20-20",
+        "type": "force",
+        "side": "blue",
+        "name": "川军郭勋祺部",
+        "level": "army",
+        "commander": "郭勋祺",
+        "strength": 12000,
+        "timestamp": "1935-01-20T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "赤水",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [105.90, 28.58] },
+      "properties": {
+        "id": "blue-chuan-army-1935-01-21-08",
+        "type": "force",
+        "side": "blue",
+        "name": "川军郭勋祺部",
+        "level": "army",
+        "commander": "郭勋祺",
+        "strength": 12000,
+        "timestamp": "1935-01-21T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "土城",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [105.72, 28.50] },
+      "properties": {
+        "id": "blue-chuan-army-1935-01-21-20",
+        "type": "force",
+        "side": "blue",
+        "name": "川军郭勋祺部",
+        "level": "army",
+        "commander": "郭勋祺",
+        "strength": 12000,
+        "timestamp": "1935-01-21T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "土城",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [105.80, 28.80] },
+      "properties": {
+        "id": "blue-chuan-army-1935-01-22-08",
+        "type": "force",
+        "side": "blue",
+        "name": "川军郭勋祺部",
+        "level": "army",
+        "commander": "郭勋祺",
+        "strength": 12000,
         "timestamp": "1935-01-22T08:00:00+08:00",
         "status": "marching",
         "next_destination": "土城",
-        "source": "《红军长征史》p.358"
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [105.97, 28.04] },
+      "properties": {
+        "id": "blue-chuan-army-1935-01-22-20",
+        "type": "force",
+        "side": "blue",
+        "name": "川军郭勋祺部",
+        "level": "army",
+        "commander": "郭勋祺",
+        "strength": 12000,
+        "timestamp": "1935-01-22T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "青杠坡",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [105.98, 28.03] },
+      "properties": {
+        "id": "blue-chuan-army-1935-01-23-08",
+        "type": "force",
+        "side": "blue",
+        "name": "川军郭勋祺部",
+        "level": "army",
+        "commander": "郭勋祺",
+        "strength": 12000,
+        "timestamp": "1935-01-23T08:00:00+08:00",
+        "status": "engaged",
+        "next_destination": "青杠坡",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [105.98, 28.03] },
+      "properties": {
+        "id": "blue-chuan-army-1935-01-23-20",
+        "type": "force",
+        "side": "blue",
+        "name": "川军郭勋祺部",
+        "level": "army",
+        "commander": "郭勋祺",
+        "strength": 12000,
+        "timestamp": "1935-01-23T20:00:00+08:00",
+        "status": "engaged",
+        "next_destination": "土城",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [105.97, 28.04] },
+      "properties": {
+        "id": "blue-chuan-army-1935-01-24-08",
+        "type": "force",
+        "side": "blue",
+        "name": "川军郭勋祺部",
+        "level": "army",
+        "commander": "郭勋祺",
+        "strength": 12000,
+        "timestamp": "1935-01-24T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "土城",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [105.97, 28.04] },
+      "properties": {
+        "id": "blue-chuan-army-1935-01-24-20",
+        "type": "force",
+        "side": "blue",
+        "name": "川军郭勋祺部",
+        "level": "army",
+        "commander": "郭勋祺",
+        "strength": 12000,
+        "timestamp": "1935-01-24T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "土城",
+        "source": "《红军长征史》模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [105.95, 28.02] },
+      "properties": {
+        "id": "blue-chuan-army-1935-01-25-08",
+        "type": "force",
+        "side": "blue",
+        "name": "川军郭勋祺部",
+        "level": "army",
+        "commander": "郭勋祺",
+        "strength": 12000,
+        "timestamp": "1935-01-25T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "元厚",
+        "source": "《红军长征史》模拟演示数据"
       }
     }
   ]

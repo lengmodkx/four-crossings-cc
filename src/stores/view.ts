@@ -14,7 +14,7 @@ import { defineStore } from 'pinia'
 export type ViewMode = 'narrative' | 'explore'
 
 /** 渲染模式 */
-export type RenderMode = '2d' | '3d' | 'split'
+export type RenderMode = '2d'
 
 /** 有效经纬度范围 (赤水河流域) */
 export const VALID_BOUNDS = {
@@ -64,10 +64,7 @@ export const useViewStore = defineStore('view', () => {
   const isExplore = computed(() => mode.value === 'explore')
 
   /** 2D 视图是否激活 */
-  const is2DActive = computed(() => render.value === '2d' || render.value === 'split')
-
-  /** 3D 视图是否激活 */
-  const is3DActive = computed(() => render.value === '3d' || render.value === 'split')
+  const is2DActive = computed(() => render.value === '2d')
 
   // ===== 方法 =====
 
@@ -131,7 +128,6 @@ export const useViewStore = defineStore('view', () => {
     isNarrative,
     isExplore,
     is2DActive,
-    is3DActive,
     // 方法
     setMode,
     setRender,

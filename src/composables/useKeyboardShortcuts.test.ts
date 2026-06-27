@@ -123,26 +123,6 @@ describe('useKeyboardShortcuts', () => {
     wrapper.unmount()
   })
 
-  it('1 键应切换到 2D 渲染', async () => {
-    const wrapper = mount(TestComponent)
-    await nextTick()
-
-    dispatchKey('1')
-
-    expect(mockSetRender).toHaveBeenCalledWith('2d')
-    wrapper.unmount()
-  })
-
-  it('2 键应切换到 3D 渲染', async () => {
-    const wrapper = mount(TestComponent)
-    await nextTick()
-
-    dispatchKey('2')
-
-    expect(mockSetRender).toHaveBeenCalledWith('3d')
-    wrapper.unmount()
-  })
-
   it('E 键应切换到 explore 模式并导航', async () => {
     const wrapper = mount(TestComponent)
     await nextTick()
