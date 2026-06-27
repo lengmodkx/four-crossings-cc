@@ -1725,6 +1725,696 @@
         "next_destination": "遵义",
         "source": "模拟演示数据"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.71,
+          26.58
+        ]
+      },
+      "properties": {
+        "id": "blue-center-xueyue-1935-01-20-08",
+        "type": "force",
+        "side": "blue",
+        "name": "中央军薛岳部",
+        "level": "army",
+        "commander": "薛岳",
+        "strength": 30000,
+        "timestamp": "1935-01-20T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "贵阳北",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.72,
+          26.65
+        ]
+      },
+      "properties": {
+        "id": "blue-center-xueyue-1935-01-20-20",
+        "type": "force",
+        "side": "blue",
+        "name": "中央军薛岳部",
+        "level": "army",
+        "commander": "薛岳",
+        "strength": 30000,
+        "timestamp": "1935-01-20T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "扎佐",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.73,
+          26.85
+        ]
+      },
+      "properties": {
+        "id": "blue-center-xueyue-1935-01-21-08",
+        "type": "force",
+        "side": "blue",
+        "name": "中央军薛岳部",
+        "level": "army",
+        "commander": "薛岳",
+        "strength": 30000,
+        "timestamp": "1935-01-21T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "息烽",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.75,
+          27.1
+        ]
+      },
+      "properties": {
+        "id": "blue-center-xueyue-1935-01-21-20",
+        "type": "force",
+        "side": "blue",
+        "name": "中央军薛岳部",
+        "level": "army",
+        "commander": "薛岳",
+        "strength": 30000,
+        "timestamp": "1935-01-21T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "乌江南岸",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.78,
+          27.2
+        ]
+      },
+      "properties": {
+        "id": "blue-center-xueyue-1935-01-22-08",
+        "type": "force",
+        "side": "blue",
+        "name": "中央军薛岳部",
+        "level": "army",
+        "commander": "薛岳",
+        "strength": 30000,
+        "timestamp": "1935-01-22T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "乌江渡口",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8,
+          27.28
+        ]
+      },
+      "properties": {
+        "id": "blue-center-xueyue-1935-01-22-20",
+        "type": "force",
+        "side": "blue",
+        "name": "中央军薛岳部",
+        "level": "army",
+        "commander": "薛岳",
+        "strength": 30000,
+        "timestamp": "1935-01-22T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "养龙司",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.82,
+          27.38
+        ]
+      },
+      "properties": {
+        "id": "blue-center-xueyue-1935-01-23-08",
+        "type": "force",
+        "side": "blue",
+        "name": "中央军薛岳部",
+        "level": "army",
+        "commander": "薛岳",
+        "strength": 30000,
+        "timestamp": "1935-01-23T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "刀靶水",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.85,
+          27.42
+        ]
+      },
+      "properties": {
+        "id": "blue-center-xueyue-1935-01-23-20",
+        "type": "force",
+        "side": "blue",
+        "name": "中央军薛岳部",
+        "level": "army",
+        "commander": "薛岳",
+        "strength": 30000,
+        "timestamp": "1935-01-23T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "懒板凳",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.87,
+          27.5
+        ]
+      },
+      "properties": {
+        "id": "blue-center-xueyue-1935-01-24-08",
+        "type": "force",
+        "side": "blue",
+        "name": "中央军薛岳部",
+        "level": "army",
+        "commander": "薛岳",
+        "strength": 30000,
+        "timestamp": "1935-01-24T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "遵义城南",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.9,
+          27.58
+        ]
+      },
+      "properties": {
+        "id": "blue-center-xueyue-1935-01-24-20",
+        "type": "force",
+        "side": "blue",
+        "name": "中央军薛岳部",
+        "level": "army",
+        "commander": "薛岳",
+        "strength": 30000,
+        "timestamp": "1935-01-24T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "遵义城",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.1,
+          26.22
+        ]
+      },
+      "properties": {
+        "id": "blue-yunnan-sundu-1935-01-20-08",
+        "type": "force",
+        "side": "blue",
+        "name": "滇军孙渡部",
+        "level": "army",
+        "commander": "孙渡",
+        "strength": 15000,
+        "timestamp": "1935-01-20T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "威宁",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.28,
+          26.87
+        ]
+      },
+      "properties": {
+        "id": "blue-yunnan-sundu-1935-01-20-20",
+        "type": "force",
+        "side": "blue",
+        "name": "滇军孙渡部",
+        "level": "army",
+        "commander": "孙渡",
+        "strength": 15000,
+        "timestamp": "1935-01-20T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "赫章",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.72,
+          27.13
+        ]
+      },
+      "properties": {
+        "id": "blue-yunnan-sundu-1935-01-21-08",
+        "type": "force",
+        "side": "blue",
+        "name": "滇军孙渡部",
+        "level": "army",
+        "commander": "孙渡",
+        "strength": 15000,
+        "timestamp": "1935-01-21T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "毕节",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.3,
+          27.3
+        ]
+      },
+      "properties": {
+        "id": "blue-yunnan-sundu-1935-01-21-20",
+        "type": "force",
+        "side": "blue",
+        "name": "滇军孙渡部",
+        "level": "army",
+        "commander": "孙渡",
+        "strength": 15000,
+        "timestamp": "1935-01-21T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "毕节东",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.4,
+          27.35
+        ]
+      },
+      "properties": {
+        "id": "blue-yunnan-sundu-1935-01-22-08",
+        "type": "force",
+        "side": "blue",
+        "name": "滇军孙渡部",
+        "level": "army",
+        "commander": "孙渡",
+        "strength": 15000,
+        "timestamp": "1935-01-22T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "赤水河镇",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.5,
+          27.42
+        ]
+      },
+      "properties": {
+        "id": "blue-yunnan-sundu-1935-01-22-20",
+        "type": "force",
+        "side": "blue",
+        "name": "滇军孙渡部",
+        "level": "army",
+        "commander": "孙渡",
+        "strength": 15000,
+        "timestamp": "1935-01-22T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "大河口",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.6,
+          27.5
+        ]
+      },
+      "properties": {
+        "id": "blue-yunnan-sundu-1935-01-23-08",
+        "type": "force",
+        "side": "blue",
+        "name": "滇军孙渡部",
+        "level": "army",
+        "commander": "孙渡",
+        "strength": 15000,
+        "timestamp": "1935-01-23T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "四川边界",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.68,
+          27.58
+        ]
+      },
+      "properties": {
+        "id": "blue-yunnan-sundu-1935-01-23-20",
+        "type": "force",
+        "side": "blue",
+        "name": "滇军孙渡部",
+        "level": "army",
+        "commander": "孙渡",
+        "strength": 15000,
+        "timestamp": "1935-01-23T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "古蔺方向",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.75,
+          27.65
+        ]
+      },
+      "properties": {
+        "id": "blue-yunnan-sundu-1935-01-24-08",
+        "type": "force",
+        "side": "blue",
+        "name": "滇军孙渡部",
+        "level": "army",
+        "commander": "孙渡",
+        "strength": 15000,
+        "timestamp": "1935-01-24T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "古蔺边境",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8,
+          27.7
+        ]
+      },
+      "properties": {
+        "id": "blue-yunnan-sundu-1935-01-24-20",
+        "type": "force",
+        "side": "blue",
+        "name": "滇军孙渡部",
+        "level": "army",
+        "commander": "孙渡",
+        "strength": 15000,
+        "timestamp": "1935-01-24T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "叙永方向",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.43,
+          28.87
+        ]
+      },
+      "properties": {
+        "id": "blue-sichuan-liuxiang-1935-01-20-08",
+        "type": "force",
+        "side": "blue",
+        "name": "川军刘湘主力",
+        "level": "army",
+        "commander": "刘湘",
+        "strength": 25000,
+        "timestamp": "1935-01-20T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "纳溪",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.38,
+          28.77
+        ]
+      },
+      "properties": {
+        "id": "blue-sichuan-liuxiang-1935-01-20-20",
+        "type": "force",
+        "side": "blue",
+        "name": "川军刘湘主力",
+        "level": "army",
+        "commander": "刘湘",
+        "strength": 25000,
+        "timestamp": "1935-01-20T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "叙永",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.43,
+          28.17
+        ]
+      },
+      "properties": {
+        "id": "blue-sichuan-liuxiang-1935-01-21-08",
+        "type": "force",
+        "side": "blue",
+        "name": "川军刘湘主力",
+        "level": "army",
+        "commander": "刘湘",
+        "strength": 25000,
+        "timestamp": "1935-01-21T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "古蔺",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.82,
+          28.05
+        ]
+      },
+      "properties": {
+        "id": "blue-sichuan-liuxiang-1935-01-21-20",
+        "type": "force",
+        "side": "blue",
+        "name": "川军刘湘主力",
+        "level": "army",
+        "commander": "刘湘",
+        "strength": 25000,
+        "timestamp": "1935-01-21T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "赤水县城",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7,
+          28.58
+        ]
+      },
+      "properties": {
+        "id": "blue-sichuan-liuxiang-1935-01-22-08",
+        "type": "force",
+        "side": "blue",
+        "name": "川军刘湘主力",
+        "level": "army",
+        "commander": "刘湘",
+        "strength": 25000,
+        "timestamp": "1935-01-22T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "复兴场",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.9,
+          28.5
+        ]
+      },
+      "properties": {
+        "id": "blue-sichuan-liuxiang-1935-01-22-20",
+        "type": "force",
+        "side": "blue",
+        "name": "川军刘湘主力",
+        "level": "army",
+        "commander": "刘湘",
+        "strength": 25000,
+        "timestamp": "1935-01-22T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "旺隆",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.94,
+          28.38
+        ]
+      },
+      "properties": {
+        "id": "blue-sichuan-liuxiang-1935-01-23-08",
+        "type": "force",
+        "side": "blue",
+        "name": "川军刘湘主力",
+        "level": "army",
+        "commander": "刘湘",
+        "strength": 25000,
+        "timestamp": "1935-01-23T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "土城北",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.96,
+          28.2
+        ]
+      },
+      "properties": {
+        "id": "blue-sichuan-liuxiang-1935-01-23-20",
+        "type": "force",
+        "side": "blue",
+        "name": "川军刘湘主力",
+        "level": "army",
+        "commander": "刘湘",
+        "strength": 25000,
+        "timestamp": "1935-01-23T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "青杠坡北",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.99,
+          28.08
+        ]
+      },
+      "properties": {
+        "id": "blue-sichuan-liuxiang-1935-01-24-08",
+        "type": "force",
+        "side": "blue",
+        "name": "川军刘湘主力",
+        "level": "army",
+        "commander": "刘湘",
+        "strength": 25000,
+        "timestamp": "1935-01-24T08:00:00+08:00",
+        "status": "marching",
+        "next_destination": "土城",
+        "source": "模拟演示数据"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.97,
+          28.04
+        ]
+      },
+      "properties": {
+        "id": "blue-sichuan-liuxiang-1935-01-24-20",
+        "type": "force",
+        "side": "blue",
+        "name": "川军刘湘主力",
+        "level": "army",
+        "commander": "刘湘",
+        "strength": 25000,
+        "timestamp": "1935-01-24T20:00:00+08:00",
+        "status": "resting",
+        "next_destination": "土城南",
+        "source": "模拟演示数据"
+      }
     }
   ]
 }
