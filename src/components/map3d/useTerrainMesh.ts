@@ -87,8 +87,8 @@ export async function loadTerrainMesh(
   options: TerrainOptions = {},
 ): Promise<THREE.Mesh> {
   const {
-    width = 1000,
-    height = 1000,
+    width = 2000,
+    height = 2000,
     widthSegments = 256,
     heightSegments = 256,
     heightExaggeration = 3,

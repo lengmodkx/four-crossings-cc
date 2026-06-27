@@ -31,8 +31,8 @@ const DEFAULT_BOUNDS = {
   maxLng: 107,
   minLat: 27,
   maxLat: 29,
-  worldMin: -4000,
-  worldMax: 4000,
+  worldMin: -1000,
+  worldMax: 1000,
 }
 
 /**
@@ -78,9 +78,9 @@ export function createForceArrow(
   options: ForceArrowOptions = {},
 ): { mesh: THREE.Mesh; glow: THREE.Mesh } {
   const {
-    height = 100,
-    radius = 30,
-    glowRadius = 50,
+    height = 300,
+    radius = 80,
+    glowRadius = 120,
     glowOpacity = 0.2,
   } = options
 
@@ -97,12 +97,6 @@ export function createForceArrow(
   arrow.position.set(worldX, height / 2, worldZ)
   arrow.castShadow = false
   arrow.receiveShadow = false
-
-  // 根据 side 旋转箭头指向
-  if (side === 'blue') {
-    // 蓝军箭头指向下方 (敌袭方向)
-    arrow.rotation.x = Math.PI
-  }
 
   scene.add(arrow)
 

@@ -250,21 +250,21 @@ describe('defaultLngLatToWorldXY', () => {
 
   it('should map west edge to negative x', () => {
     const [x, _] = defaultLngLatToWorldXY([104, 28])
-    expect(x).toBeLessThan(-3000)
+    expect(x).toBeLessThan(-900)
   })
 
   it('should map east edge to positive x', () => {
     const [x, _] = defaultLngLatToWorldXY([107, 28])
-    expect(x).toBeGreaterThan(3000)
+    expect(x).toBeGreaterThan(900)
   })
 
   it('should map north edge to positive z', () => {
     const [_, z] = defaultLngLatToWorldXY([105.5, 27])
-    expect(z).toBeGreaterThan(3000)
+    expect(z).toBeGreaterThan(900)
   })
 
   it('should map south edge to negative z', () => {
     const [_, z] = defaultLngLatToWorldXY([105.5, 29])
-    expect(z).toBeLessThan(-3000)
+    expect(z).toBeLessThan(-900)
   })
 })

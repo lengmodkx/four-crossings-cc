@@ -28,7 +28,7 @@ export function useThreeSetup(
   // ===== Scene =====
   const scene = new THREE.Scene()
   scene.background = new THREE.Color('#E8E0D0')
-  scene.fog = new THREE.Fog('#F2E8D0', 500, 5000)
+  scene.fog = new THREE.Fog('#F2E8D0', 1000, 6000)
 
   // ===== Camera =====
   const camera = new THREE.PerspectiveCamera(
@@ -38,7 +38,7 @@ export function useThreeSetup(
     20000, // Far
   )
   // 默认鸟瞰视角: 从上方俯视，略微倾斜
-  camera.position.set(0, 3000, 4000)
+  camera.position.set(0, 1500, 2500)
   camera.lookAt(0, 0, 0)
 
   // ===== Renderer =====

@@ -5,14 +5,18 @@
  * 布局: TopBar (上) + [MapView2D/MapView3D] 主区 (左) + SidePanel (右) + Timeline (下)
  * onMounted 时加载数据并设置叙事模式。
  * 当前事件与时间同步时，在 SidePanel 顶部显示旁白文字。
+ *
+ * Bug Fix: 捕获 mapReady 事件，渲染 ForceMarker / TrajectoryLine / EventPin
+ * 到 MapLibre 地图实例上。
  */
 import { onMounted, computed, watch, ref } from 'vue'
 import { useRoute } from 'vue-router'
+import { storeToRefs } from 'pinia'
 import { useViewStore } from '@/stores/view'
 import { useTimeStore } from '@/stores/time'
 import { useScenarioStore } from '@/stores/scenario'
 import { parseTime } from '@/stores/time'
-import type { EventRecord } from '@/data/types'
+import type { EventRecord, ForceFeature, ForcesCollection, TrajectoriesCollection } from '@/data/types'
 import TopBar from '@/components/layout/TopBar.vue'
 import MapView2D from '@/components/map2d/MapView2D.vue'
 import MapView3D from '@/components/map3d/MapView3D.vue'
@@ -21,13 +25,79 @@ import SidePanel from '@/components/layout/SidePanel.vue'
 import ChapterBookmark from '@/components/timeline/ChapterBookmark.vue'
 import LoadingCompass from '@/components/common/LoadingCompass.vue'
 import ErrorState from '@/components/common/ErrorState.vue'
+import ForceMarker from '@/components/map2d/ForceMarker.vue'
+import TrajectoryLine from '@/components/map2d/TrajectoryLine.vue'
+import EventPin from '@/components/map2d/EventPin.vue'
+import { useForceMarkers } from '@/components/map2d/useForceMarkers'
+import { useTrajectories } from '@/components/map2d/useTrajectories'
+import { useSelectionStore } from '@/stores/selection'
 
 const route = useRoute()
 const viewStore = useViewStore()
 const timeStore = useTimeStore()
 const scenarioStore = useScenarioStore()
+const selectionStore = useSelectionStore()
+
+// Pinia store refs (storeToRefs preserves Ref<> wrapper for composable type compatibility)
+const { currentTime, currentPhase } = storeToRefs(timeStore)
 
 const loadError = ref(false)
+
+// ===== 地图实例 (由 MapView2D @mapReady 填充) =====
+// 使用 any 绕过 maplibre-gl 私有成员类型检查 (_setupResizeObserver 等)
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const mapInstance = ref<any>(null)
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function handleMapReady(map: any): void {
+  mapInstance.value = map
+}
+
+// ===== 部队数据 (包装为 ForcesCollection 供 useForceMarkers 使用) =====
+const forcesCollection = computed<ForcesCollection | null>(() => {
+  if (!scenarioStore.forces.length) return null
+  return {
+    type: 'FeatureCollection',
+    features: scenarioStore.forces,
+  }
+})
+
+// ===== 轨迹数据 (包装为 TrajectoriesCollection 供 useTrajectories 使用) =====
+const trajectoriesCollection = computed<TrajectoriesCollection | null>(() => {
+  if (!scenarioStore.trajectories.length) return null
+  return {
+    type: 'FeatureCollection',
+    features: scenarioStore.trajectories,
+  }
+})
+
+// ===== 活跃部队标记 (按当前时间筛选) =====
+const { activeForces } = useForceMarkers(forcesCollection, currentTime)
+
+// ===== 可见轨迹 (按阶段 + 时间重叠筛选) =====
+const { visibleTrajectories } = useTrajectories(
+  trajectoriesCollection,
+  currentPhase,
+  currentTime,
+)
+
+// ===== 当前阶段事件 =====
+const currentPhaseEvents = computed<EventRecord[]>(() => {
+  const { start, end } = timeStore.phaseRange
+  return scenarioStore.events.filter(
+    (e) => e.timestamp >= start && e.timestamp <= end,
+  )
+})
+
+// ===== 点击处理 =====
+function handleForceClick(force: ForceFeature): void {
+  selectionStore.selectForce(force)
+}
+
+function handleEventClick(evt: EventRecord): void {
+  timeStore.setTime(evt.timestamp)
+  selectionStore.selectEvent(evt)
+}
 
 async function loadData(): Promise<void> {
   loadError.value = false
@@ -90,8 +160,34 @@ onMounted(async () => {
     <template v-else>
       <div class="narrative-main">
         <div class="map-area">
-          <MapView2D v-if="viewStore.render === '2d'" />
+          <MapView2D v-if="viewStore.render === '2d'" @map-ready="handleMapReady" />
           <MapView3D v-else-if="viewStore.render === '3d'" />
+
+          <!-- 地图叠加层: 部队标记 / 行军轨迹 / 事件标记 -->
+          <!-- 这些组件通过 maplibregl API 直接操作地图, 不渲染可见 DOM -->
+          <div v-if="mapInstance && viewStore.render === '2d'" style="display:none">
+            <ForceMarker
+              v-for="force in activeForces"
+              :key="force.properties.id"
+              :map="mapInstance"
+              :feature="force"
+              @click="handleForceClick(force)"
+            />
+            <TrajectoryLine
+              v-for="traj in visibleTrajectories"
+              :key="traj.properties.id"
+              :map="mapInstance"
+              :feature="traj"
+            />
+            <EventPin
+              v-for="evt in currentPhaseEvents"
+              :key="evt.id"
+              :map="mapInstance"
+              :event="evt"
+              @click="handleEventClick(evt)"
+            />
+          </div>
+
           <!-- 地图底部旁白叠加 -->
           <div v-if="currentEvent" class="narration-overlay">
             <h3 class="narration-title">{{ currentEvent.title }}</h3>
