@@ -2,15 +2,15 @@
 /**
  * TrajectoryLine — 行军轨迹线组件
  *
- * 使用 Mapbox GL GeoJSON source + line layer 在地图上渲染行军轨迹。
+ * 使用 MapLibre GL GeoJSON source + line layer 在地图上渲染行军轨迹。
  * 颜色从 trajectory.properties.color 读取，线宽 2.5。
  */
 import { onMounted, onBeforeUnmount, watch } from 'vue'
-import type { Map, GeoJSONSource } from 'mapbox-gl'
+import type { Map, GeoJSONSource } from 'maplibre-gl'
 import type { TrajectoryFeature } from '@/data/types'
 
 const props = defineProps<{
-  /** Mapbox GL Map 实例 */
+  /** MapLibre GL Map 实例 */
   map: Map
   /** 要渲染的轨迹 feature */
   feature: TrajectoryFeature
@@ -21,9 +21,11 @@ const sourceId = `trajectory-source-${props.feature.properties.id}`
 const layerId = `trajectory-layer-${props.feature.properties.id}`
 
 /**
- * 将 TrajectoryFeature 转换为 Mapbox GeoJSON source data
+ * 将 TrajectoryFeature 转换为 GeoJSON Feature 对象
+ * maplibre-gl 的 GeoJSONSource API 接受 any，此处绕过严格的 GeoJSON 泛型校验
  */
-function toGeoJSONSource(): GeoJSON.Feature {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function toGeoJSONSourceData(): any {
   return {
     type: 'Feature',
     properties: props.feature.properties,
@@ -37,14 +39,14 @@ function addSourceAndLayer(): void {
   // 检查 source 是否已存在 (热更新场景)
   if (map.getSource(sourceId)) {
     const source = map.getSource(sourceId) as GeoJSONSource
-    source.setData(toGeoJSONSource() as GeoJSON.GeoJSON)
+    source.setData(toGeoJSONSourceData())
     return
   }
 
   // 添加 GeoJSON source
   map.addSource(sourceId, {
     type: 'geojson',
-    data: toGeoJSONSource() as GeoJSON.GeoJSON,
+    data: toGeoJSONSourceData(),
   })
 
   // 添加 line layer
@@ -100,7 +102,7 @@ watch(
 
     const source = map.getSource(sourceId) as GeoJSONSource | undefined
     if (source) {
-      source.setData(toGeoJSONSource() as GeoJSON.GeoJSON)
+      source.setData(toGeoJSONSourceData())
     }
   },
   { deep: true },
@@ -112,5 +114,5 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <!-- 此组件不渲染 DOM，通过 Mapbox GL API 直接操作地图图层 -->
+  <!-- 此组件不渲染 DOM，通过 MapLibre GL API 直接操作地图图层 -->
 </template>

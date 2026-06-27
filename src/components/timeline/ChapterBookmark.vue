@@ -5,7 +5,7 @@
  * 全屏覆盖，显示当前阶段名称、日期范围与引言。
  * 淡入后 2.5 秒自动淡出，不可交互。
  */
-import { computed, ref, watch, onBeforeUnmount } from 'vue'
+import { computed } from 'vue'
 import { useTimeStore, PHASES } from '@/stores/time'
 
 const timeStore = useTimeStore()

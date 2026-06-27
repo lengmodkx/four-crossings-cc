@@ -59,7 +59,7 @@ const persons = computed<Person[]>(() => {
 })
 
 // ===== 阵营筛选 =====
-function handleSideToggle(side: ForceSide | null): void {
+function handleSideToggle(_side: ForceSide | null): void {
   // 筛选逻辑由父组件处理; 可用于未来扩展
 }
 

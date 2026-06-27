@@ -2,19 +2,19 @@
 /**
  * ForceMarker — 部队标记组件
  *
- * 在 Mapbox 地图上显示单个部队标记 (HTML marker)。
+ * 在 MapLibre 地图上显示单个部队标记 (HTML marker)。
  * 根据部队隶属 (红/蓝) 显示不同边框颜色。
  *
- * 注意: 必须在 Mapbox Map 初始化之后使用，
- * 组件通过 mapboxgl.Marker API 添加标记到地图。
+ * 注意: 必须在 MapLibre Map 初始化之后使用，
+ * 组件通过 maplibregl.Marker API 添加标记到地图。
  */
 import { onMounted, onBeforeUnmount, ref } from 'vue'
-import mapboxgl from 'mapbox-gl'
+import maplibregl from 'maplibre-gl'
 import type { ForceFeature } from '@/data/types'
 
 const props = defineProps<{
-  /** Mapbox GL Map 实例 */
-  map: mapboxgl.Map
+  /** MapLibre GL Map 实例 */
+  map: maplibregl.Map
   /** 部队点位 Feature */
   feature: ForceFeature
 }>()
@@ -23,7 +23,7 @@ const emit = defineEmits<{
   click: [feature: ForceFeature]
 }>()
 
-const markerRef = ref<mapboxgl.Marker | null>(null)
+const markerRef = ref<maplibregl.Marker | null>(null)
 
 /** 构造部队标签的 HTML 元素 */
 function createMarkerElement(): HTMLElement {
@@ -40,7 +40,7 @@ onMounted(() => {
   const el = createMarkerElement()
   const coords = props.feature.geometry.coordinates as [number, number]
 
-  const marker = new mapboxgl.Marker({
+  const marker = new maplibregl.Marker({
     element: el,
     anchor: 'center',
   })
@@ -66,7 +66,7 @@ onBeforeUnmount(() => {
 <template>
   <!--
     此组件不渲染任何 DOM 内容。
-    标记通过 mapboxgl.Marker API 直接添加到地图。
+    标记通过 maplibregl.Marker API 直接添加到地图。
   -->
 </template>
 

@@ -2,13 +2,13 @@
  * useViewSync — 2D/3D 视角同步 composable
  *
  * 监听 ViewStore 中的 mapCenter 和 mapZoom 变化，
- * 同步更新 Mapbox GL 2D 地图和 Three.js 3D 相机的视角。
+ * 同步更新 MapLibre GL 2D 地图和 Three.js 3D 相机的视角。
  * 支持双向同步: 用户拖动地图 → store 更新 → 另一视图响应。
  *
  * 设计参考: §5.4 鸟瞰沙盘模式 - 2D/3D 视角同步
  */
 import { watch, type Ref } from 'vue'
-import type { Map } from 'mapbox-gl'
+import type { Map } from 'maplibre-gl'
 import type { Camera } from 'three'
 import { useViewStore } from '@/stores/view'
 
@@ -45,9 +45,9 @@ function lngLatZoomToCameraPos(
 }
 
 /**
- * 启动 2D Mapbox 地图和 3D Three.js 相机的视角同步
+ * 启动 2D MapLibre 地图和 3D Three.js 相机的视角同步
  *
- * @param map2dRef - Mapbox GL Map 实例的 Ref (可选, 可能延迟加载)
+ * @param map2dRef - MapLibre GL Map 实例的 Ref (可选, 可能延迟加载)
  * @param camera3dRef - Three.js Camera 实例的 Ref (可选, 可能延迟加载)
  */
 export function useViewSync(

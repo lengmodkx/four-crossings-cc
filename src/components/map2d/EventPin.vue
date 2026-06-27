@@ -2,22 +2,22 @@
 /**
  * EventPin — 事件标记组件
  *
- * 在 Mapbox 地图上显示事件标记 (圆形 marker)。
+ * 在 MapLibre 地图上显示事件标记 (圆形 marker)。
  * 根据事件类型显示不同图标:
  * - battle   → ⚔ 战斗
  * - meeting  → ★ 会议
  * - crossing → ◆ 渡河
  * - maneuver → ◇ 机动
  *
- * 组件通过 mapboxgl.Marker API 添加标记到地图。
+ * 组件通过 maplibregl.Marker API 添加标记到地图。
  */
 import { onMounted, onBeforeUnmount, ref, computed } from 'vue'
-import mapboxgl from 'mapbox-gl'
+import maplibregl from 'maplibre-gl'
 import type { EventRecord } from '@/data/types'
 
 const props = defineProps<{
-  /** Mapbox GL Map 实例 */
-  map: mapboxgl.Map
+  /** MapLibre GL Map 实例 */
+  map: maplibregl.Map
   /** 事件记录 */
   event: EventRecord
 }>()
@@ -26,7 +26,7 @@ const emit = defineEmits<{
   click: [event: EventRecord]
 }>()
 
-const markerRef = ref<mapboxgl.Marker | null>(null)
+const markerRef = ref<maplibregl.Marker | null>(null)
 
 /** 事件类型 → 图标映射 */
 const typeIcon = computed<string>(() => {
@@ -63,7 +63,7 @@ onMounted(() => {
   const el = createPinElement()
   const coords = props.event.location as [number, number]
 
-  const marker = new mapboxgl.Marker({
+  const marker = new maplibregl.Marker({
     element: el,
     anchor: 'center',
   })
@@ -89,7 +89,7 @@ onBeforeUnmount(() => {
 <template>
   <!--
     此组件不渲染任何 DOM 内容。
-    标记通过 mapboxgl.Marker API 直接添加到地图。
+    标记通过 maplibregl.Marker API 直接添加到地图。
   -->
 </template>
 

@@ -1,6 +1,6 @@
 # 四渡赤水·全景沙盘 (Four Crossings of the Red Army)
 
-四渡赤水战役可视化平台 -- 为军史爱好者构建的可推演、可考据、可沉浸的战役沙盘。本项目以 1935 年中央红军四渡赤水战役为核心，通过 2D Mapbox 地图与 3D Three.js 地形沙盘的双视图联动，提供叙事模式（时间轴驱动的事件回顾）与探索模式（自由浏览兵力部署、会议决策与人物关系），辅以键盘快捷键控制播放与视角切换，使这场经典战役在数字空间中可感、可读、可交互。
+四渡赤水战役可视化平台 -- 为军史爱好者构建的可推演、可考据、可沉浸的战役沙盘。本项目以 1935 年中央红军四渡赤水战役为核心，通过 2D MapLibre 地图与 3D Three.js 地形沙盘的双视图联动，提供叙事模式（时间轴驱动的事件回顾）与探索模式（自由浏览兵力部署、会议决策与人物关系），辅以键盘快捷键控制播放与视角切换，使这场经典战役在数字空间中可感、可读、可交互。
 
 ## 快速开始
 
@@ -8,10 +8,7 @@
 # 1. 安装依赖
 npm install
 
-# 2. 配置 Mapbox token
-cp .env.example .env
-# 编辑 .env，填入你的 Mapbox 公开访问令牌
-# 从 https://account.mapbox.com/access-tokens/ 获取
+# 2. MapLibre GL 无需 token，使用免费 OpenStreetMap 瓦片
 
 # 3. 安装字体（详见下方"字体说明"）
 # 将字体文件放入 public/fonts/
@@ -34,9 +31,9 @@ npm run dev
 
 > 字体文件较大（合计约 150MB+），未纳入版本管理。部署前请确保字体文件已就位。
 
-### Mapbox Token
+### MapLibre GL + OpenStreetMap 瓦片
 
-本项目使用 Mapbox GL JS 渲染 2D 地图。需要免费注册 [Mapbox](https://account.mapbox.com/) 并创建公开访问令牌 (public token)。将令牌填入 `.env` 文件的 `VITE_MAPBOX_TOKEN` 字段。
+本项目已迁移至 [MapLibre GL JS](https://maplibre.org/)（Mapbox GL JS 的免费开源替代品），使用 [OpenStreetMap](https://www.openstreetmap.org/) 免费光栅瓦片。无需注册、无需 token，真正做到零成本部署。
 
 ## 技术栈
 
@@ -49,7 +46,7 @@ npm run dev
 | **样式** | SCSS (Sass) + CSS Custom Properties |
 | **动画** | GSAP 3 |
 | **数据验证** | Zod 4 |
-| **2D 地图** | Mapbox GL JS 3 |
+| **2D 地图** | MapLibre GL JS 5 |
 | **3D 沙盘** | Three.js + GeoTIFF (DEM 地形) |
 | **单元测试** | Vitest 4 + jsdom |
 | **E2E 测试** | Playwright |
@@ -67,7 +64,7 @@ four_crossings_cc/
 ├── src/
 │   ├── assets/            # 静态资源 (图标、纹理等)
 │   ├── components/        # 可复用 Vue 组件
-│   │   ├── map/           # 2D Mapbox 相关组件
+│   │   ├── map/           # 2D MapLibre 相关组件
 │   │   ├── map3d/         # 3D Three.js 相关组件
 │   │   ├── narrative/     # 叙事模式组件
 │   │   ├── explore/       # 探索模式组件
@@ -116,8 +113,7 @@ four_crossings_cc/
 
 1. 将项目推送到 GitHub/GitLab
 2. 在 [Vercel](https://vercel.com/) 中导入项目
-3. 在 Vercel 项目设置中添加环境变量 `VITE_MAPBOX_TOKEN`
-4. 部署完成后，将字体文件通过 Vercel CLI 或手动上传至 `public/fonts/`
+3. 部署完成后，将字体文件通过 Vercel CLI 或手动上传至 `public/fonts/`
 
 构建输出目录为 `dist/`，框架类型为 Vite，已配置 SPA 路由回退。
 
@@ -144,7 +140,7 @@ npm run build
 ## 致谢
 
 - **史料来源**：《中国工农红军第一方面军长征史》《四渡赤水战役亲历记》等军史文献
-- **地图底图**：Mapbox GL JS
+- **地图底图**：MapLibre GL JS + OpenStreetMap
 - **地形数据**：NASA SRTM / JAXA ALOS
 - **中文字体**：霞鹜文楷 (LXGW WenKai)、思源宋体 (Source Han Serif)
 - **军史研究**：中国人民解放军军事科学院
