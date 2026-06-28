@@ -1,9 +1,29 @@
-// 四渡赤水全景沙盘 — 全局样式
+// Global styles - sidu-red-river
 @use 'variables' as *;
 @use 'typography' as *;
 @use 'fonts' as *;
+@use 'mobile' as *;
 
-// === 全局重置 ===
+:root {
+  --color-bg-paper: #{$color-bg-paper};
+  --color-bg-dark: #{$color-bg-dark};
+  --color-text-main: #{$color-text-main};
+  --color-text-muted: #{$color-text-muted};
+  --color-accent-red: #{$color-accent-red};
+  --color-accent-blue: #{$color-accent-blue};
+  --color-highlight: #{$color-highlight};
+  --color-contour: #{$color-contour};
+  --font-title: #{$font-title};
+  --font-body: #{$font-body};
+  --font-mono: #{$font-mono};
+  --font-english: #{$font-english};
+
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+}
+
 *,
 *::before,
 *::after {
@@ -13,35 +33,58 @@
 }
 
 html {
-  font-size: $font-size-base;
+  font-size: #{$font-size-base};
+  -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: none;
 }
 
 body {
-  font-family: $font-body;
-  color: $color-text-main;
-  background-color: $color-bg-paper;
-  line-height: $line-height-normal;
+  font-family: #{$font-body};
+  color: #{$color-text-main};
+  background-color: #{$color-bg-paper};
+  line-height: #{$line-height-normal};
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  overflow-x: hidden;
+  touch-action: manipulation;
 }
 
-// === 排版 ===
+input, textarea, [contenteditable], .allow-select {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: $font-title;
-  color: $color-bg-dark;
-  line-height: $line-height-tight;
+  font-family: #{$font-title};
+  color: #{$color-bg-dark};
+  line-height: #{$line-height-tight};
 }
 
 code, pre {
-  font-family: $font-mono;
+  font-family: #{$font-mono};
 }
 
 a {
-  color: $color-accent-red;
+  color: #{$color-accent-red};
   text-decoration: none;
 
   &:hover {
-    color: $color-highlight;
+    color: #{$color-highlight};
     text-decoration: underline;
+  }
+}
+
+@media (max-width: #{$breakpoint-md}) {
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
   }
 }

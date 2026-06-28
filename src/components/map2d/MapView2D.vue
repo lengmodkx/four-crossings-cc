@@ -2,8 +2,8 @@
 /**
  * MapView2D — 古旧军图风格 2D 地图组件
  *
- * 使用 MapLibre GL JS 渲染自定义古旧军图样式的地图。
- * 以贵州遵义地区为中心，展示四渡赤水战役全貌。
+ * 使用 MapLibre GL JS 渲染自定义古军图样式的地图。
+ * 以赤水河流域为中心,展示四渡赤水战役全景。
  */
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 import maplibregl from 'maplibre-gl'
@@ -33,9 +33,13 @@ onMounted(() => {
       center: [105.5, 27.8],
       zoom: 6,
       attributionControl: false,
+      // 移动端:禁用双指旋转,允许单指平移 + 双指缩放
+      dragRotate: false,
+      pitchWithRotate: false,
+      touchPitch: false,
     })
 
-    map.addControl(new maplibregl.NavigationControl(), 'top-right')
+    map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right')
     map.addControl(new maplibregl.ScaleControl(), 'bottom-left')
 
     map.on('load', () => {
@@ -46,7 +50,7 @@ onMounted(() => {
     map.on('error', (e) => {
       if (!map.isStyleLoaded()) {
         const msg = (e.error as any)?.message || (e.error as any)?.statusText || e.error?.toString() || '未知错误'
-        errorMsg.value = `地图样式加载失败：${msg}。请检查网络连接。`
+        errorMsg.value = `地图样式加载失败:${msg}。请检查网络连接。`
         isLoading.value = false
         emit('mapError', errorMsg.value)
       }
@@ -54,7 +58,7 @@ onMounted(() => {
 
     mapInstance.value = map
   } catch (e: any) {
-    errorMsg.value = `地图初始化失败：${e.message || e}`
+    errorMsg.value = `地图初始化失败:${e.message || e}`
     isLoading.value = false
     emit('mapError', errorMsg.value)
   }
@@ -80,7 +84,7 @@ onBeforeUnmount(() => {
     <div v-else-if="errorMsg" class="map-status map-error">
       <p>⚠ {{ errorMsg }}</p>
       <p class="error-hint">
-        MapLibre GL + OpenStreetMap 瓦片：完全免费、无需注册。
+        MapLibre GL + OpenStreetMap 瓦片:完全免费、无需注册。
       </p>
     </div>
 
@@ -99,7 +103,13 @@ onBeforeUnmount(() => {
 .map-container {
   width: 100%;
   height: 100%;
-  min-height: 400px;
+  min-height: 300px;
+  /* 移动端:允许地图自身处理单指平移/双指缩放,不要让浏览器抢走触摸事件 */
+  touch-action: pan-x pan-y pinch-zoom;
+}
+
+@media (max-width: 768px) {
+  .map-container { min-height: 240px; }
 }
 
 .map-container.hidden {

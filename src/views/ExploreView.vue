@@ -1,13 +1,11 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 /**
- * ExploreView — 探索模式核心视图
+ * ExploreView 鈥?鎺㈢储妯″紡鏍稿績瑙嗗浘
  *
- * 布局: TopBar (上) + FilterPanel (左) + MapView2D 主区 (右) + Timeline (下)
- * onMounted 时加载数据并设置探索模式。
- *
- * Bug Fix: 捕获 mapReady 事件，渲染 ForceMarker / TrajectoryLine / EventPin
- * 到 MapLibre 地图实例上。集成 FilterPanel 筛选状态。
- */
+ * 甯冨眬: TopBar (涓? + FilterPanel (宸? + MapView2D 涓诲尯 (鍙? + Timeline (涓?
+ * onMounted 鏃跺姞杞芥暟鎹苟璁剧疆鎺㈢储妯″紡銆? *
+ * Bug Fix: 鎹曡幏 mapReady 浜嬩欢锛屾覆鏌?ForceMarker / TrajectoryLine / EventPin
+ * 鍒?MapLibre 鍦板浘瀹炰緥涓娿€傞泦鎴?FilterPanel 绛涢€夌姸鎬併€? */
 import { onMounted, computed, ref } from 'vue'
 import { useRoute } from 'vue-router'
 import { storeToRefs } from 'pinia'
@@ -28,21 +26,22 @@ import EventPin from '@/components/map2d/EventPin.vue'
 import { useForceMarkers } from '@/components/map2d/useForceMarkers'
 import { useTrajectories } from '@/components/map2d/useTrajectories'
 import { useSelectionStore } from '@/stores/selection'
+import { useUiStore } from '@/stores/ui'
 
 const route = useRoute()
 const viewStore = useViewStore()
 const timeStore = useTimeStore()
 const scenarioStore = useScenarioStore()
 const selectionStore = useSelectionStore()
+const uiStore = useUiStore()
 
 // Pinia store refs (storeToRefs preserves Ref<> wrapper for composable type compatibility)
 const { currentTime, currentPhase } = storeToRefs(timeStore)
 
 const loadError = ref(false)
 
-// ===== 地图实例 (由 MapView2D @mapReady 填充) =====
-// 使用 any 绕过 maplibre-gl 私有成员类型检查
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
+// ===== 鍦板浘瀹炰緥 (鐢?MapView2D @mapReady 濉厖) =====
+// 浣跨敤 any 缁曡繃 maplibre-gl 绉佹湁鎴愬憳绫诲瀷妫€鏌?// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const mapInstance = ref<any>(null)
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -50,12 +49,12 @@ function handleMapReady(map: any): void {
   mapInstance.value = map
 }
 
-// ===== 筛选状态 =====
+// ===== 绛涢€夌姸鎬?=====
 const showRed = ref<boolean>(true)
 const showBlue = ref<boolean>(true)
 const selectedEventTypes = ref<Set<EventType>>(new Set(EVENT_TYPES))
 
-// ===== 部队数据 (包装为 ForcesCollection 供 useForceMarkers 使用) =====
+// ===== 閮ㄩ槦鏁版嵁 (鍖呰涓?ForcesCollection 渚?useForceMarkers 浣跨敤) =====
 const forcesCollection = computed<ForcesCollection | null>(() => {
   if (!scenarioStore.forces.length) return null
   return {
@@ -64,7 +63,7 @@ const forcesCollection = computed<ForcesCollection | null>(() => {
   }
 })
 
-// ===== 轨迹数据 (包装为 TrajectoriesCollection 供 useTrajectories 使用) =====
+// ===== 杞ㄨ抗鏁版嵁 (鍖呰涓?TrajectoriesCollection 渚?useTrajectories 浣跨敤) =====
 const trajectoriesCollection = computed<TrajectoriesCollection | null>(() => {
   if (!scenarioStore.trajectories.length) return null
   return {
@@ -73,17 +72,17 @@ const trajectoriesCollection = computed<TrajectoriesCollection | null>(() => {
   }
 })
 
-// ===== 活跃部队标记 (按当前时间筛选) =====
+// ===== 娲昏穬閮ㄩ槦鏍囪 (鎸夊綋鍓嶆椂闂寸瓫閫? =====
 const { activeForces } = useForceMarkers(forcesCollection, currentTime)
 
-// ===== 可见轨迹 (按阶段 + 时间重叠筛选) =====
+// ===== 鍙杞ㄨ抗 (鎸夐樁娈?+ 鏃堕棿閲嶅彔绛涢€? =====
 const { visibleTrajectories } = useTrajectories(
   trajectoriesCollection,
   currentPhase,
   currentTime,
 )
 
-// ===== 筛选后的部队 (阵营筛选) =====
+// ===== 绛涢€夊悗鐨勯儴闃?(闃佃惀绛涢€? =====
 const filteredForces = computed<ForceFeature[]>(() => {
   return activeForces.value.filter((f) => {
     const side = f.properties.side
@@ -93,7 +92,7 @@ const filteredForces = computed<ForceFeature[]>(() => {
   })
 })
 
-// ===== 筛选后的事件 (类型 + 阶段) =====
+// ===== 绛涢€夊悗鐨勪簨浠?(绫诲瀷 + 闃舵) =====
 const filteredEvents = computed<EventRecord[]>(() => {
   const { start, end } = timeStore.phaseRange
   return scenarioStore.events.filter((e) => {
@@ -103,7 +102,7 @@ const filteredEvents = computed<EventRecord[]>(() => {
   })
 })
 
-// ===== 点击处理 =====
+// ===== 鐐瑰嚮澶勭悊 =====
 function handleForceClick(force: ForceFeature): void {
   selectionStore.selectForce(force)
 }
@@ -138,12 +137,12 @@ onMounted(async () => {
 <template>
   <div class="explore-view">
     <TopBar />
-    <!-- 加载/错误状态 -->
+    <!-- 鍔犺浇/閿欒鐘舵€?-->
     <div v-if="!scenarioStore.loaded && !loadError" class="load-state">
       <LoadingCompass />
     </div>
     <div v-else-if="loadError" class="load-state">
-      <ErrorState message="史料加载失败" @retry="loadData()" />
+      <ErrorState message="鍙叉枡鍔犺浇澶辫触" @retry="loadData()" />
     </div>
     <template v-else>
       <div class="explore-main">
@@ -151,7 +150,7 @@ onMounted(async () => {
         <div class="map-area">
           <MapView2D @map-ready="handleMapReady" />
 
-          <!-- 地图叠加层: 部队标记 / 行军轨迹 / 事件标记 -->
+          <!-- 鍦板浘鍙犲姞灞? 閮ㄩ槦鏍囪 / 琛屽啗杞ㄨ抗 / 浜嬩欢鏍囪 -->
           <div v-if="mapInstance" style="display:none">
             <ForceMarker
               v-for="force in filteredForces"
@@ -174,6 +173,19 @@ onMounted(async () => {
               @click="handleEventClick(evt)"
             />
           </div>
+
+          <!-- 移动端 FAB: 唤起筛选抽屉 -->
+          <button
+            class="fab explore-fab only-mobile"
+            :class="{ 'is-active': uiStore.filterOpen }"
+            @click="uiStore.toggleFilter()"
+            aria-label="切换目录"
+            title="切换目录"
+          >
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 6h18M6 12h12M10 18h4"/>
+            </svg>
+          </button>
         </div>
       </div>
       <Timeline />
@@ -189,35 +201,39 @@ onMounted(async () => {
   overflow: hidden;
   background: var(--color-bg-paper, #F2E8D0);
 }
-
 .explore-main {
   display: flex;
   flex: 1;
   min-height: 0;
   overflow: hidden;
 }
-
 .map-area {
   flex: 1;
   min-width: 0;
   position: relative;
 }
-
 .load-state {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.explore-fab {
+  top: calc(64px + env(safe-area-inset-top, 0px));
+  right: 16px;
+}
 
 /* ===== 响应式 ===== */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .explore-view .explore-main {
     flex-direction: column;
   }
-}
-
-@media (min-width: 769px) and (max-width: 1280px) {
-  /* 中等屏幕保留侧栏 */
+  /* 桌面端 inline 面板在中等屏也隐藏,统一走 FAB */
+  .explore-main > .filter-panel { display: none !important; }
 }
 </style>
+
+
+
+
+
