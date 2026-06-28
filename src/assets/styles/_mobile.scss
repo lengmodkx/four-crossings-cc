@@ -1,0 +1,141 @@
+﻿// 移动端响应式补充 - sidu-red-river
+@use 'variables' as *;
+
+// ===== Touch 反馈 =====
+button, [role='button'] {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+// ===== 安全区工具类 =====
+.safe-top    { padding-top: env(safe-area-inset-top, 0px); }
+.safe-bottom { padding-bottom: env(safe-area-inset-bottom, 0px); }
+.safe-left   { padding-left: env(safe-area-inset-left, 0px); }
+.safe-right  { padding-right: env(safe-area-inset-right, 0px); }
+
+// ===== FAB 浮动操作按钮 =====
+.fab {
+  position: fixed;
+  z-index: 50;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: var(--color-accent-red, #C0392B);
+  color: #fff;
+  font-size: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: transform 0.15s, background-color 0.15s;
+  -webkit-tap-highlight-color: transparent;
+}
+.fab:active { transform: scale(0.94); }
+.fab.is-active { background: var(--color-bg-dark, #3D2F1F); }
+
+// ===== Drawer 通用 =====
+.drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 40;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+.drawer-backdrop.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.drawer {
+  position: fixed;
+  z-index: 45;
+  background: var(--color-bg-paper, #F2E8D0);
+  box-shadow: 0 -2px 16px rgba(0, 0, 0, 0.18);
+  transition: transform 0.25s ease, opacity 0.25s;
+  will-change: transform;
+}
+.drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--color-bg-dark, #3D2F1F);
+  flex-shrink: 0;
+  min-height: 44px;
+}
+.drawer-title {
+  font-family: var(--font-title, serif);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-text-main, #1A1410);
+}
+.drawer-close {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  color: var(--color-text-muted, #6B5D4A);
+  font-size: 22px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.drawer-close:active { background: rgba(0, 0, 0, 0.08); }
+
+// 底部抽屉 - 手机
+.drawer-bottom {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 70vh;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  transform: translateY(100%);
+  display: flex;
+  flex-direction: column;
+}
+.drawer-bottom.is-open { transform: translateY(0); }
+.drawer-bottom .drawer-body {
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+// 左侧抽屉 - 平板(>= 768px)
+.drawer-side {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: min(320px, 80vw);
+  transform: translateX(-100%);
+  display: flex;
+  flex-direction: column;
+}
+.drawer-side.is-open { transform: translateX(0); }
+.drawer-side .drawer-body {
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+// ===== 显示控制 =====
+.only-mobile  { display: none !important; }
+.only-desktop { display: revert !important; }
+
+@media (max-width: #{$breakpoint-md}) {
+  .only-mobile  { display: revert !important; }
+  .only-desktop { display: none !important; }
+}
+
+// ===== 减少动效 =====
+@media (prefers-reduced-motion: reduce) {
+  .drawer, .drawer-backdrop, .fab { transition: none; }
+}

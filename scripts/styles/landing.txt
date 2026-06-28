@@ -1,34 +1,3 @@
-<script setup lang="ts">
-/**
- * LandingView — 首屏扉页
- *
- * 古旧军图风格首屏，展示战役标题与副标题，
- * 点击 [进入战役] 跳转至阶段选择页。
- */
-import { useRouter } from 'vue-router'
-
-const router = useRouter()
-
-function enterCampaign(): void {
-  router.push('/phase-select')
-}
-</script>
-
-<template>
-  <div class="landing">
-    <div class="landing-overlay"></div>
-    <div class="landing-content">
-      <h1 class="landing-title">四渡赤水·全景沙盘</h1>
-      <p class="landing-subtitle">
-        1935.1.19—1935.5.9 · 中央红军长征中的四渡赤水
-      </p>
-      <button class="landing-btn" @click="enterCampaign">
-        进入战役
-      </button>
-    </div>
-  </div>
-</template>
-
 <style scoped>
 .landing {
   position: relative;
