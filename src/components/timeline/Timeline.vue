@@ -161,18 +161,24 @@ function handlePhaseClick(phaseId: string): void {
   flex-direction: column;
   gap: 8px;
   padding: 12px 16px;
+  padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px));
   background: var(--color-bg-paper, #F2E8D0);
   border-top: 2px solid var(--color-bg-dark, #3D2F1F);
+  flex-shrink: 0;
 }
-
 .timeline-phases {
   display: flex;
-  gap: 4px;
-  flex-wrap: wrap;
+  gap: 6px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 2px;
 }
-
+.timeline-phases::-webkit-scrollbar { display: none; }
 .phase-btn {
-  padding: 4px 10px;
+  padding: 6px 12px;
   border: 1px solid var(--color-text-muted, #6B5D4A);
   border-radius: 3px;
   background: transparent;
@@ -181,51 +187,41 @@ function handlePhaseClick(phaseId: string): void {
   font-size: 12px;
   cursor: pointer;
   transition: all 0.2s;
+  white-space: nowrap;
+  flex-shrink: 0;
+  min-height: 32px;
+  -webkit-tap-highlight-color: transparent;
 }
-
 .phase-btn:hover {
   border-color: var(--color-accent-red, #C0392B);
   color: var(--color-accent-red, #C0392B);
 }
-
 .phase-btn.active {
   background: var(--color-bg-dark, #3D2F1F);
   border-color: var(--color-bg-dark, #3D2F1F);
   color: var(--color-bg-paper, #F2E8D0);
 }
-
-.timeline-track-wrapper {
-  padding: 8px 0;
-}
-
+.timeline-track-wrapper { padding: 6px 0; }
 .timeline-track {
   position: relative;
-  height: 8px;
+  height: 10px;
   background: var(--color-contour, #6B7F4A);
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
   opacity: 0.4;
 }
-
-.timeline-track:hover {
-  opacity: 0.6;
-}
-
+.timeline-track:hover { opacity: 0.6; }
+.timeline-track:active { opacity: 0.8; }
 .timeline-progress {
-  position: absolute;
-  left: 0;
-  top: 0;
+  position: absolute; left: 0; top: 0;
   height: 100%;
   background: var(--color-accent-red, #C0392B);
-  border-radius: 4px;
+  border-radius: 5px;
   transition: width 0.1s linear;
 }
-
 .timeline-thumb {
-  position: absolute;
-  top: 50%;
-  width: 14px;
-  height: 14px;
+  position: absolute; top: 50%;
+  width: 18px; height: 18px;
   background: var(--color-accent-red, #C0392B);
   border: 2px solid var(--color-bg-paper, #F2E8D0);
   border-radius: 50%;
@@ -233,48 +229,34 @@ function handlePhaseClick(phaseId: string): void {
   pointer-events: none;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
-
 .timeline-controls {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
+  flex-wrap: wrap;
 }
-
 .control-btn {
-  width: 32px;
-  height: 32px;
+  width: 36px; height: 36px;
   border: 1px solid var(--color-bg-dark, #3D2F1F);
   border-radius: 4px;
   background: var(--color-bg-paper, #F2E8D0);
   color: var(--color-bg-dark, #3D2F1F);
   font-size: 14px;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex; align-items: center; justify-content: center;
   transition: all 0.2s;
+  -webkit-tap-highlight-color: transparent;
 }
-
-.control-btn:hover {
-  background: var(--color-bg-dark, #3D2F1F);
-  color: var(--color-bg-paper, #F2E8D0);
-}
-
+.control-btn:hover { background: var(--color-bg-dark, #3D2F1F); color: var(--color-bg-paper, #F2E8D0); }
 .time-display {
   font-family: monospace;
   font-size: 14px;
   color: var(--color-text-main, #1A1410);
   min-width: 100px;
 }
-
-.speed-buttons {
-  display: flex;
-  gap: 2px;
-  margin-left: auto;
-}
-
+.speed-buttons { display: flex; gap: 2px; margin-left: auto; }
 .speed-btn {
-  padding: 4px 8px;
+  padding: 6px 10px;
   border: 1px solid var(--color-text-muted, #6B5D4A);
   border-radius: 3px;
   background: transparent;
@@ -283,16 +265,37 @@ function handlePhaseClick(phaseId: string): void {
   font-size: 11px;
   cursor: pointer;
   transition: all 0.2s;
+  min-width: 38px;
+  min-height: 32px;
+  -webkit-tap-highlight-color: transparent;
 }
-
 .speed-btn:hover {
   border-color: var(--color-accent-red, #C0392B);
   color: var(--color-accent-red, #C0392B);
 }
-
 .speed-btn.active {
   background: var(--color-accent-red, #C0392B);
   border-color: var(--color-accent-red, #C0392B);
   color: #fff;
+}
+@media (max-width: 1024px) {
+  /* iPad / 平板:控件紧凑、章节按钮可水平滚动 */
+  .timeline { padding: 10px 14px; gap: 6px; }
+  .phase-btn { padding: 5px 10px; font-size: 11px; }
+  .time-display { font-size: 12px; min-width: 90px; }
+  .speed-btn { padding: 4px 8px; font-size: 10px; min-width: 34px; }
+  .control-btn { width: 32px; height: 32px; }
+  .timeline-track { height: 12px; }
+  .timeline-thumb { width: 20px; height: 20px; }
+}
+@media (max-width: 480px) {
+  /* 手机:进一步压缩,关键控件保持 36px 最小触摸目标 */
+  .timeline { padding: 8px 10px; gap: 4px; }
+  .phase-btn { padding: 4px 8px; font-size: 10px; min-height: 30px; }
+  .time-display { font-size: 11px; min-width: 76px; }
+  .speed-btn { padding: 3px 6px; font-size: 9px; min-width: 28px; }
+  .control-btn { width: 36px; height: 36px; } /* 触摸目标:不小于 36 */
+  .timeline-controls { gap: 6px; }
+  .speed-buttons { margin-left: 0; width: 100%; justify-content: flex-end; }
 }
 </style>
