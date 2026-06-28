@@ -33,4 +33,11 @@ public/fonts/*.otf
 
 # Debug screenshots (Playwright artifacts)
 tmp-screens/
+screenshots/
+
+# Coverage reports
+coverage/
+
+# One-off ad-hoc scripts at repo root
+/tmp-*.mjs
 
